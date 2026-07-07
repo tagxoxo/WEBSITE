@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Insurance | Millennium Insurance — Clarksville, TN</title>
+  <meta name="description" content="Home, auto, renters, umbrella, watercraft, life, and commercial insurance from Millennium Insurance in Clarksville, TN. Serving customers since 1995. También hablamos español." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container">
+      <span data-i18n="topbar.serving">Serving Clarksville, TN since 1995 &middot; Tambi&eacute;n Hablamos Espa&ntilde;ol</span>
+      <div class="topbar-contacts">
+        <a href="tel:9315550142">(931) 555-0142</a>
+        <a href="mailto:hello@millenniuminsurance.example">hello@millenniuminsurance.example</a>
+        <button class="lang-btn" type="button">Español</button>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <svg class="brand-mark" viewBox="0 0 44 44" aria-hidden="true">
+          <circle cx="22" cy="22" r="20" fill="none" stroke="#d4af37" stroke-width="2.5"/>
+          <path d="M12 30 V16 l5 8 5-10 5 10 5-8 v14" fill="none" stroke="#d4af37" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+        </svg>
+        <span>
+          <span class="brand-name">Millennium <span>Insurance</span></span><br/>
+          <span class="brand-tag">Clarksville, Tennessee &middot; Since 1995</span>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+      <nav class="main-nav">
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="personal-insurance.html" class="active" data-i18n="nav.personal">Personal Insurance</a>
+        <a href="#specialties" data-i18n="nav.coverages">Coverages</a>
+        <a href="#quote" data-i18n="nav.quote">Get a Quote</a>
+        <a href="#quote" class="btn btn-gold" data-i18n="nav.start">Start My Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="crumbs"><a href="index.html" data-i18n="nav.home">Home</a> &raquo; <span data-i18n="nav.personal">Personal Insurance</span></p>
+      <h1 data-i18n="pi.title">Personal Insurance</h1>
+      <p data-i18n="pi.lede">
+        Life moves quickly, and the right coverage should keep up. Since 1995,
+        our Clarksville agents have built personal insurance packages around
+        your home, your vehicles, and the people who count on you &mdash; at a
+        price that respects your budget.
+      </p>
+      <div class="hero-ctas" style="margin-top:1.5rem;">
+        <a class="btn btn-gold" href="#quote" data-i18n="hero.cta.quote">Get a Quote</a>
+        <a class="btn btn-outline" href="#interactive" data-i18n="pi.cta.try">Try the Interactive Graphic</a>
+      </div>
+      <p class="hero-espanol" data-i18n="hero.espanol">Tambi&eacute;n Hablamos Espa&ntilde;ol</p>
+    </div>
+  </section>
+
+  <section class="interactive-section on-dark" id="interactive">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker" data-i18n="int.kicker">Interactive Graphic</p>
+        <h2 data-i18n="int.title">Take a coverage tour of this home</h2>
+        <p data-i18n="int.sub">Click the gold markers to see how each part of your world maps to a coverage in your policy.</p>
+      </div>
+      <div class="interactive-wrap">
+        <div class="scene-frame">
+          <svg id="homeScene" viewBox="0 0 760 520" role="group" aria-label="Interactive home showing insurance coverage areas">
+            <defs>
+              <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#14573e"/>
+                <stop offset="1" stop-color="#0a3325"/>
+              </linearGradient>
+              <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#efe9d8"/>
+                <stop offset="1" stop-color="#d8cfae"/>
+              </linearGradient>
+            </defs>
+
+            <!-- backdrop -->
+            <rect x="0" y="0" width="760" height="440" fill="url(#sky)"/>
+            <circle cx="655" cy="75" r="34" fill="#e3c565" opacity="0.9"/>
+            <circle cx="655" cy="75" r="46" fill="#e3c565" opacity="0.18"/>
+            <!-- ground -->
+            <rect x="0" y="400" width="760" height="120" fill="#0e4430"/>
+            <ellipse cx="380" cy="404" rx="420" ry="26" fill="#14573e"/>
+
+            <!-- tree -->
+            <rect x="62" y="322" width="14" height="82" fill="#5b4326"/>
+            <circle cx="69" cy="288" r="46" fill="#1b6b4c"/>
+            <circle cx="42" cy="312" r="32" fill="#14573e"/>
+            <circle cx="98" cy="310" r="30" fill="#14573e"/>
+
+            <!-- house body -->
+            <rect x="180" y="240" width="300" height="164" fill="url(#wall)" stroke="#0a3325" stroke-width="3"/>
+            <!-- roof -->
+            <path d="M160 244 L330 140 L500 244 Z" fill="#0e4430" stroke="#0a3325" stroke-width="3"/>
+            <path d="M330 140 L500 244 H470 L330 158 Z" fill="#14573e"/>
+            <!-- chimney -->
+            <rect x="420" y="168" width="26" height="52" fill="#b8952c" stroke="#0a3325" stroke-width="2"/>
+            <!-- door -->
+            <rect x="308" y="316" width="48" height="88" rx="4" fill="#0e4430" stroke="#0a3325" stroke-width="3"/>
+            <circle cx="346" cy="362" r="4" fill="#e3c565"/>
+            <!-- windows -->
+            <rect x="212" y="272" width="56" height="52" fill="#bfe0d0" stroke="#0a3325" stroke-width="3"/>
+            <line x1="240" y1="272" x2="240" y2="324" stroke="#0a3325" stroke-width="2"/>
+            <line x1="212" y1="298" x2="268" y2="298" stroke="#0a3325" stroke-width="2"/>
+            <rect x="396" y="272" width="56" height="52" fill="#bfe0d0" stroke="#0a3325" stroke-width="3"/>
+            <line x1="424" y1="272" x2="424" y2="324" stroke="#0a3325" stroke-width="2"/>
+            <line x1="396" y1="298" x2="452" y2="298" stroke="#0a3325" stroke-width="2"/>
+
+            <!-- workshop / small business building -->
+            <rect x="480" y="286" width="150" height="118" fill="url(#wall)" stroke="#0a3325" stroke-width="3"/>
+            <path d="M470 290 L555 232 L640 290 Z" fill="#0e4430" stroke="#0a3325" stroke-width="3"/>
+            <rect x="500" y="316" width="110" height="88" rx="4" fill="#d4af37" stroke="#0a3325" stroke-width="3"/>
+            <line x1="500" y1="338" x2="610" y2="338" stroke="#0a3325" stroke-width="2"/>
+            <line x1="500" y1="360" x2="610" y2="360" stroke="#0a3325" stroke-width="2"/>
+            <line x1="500" y1="382" x2="610" y2="382" stroke="#0a3325" stroke-width="2"/>
+            <!-- shop sign -->
+            <rect x="516" y="296" width="78" height="14" rx="3" fill="#0a3325"/>
+            <rect x="522" y="300" width="66" height="6" rx="2" fill="#e3c565"/>
+
+            <!-- car -->
+            <g>
+              <rect x="72" y="424" width="150" height="34" rx="14" fill="#e3c565" stroke="#0a3325" stroke-width="3"/>
+              <path d="M100 426 L120 402 h56 l22 24" fill="#efe9d8" stroke="#0a3325" stroke-width="3"/>
+              <circle cx="112" cy="460" r="14" fill="#10201a" stroke="#e3c565" stroke-width="3"/>
+              <circle cx="186" cy="460" r="14" fill="#10201a" stroke="#e3c565" stroke-width="3"/>
+            </g>
+
+            <!-- boat on trailer -->
+            <g>
+              <path d="M560 452 q60 20 120 0 l-14 24 h-92 Z" fill="#efe9d8" stroke="#0a3325" stroke-width="3"/>
+              <path d="M620 414 v36" stroke="#0a3325" stroke-width="3"/>
+              <path d="M620 416 l30 32 h-30 Z" fill="#d4af37" stroke="#0a3325" stroke-width="2"/>
+            </g>
+
+            <!-- fence -->
+            <g stroke="#d8cfae" stroke-width="5">
+              <line x1="252" y1="404" x2="252" y2="434"/>
+              <line x1="232" y1="404" x2="232" y2="434"/>
+              <line x1="272" y1="404" x2="272" y2="434"/>
+              <line x1="224" y1="414" x2="280" y2="414"/>
+            </g>
+
+            <!-- family -->
+            <g>
+              <circle cx="392" cy="440" r="9" fill="#e3c565"/>
+              <path d="M392 449 v26 M392 458 l-11 12 M392 458 l11 12 M392 475 l-8 16 M392 475 l8 16" stroke="#e3c565" stroke-width="4" stroke-linecap="round" fill="none"/>
+              <circle cx="424" cy="446" r="7" fill="#efe9d8"/>
+              <path d="M424 453 v20 M424 460 l-8 9 M424 460 l8 9 M424 473 l-6 13 M424 473 l6 13" stroke="#efe9d8" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+            </g>
+
+            <!-- hotspots -->
+            <g class="hotspot" data-key="home" tabindex="0" role="button" aria-label="Home insurance details">
+              <circle class="ring" cx="330" cy="196" r="24"/>
+              <circle class="pulse" cx="330" cy="196" r="16"/>
+              <text x="330" y="201" text-anchor="middle">1</text>
+            </g>
+            <g class="hotspot" data-key="auto" tabindex="0" role="button" aria-label="Auto insurance details">
+              <circle class="ring" cx="147" cy="420" r="24"/>
+              <circle class="pulse" cx="147" cy="420" r="16"/>
+              <text x="147" y="425" text-anchor="middle">2</text>
+            </g>
+            <g class="hotspot" data-key="renters" tabindex="0" role="button" aria-label="Renters insurance details">
+              <circle class="ring" cx="240" cy="298" r="22"/>
+              <circle class="pulse" cx="240" cy="298" r="15"/>
+              <text x="240" y="303" text-anchor="middle">3</text>
+            </g>
+            <g class="hotspot" data-key="commercial" tabindex="0" role="button" aria-label="Commercial insurance details">
+              <circle class="ring" cx="555" cy="264" r="22"/>
+              <circle class="pulse" cx="555" cy="264" r="15"/>
+              <text x="555" y="269" text-anchor="middle">4</text>
+            </g>
+            <g class="hotspot" data-key="watercraft" tabindex="0" role="button" aria-label="Watercraft insurance details">
+              <circle class="ring" cx="694" cy="440" r="22"/>
+              <circle class="pulse" cx="694" cy="440" r="15"/>
+              <text x="694" y="445" text-anchor="middle">5</text>
+            </g>
+            <g class="hotspot" data-key="life" tabindex="0" role="button" aria-label="Life insurance details">
+              <circle class="ring" cx="408" cy="412" r="22"/>
+              <circle class="pulse" cx="408" cy="412" r="15"/>
+              <text x="408" y="417" text-anchor="middle">6</text>
+            </g>
+            <g class="hotspot" data-key="umbrella" tabindex="0" role="button" aria-label="Umbrella insurance details">
+              <circle class="ring" cx="655" cy="150" r="22"/>
+              <circle class="pulse" cx="655" cy="150" r="15"/>
+              <text x="655" y="155" text-anchor="middle">7</text>
+            </g>
+          </svg>
+        </div>
+        <aside class="coverage-panel" id="coveragePanel" aria-live="polite">
+          <p class="panel-kicker" id="panelKicker" data-i18n="panel.kicker0">Coverage Tour</p>
+          <h3 id="panelTitle" data-i18n="panel.title0">Click a marker to begin</h3>
+          <p id="panelBody" data-i18n="panel.body0">
+            Each numbered gold marker highlights a part of everyday life that a
+            Millennium Insurance policy can protect. Select one to learn what the
+            coverage does and why it matters here in Clarksville.
+          </p>
+          <ul id="panelPoints" hidden></ul>
+          <a class="btn btn-gold" id="panelCta" href="#quote" hidden data-i18n="panel.cta">Get a Quote</a>
+          <p class="panel-hint" data-i18n="panel.hint">Tip: use Tab and Enter to explore with a keyboard.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="specialties">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker" data-i18n="spec.kicker">Our Insurance Specialties</p>
+        <h2 data-i18n="spec.title">Seven coverages. Every corner of your life.</h2>
+        <p data-i18n="spec.sub">As an independent agency serving Clarksville since 1995, we compare options from many carriers to match you with the right protection.</p>
+      </div>
+      <div class="cards" id="specialtyCards"></div>
+    </div>
+  </section>
+
+  <section class="quote-section" id="quote">
+    <div class="container quote-grid">
+      <div>
+        <div class="section-head" style="text-align:left; margin:0 0 0.5rem;">
+          <p class="kicker" data-i18n="quote.kicker">Request a Quote</p>
+          <h2 data-i18n="quote.title">It only takes a minute to get started</h2>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div>
+              <h4 data-i18n="quote.s1t">Tell us about yourself</h4>
+              <p data-i18n="quote.s1b">Fill out the short form and a licensed Clarksville agent will reach out &mdash; usually the same business day.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div>
+              <h4 data-i18n="quote.s2t">Review your options</h4>
+              <p data-i18n="quote.s2b">We shop multiple carriers and walk you through the trade-offs in plain language.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div>
+              <h4 data-i18n="quote.s3t">Get covered</h4>
+              <p data-i18n="quote.s3b">Pick the policy that fits and enjoy the peace of mind that comes with real protection.</p>
+            </div>
+          </div>
+        </div>
+        <p style="margin-top:1.6rem; color:#5a6b62;" data-i18n="quote.visit">
+          Rather talk it through in person? Stop by our office at
+          100 Riverbend Way, Suite 210, Clarksville, TN 37040, or call
+          <a href="tel:9315550142" style="color:#b8952c; font-weight:600;">(931) 555-0142</a>.
+          Tambi&eacute;n hablamos espa&ntilde;ol.
+        </p>
+      </div>
+      <form class="quote-form" id="quoteForm" novalidate>
+        <h3 data-i18n="form.title">Request an Insurance Quote</h3>
+        <div class="form-row">
+          <label><span data-i18n="form.first">First name</span> <input type="text" name="firstName" required autocomplete="given-name" /></label>
+          <label><span data-i18n="form.last">Last name</span> <input type="text" name="lastName" required autocomplete="family-name" /></label>
+        </div>
+        <div class="form-row">
+          <label><span data-i18n="form.email">Email</span> <input type="email" name="email" required autocomplete="email" /></label>
+          <label><span data-i18n="form.phone">Phone</span> <input type="tel" name="phone" autocomplete="tel" /></label>
+        </div>
+        <label><span data-i18n="form.zip">ZIP code</span> <input type="text" name="zip" inputmode="numeric" placeholder="37040" /></label>
+        <label><span data-i18n="form.coverage">What would you like a quote for?</span>
+          <select name="coverage">
+            <option data-i18n="opt.home">Home Insurance</option>
+            <option data-i18n="opt.auto">Auto Insurance</option>
+            <option data-i18n="opt.renters">Renters Insurance</option>
+            <option data-i18n="opt.umbrella">Umbrella Insurance</option>
+            <option data-i18n="opt.watercraft">Watercraft Insurance</option>
+            <option data-i18n="opt.life">Life Insurance</option>
+            <option data-i18n="opt.commercial">Commercial Insurance</option>
+          </select>
+        </label>
+        <label><span data-i18n="form.notes">Anything we should know?</span> <textarea name="notes" rows="3"></textarea></label>
+        <button class="btn btn-gold" type="submit" data-i18n="form.submit">Send My Request</button>
+        <p class="form-note" data-i18n="form.note">This demo form doesn't transmit data anywhere. In production, connect it to your CRM or email service.</p>
+      </form>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container">
+      <h2 data-i18n="cta2.title">Ready for coverage that <em>works as hard</em> as you do?</h2>
+      <a class="btn btn-gold" href="#quote" data-i18n="hero.cta.quote">Get a Quote</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Millennium Insurance</h4>
+          <p data-i18n="footer.about">An independent insurance agency proudly serving Clarksville, Tennessee since 1995. We work for you &mdash; not the insurance companies. Tambi&eacute;n hablamos espa&ntilde;ol.</p>
+        </div>
+        <div>
+          <h4 data-i18n="footer.coverages">Coverages</h4>
+          <ul>
+            <li><a href="#specialties" data-i18n="cov.home">Home Insurance</a></li>
+            <li><a href="#specialties" data-i18n="cov.auto">Auto Insurance</a></li>
+            <li><a href="#specialties" data-i18n="cov.renters">Renters Insurance</a></li>
+            <li><a href="#specialties" data-i18n="cov.umbrella">Umbrella Insurance</a></li>
+            <li><a href="#specialties" data-i18n="cov.watercraft">Watercraft Insurance</a></li>
+            <li><a href="#specialties" data-i18n="cov.life">Life Insurance</a></li>
+            <li><a href="#specialties" data-i18n="cov.commercial">Commercial Insurance</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer.company">Company</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="personal-insurance.html" data-i18n="nav.personal">Personal Insurance</a></li>
+            <li><a href="#quote" data-i18n="nav.quote">Get a Quote</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer.visit">Visit Us</h4>
+          <ul>
+            <li>100 Riverbend Way, Suite 210</li>
+            <li>Clarksville, TN 37040</li>
+            <li><a href="tel:9315550142">(931) 555-0142</a></li>
+            <li><a href="mailto:hello@millenniuminsurance.example">hello@millenniuminsurance.example</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span data-i18n="footer.rights">&copy; 2026 Millennium Insurance. All rights reserved. Serving customers since 1995.</span>
+        <span data-i18n="footer.licensed">Licensed in the State of Tennessee</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
