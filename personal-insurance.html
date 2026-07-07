@@ -39,7 +39,7 @@
       <nav class="main-nav">
         <a href="index.html" data-i18n="nav.home">Home</a>
         <a href="personal-insurance.html" class="active" data-i18n="nav.personal">Personal Insurance</a>
-        <a href="#specialties" data-i18n="nav.coverages">Coverages</a>
+        <a href="business-insurance.html" data-i18n="nav.business">Business Insurance</a>
         <a href="#quote" class="btn btn-gold" data-i18n="nav.quote">Get a Quote</a>
       </nav>
     </div>
@@ -116,16 +116,13 @@
             <line x1="424" y1="272" x2="424" y2="324" stroke="#0a3325" stroke-width="2"/>
             <line x1="396" y1="298" x2="452" y2="298" stroke="#0a3325" stroke-width="2"/>
 
-            <!-- workshop / small business building -->
+            <!-- garage -->
             <rect x="480" y="286" width="150" height="118" fill="url(#wall)" stroke="#0a3325" stroke-width="3"/>
             <path d="M470 290 L555 232 L640 290 Z" fill="#0e4430" stroke="#0a3325" stroke-width="3"/>
             <rect x="500" y="316" width="110" height="88" rx="4" fill="#d4af37" stroke="#0a3325" stroke-width="3"/>
             <line x1="500" y1="338" x2="610" y2="338" stroke="#0a3325" stroke-width="2"/>
             <line x1="500" y1="360" x2="610" y2="360" stroke="#0a3325" stroke-width="2"/>
             <line x1="500" y1="382" x2="610" y2="382" stroke="#0a3325" stroke-width="2"/>
-            <!-- shop sign -->
-            <rect x="516" y="296" width="78" height="14" rx="3" fill="#0a3325"/>
-            <rect x="522" y="300" width="66" height="6" rx="2" fill="#e3c565"/>
 
             <!-- car -->
             <g>
@@ -174,25 +171,20 @@
               <circle class="pulse" cx="240" cy="298" r="15"/>
               <text x="240" y="303" text-anchor="middle">3</text>
             </g>
-            <g class="hotspot" data-key="commercial" tabindex="0" role="button" aria-label="Commercial insurance details">
-              <circle class="ring" cx="555" cy="264" r="22"/>
-              <circle class="pulse" cx="555" cy="264" r="15"/>
-              <text x="555" y="269" text-anchor="middle">4</text>
-            </g>
             <g class="hotspot" data-key="watercraft" tabindex="0" role="button" aria-label="Watercraft insurance details">
               <circle class="ring" cx="694" cy="440" r="22"/>
               <circle class="pulse" cx="694" cy="440" r="15"/>
-              <text x="694" y="445" text-anchor="middle">5</text>
+              <text x="694" y="445" text-anchor="middle">4</text>
             </g>
             <g class="hotspot" data-key="life" tabindex="0" role="button" aria-label="Life insurance details">
               <circle class="ring" cx="408" cy="412" r="22"/>
               <circle class="pulse" cx="408" cy="412" r="15"/>
-              <text x="408" y="417" text-anchor="middle">6</text>
+              <text x="408" y="417" text-anchor="middle">5</text>
             </g>
             <g class="hotspot" data-key="umbrella" tabindex="0" role="button" aria-label="Umbrella insurance details">
               <circle class="ring" cx="655" cy="150" r="22"/>
               <circle class="pulse" cx="655" cy="150" r="15"/>
-              <text x="655" y="155" text-anchor="middle">7</text>
+              <text x="655" y="155" text-anchor="middle">6</text>
             </g>
           </svg>
         </div>
@@ -219,7 +211,7 @@
         <h2 data-i18n="spec.title">Seven coverages. Every corner of your life.</h2>
         <p data-i18n="spec.sub">As an independent agency serving Clarksville since 1995, we compare options from many carriers to match you with the right protection.</p>
       </div>
-      <div class="cards" id="specialtyCards"></div>
+      <div class="cards" id="specialtyCards" data-set="personal"></div>
     </div>
   </section>
 
@@ -279,7 +271,7 @@
             <option data-i18n="opt.umbrella">Umbrella Insurance</option>
             <option data-i18n="opt.watercraft">Watercraft Insurance</option>
             <option data-i18n="opt.life">Life Insurance</option>
-            <option data-i18n="opt.commercial">Commercial Insurance</option>
+            <option data-i18n="opt.business">Business Insurance</option>
           </select>
         </label>
         <label><span data-i18n="form.notes">Anything we should know?</span> <textarea name="notes" rows="3"></textarea></label>
@@ -314,7 +306,7 @@
             <li><a href="#specialties" data-i18n="cov.umbrella">Umbrella Insurance</a></li>
             <li><a href="#specialties" data-i18n="cov.watercraft">Watercraft Insurance</a></li>
             <li><a href="#specialties" data-i18n="cov.life">Life Insurance</a></li>
-            <li><a href="#specialties" data-i18n="cov.commercial">Commercial Insurance</a></li>
+            <li><a href="business-insurance.html" data-i18n="cov.business">Business Insurance</a></li>
           </ul>
         </div>
         <div>
@@ -322,6 +314,7 @@
           <ul>
             <li><a href="index.html" data-i18n="nav.home">Home</a></li>
             <li><a href="personal-insurance.html" data-i18n="nav.personal">Personal Insurance</a></li>
+            <li><a href="business-insurance.html" data-i18n="nav.business">Business Insurance</a></li>
             <li><a href="#quote" data-i18n="nav.quote">Get a Quote</a></li>
           </ul>
         </div>

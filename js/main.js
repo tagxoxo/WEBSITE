@@ -1,4 +1,6 @@
-/* Millennium Insurance — site interactions + EN/ES language support */
+/* Millennium Insurance — site interactions, EN/ES language support, scroll reveals */
+
+document.documentElement.classList.add("js");
 
 /* ============================================================
    Translations
@@ -8,7 +10,7 @@ const I18N = {
     "topbar.serving": "Serving Clarksville, TN since 1995 &middot; Tambi&eacute;n Hablamos Espa&ntilde;ol",
     "nav.home": "Home",
     "nav.personal": "Personal Insurance",
-    "nav.coverages": "Coverages",
+    "nav.business": "Business Insurance",
     "nav.quote": "Get a Quote",
 
     "hero.kicker": "Independent Agency &middot; Serving Customers Since 1995",
@@ -21,19 +23,16 @@ const I18N = {
 
     "home.what.kicker": "What we do",
     "home.what.title": "One agency, every angle of protection",
-    "home.what.sub": "Home, auto, renters, umbrella, watercraft, life, and commercial coverage &mdash; all under one roof.",
+    "home.what.sub": "Personal and business coverage &mdash; all under one roof.",
     "home.c1.title": "Personal Insurance",
     "home.c1.body": "Home, auto, renters, umbrella, watercraft, and life &mdash; tailored packages for individuals and families in Tennessee.",
     "home.c1.link": "Explore &rarr;",
-    "home.c2.title": "Commercial Insurance",
+    "home.c2.title": "Business Insurance",
     "home.c2.body": "Protect your business, your team, and everything you've built with coverage designed for Tennessee companies.",
-    "home.c2.link": "Get covered &rarr;",
-    "home.c3.title": "Interactive Coverage Tour",
-    "home.c3.body": "Click through our interactive home graphic to see exactly what each part of a policy protects.",
-    "home.c3.link": "Try it &rarr;",
-    "home.c4.title": "Fast, Friendly Quotes",
-    "home.c4.body": "Tell us a little about yourself and a licensed Clarksville agent will follow up with real options, not spam.",
-    "home.c4.link": "Start now &rarr;",
+    "home.c2.link": "Explore &rarr;",
+    "home.c3.title": "Fast, Friendly Quotes",
+    "home.c3.body": "Tell us a little about yourself and a licensed Clarksville agent will follow up with real options, not spam.",
+    "home.c3.link": "Start now &rarr;",
 
     "stats.1n": "1995",
     "stats.1l": "Serving customers since",
@@ -63,9 +62,20 @@ const I18N = {
     "panel.cta": "Get a Quote",
 
     "spec.kicker": "Our Insurance Specialties",
-    "spec.title": "Seven coverages. Every corner of your life.",
+    "spec.title": "Coverage for every corner of your life",
     "spec.sub": "As an independent agency serving Clarksville since 1995, we compare options from many carriers to match you with the right protection.",
     "spec.link": "Get a quote &rarr;",
+
+    "biz.title": "Business Insurance",
+    "biz.lede":
+      "From Main Street storefronts to growing companies, we've protected Clarksville businesses since 1995. The right business insurance keeps one bad day &mdash; a lawsuit, a fire, a data breach &mdash; from undoing years of hard work.",
+    "biz.int.title": "Take a coverage tour of this business",
+    "biz.int.sub": "Click the gold markers to see how each part of a working business maps to a coverage in your policy.",
+    "biz.panel.body0":
+      "Each numbered gold marker highlights a part of running a business that a Millennium Insurance policy can protect. Select one to learn what the coverage does and why it matters for Clarksville companies.",
+    "biz.spec.kicker": "Business Coverages",
+    "biz.spec.title": "Protection for every side of your business",
+    "biz.spec.sub": "We build coverage packages around how your business actually operates &mdash; and adjust them as you grow.",
 
     "quote.kicker": "Request a Quote",
     "quote.title": "It only takes a minute to get started",
@@ -91,7 +101,14 @@ const I18N = {
     "opt.umbrella": "Umbrella Insurance",
     "opt.watercraft": "Watercraft Insurance",
     "opt.life": "Life Insurance",
-    "opt.commercial": "Commercial Insurance",
+    "opt.business": "Business Insurance",
+    "bopt.liability": "General Liability",
+    "bopt.property": "Commercial Property",
+    "bopt.auto": "Business Auto",
+    "bopt.workers": "Workers' Compensation",
+    "bopt.cyber": "Cyber Liability",
+    "bopt.prof": "Professional Liability",
+    "bopt.other": "Something else",
     "form.notes": "Anything we should know?",
     "form.submit": "Send My Request",
     "form.sending": "Sending&hellip;",
@@ -113,14 +130,14 @@ const I18N = {
     "cov.umbrella": "Umbrella Insurance",
     "cov.watercraft": "Watercraft Insurance",
     "cov.life": "Life Insurance",
-    "cov.commercial": "Commercial Insurance",
+    "cov.business": "Business Insurance",
   },
 
   es: {
     "topbar.serving": "Sirviendo a Clarksville, TN desde 1995 &middot; We Also Speak English",
     "nav.home": "Inicio",
     "nav.personal": "Seguros Personales",
-    "nav.coverages": "Coberturas",
+    "nav.business": "Seguros de Negocios",
     "nav.quote": "Cotizar",
 
     "hero.kicker": "Agencia Independiente &middot; Sirviendo Clientes Desde 1995",
@@ -133,19 +150,16 @@ const I18N = {
 
     "home.what.kicker": "Lo que hacemos",
     "home.what.title": "Una agencia, protecci\u00f3n desde todos los \u00e1ngulos",
-    "home.what.sub": "Hogar, auto, inquilinos, sombrilla, embarcaciones, vida y seguros comerciales \u2014 todo bajo un mismo techo.",
+    "home.what.sub": "Cobertura personal y de negocios \u2014 todo bajo un mismo techo.",
     "home.c1.title": "Seguros Personales",
     "home.c1.body": "Hogar, auto, inquilinos, sombrilla, embarcaciones y vida \u2014 paquetes a la medida para individuos y familias en Tennessee.",
     "home.c1.link": "Explorar &rarr;",
-    "home.c2.title": "Seguro Comercial",
+    "home.c2.title": "Seguros de Negocios",
     "home.c2.body": "Proteja su negocio, su equipo y todo lo que ha construido con cobertura dise\u00f1ada para empresas de Tennessee.",
-    "home.c2.link": "Prot\u00e9jase &rarr;",
-    "home.c3.title": "Recorrido Interactivo de Cobertura",
-    "home.c3.body": "Explore nuestro gr\u00e1fico interactivo del hogar para ver exactamente qu\u00e9 protege cada parte de una p\u00f3liza.",
-    "home.c3.link": "Pru\u00e9belo &rarr;",
-    "home.c4.title": "Cotizaciones R\u00e1pidas y Amables",
-    "home.c4.body": "Cu\u00e9ntenos un poco sobre usted y un agente licenciado de Clarksville le responder\u00e1 con opciones reales, no spam.",
-    "home.c4.link": "Comenzar &rarr;",
+    "home.c2.link": "Explorar &rarr;",
+    "home.c3.title": "Cotizaciones R\u00e1pidas y Amables",
+    "home.c3.body": "Cu\u00e9ntenos un poco sobre usted y un agente licenciado de Clarksville le responder\u00e1 con opciones reales, no spam.",
+    "home.c3.link": "Comenzar &rarr;",
 
     "stats.1n": "1995",
     "stats.1l": "Sirviendo clientes desde",
@@ -175,9 +189,20 @@ const I18N = {
     "panel.cta": "Cotizar Ahora",
 
     "spec.kicker": "Nuestras Especialidades",
-    "spec.title": "Siete coberturas. Cada rinc\u00f3n de su vida.",
+    "spec.title": "Cobertura para cada rinc\u00f3n de su vida",
     "spec.sub": "Como agencia independiente sirviendo a Clarksville desde 1995, comparamos opciones de muchas aseguradoras para encontrar la protecci\u00f3n adecuada para usted.",
     "spec.link": "Cotizar &rarr;",
+
+    "biz.title": "Seguros de Negocios",
+    "biz.lede":
+      "Desde tiendas locales hasta empresas en crecimiento, hemos protegido a los negocios de Clarksville desde 1995. El seguro de negocios correcto evita que un mal d\u00eda \u2014 una demanda, un incendio, una filtraci\u00f3n de datos \u2014 borre a\u00f1os de trabajo duro.",
+    "biz.int.title": "Haga un recorrido de cobertura por este negocio",
+    "biz.int.sub": "Haga clic en los marcadores dorados para ver c\u00f3mo cada parte de un negocio en marcha se conecta con una cobertura de su p\u00f3liza.",
+    "biz.panel.body0":
+      "Cada marcador dorado numerado destaca una parte de administrar un negocio que una p\u00f3liza de Millennium Insurance puede proteger. Seleccione uno para conocer qu\u00e9 hace la cobertura y por qu\u00e9 importa para las empresas de Clarksville.",
+    "biz.spec.kicker": "Coberturas de Negocios",
+    "biz.spec.title": "Protecci\u00f3n para cada aspecto de su negocio",
+    "biz.spec.sub": "Creamos paquetes de cobertura seg\u00fan c\u00f3mo opera realmente su negocio \u2014 y los ajustamos a medida que crece.",
 
     "quote.kicker": "Solicite una Cotizaci\u00f3n",
     "quote.title": "Solo toma un minuto comenzar",
@@ -203,7 +228,14 @@ const I18N = {
     "opt.umbrella": "Seguro Sombrilla",
     "opt.watercraft": "Seguro de Embarcaciones",
     "opt.life": "Seguro de Vida",
-    "opt.commercial": "Seguro Comercial",
+    "opt.business": "Seguro de Negocios",
+    "bopt.liability": "Responsabilidad General",
+    "bopt.property": "Propiedad Comercial",
+    "bopt.auto": "Auto Comercial",
+    "bopt.workers": "Compensaci\u00f3n Laboral",
+    "bopt.cyber": "Responsabilidad Cibern\u00e9tica",
+    "bopt.prof": "Responsabilidad Profesional",
+    "bopt.other": "Otra cosa",
     "form.notes": "\u00bfAlgo que debamos saber?",
     "form.submit": "Enviar Mi Solicitud",
     "form.sending": "Enviando&hellip;",
@@ -225,7 +257,7 @@ const I18N = {
     "cov.umbrella": "Seguro Sombrilla",
     "cov.watercraft": "Seguro de Embarcaciones",
     "cov.life": "Seguro de Vida",
-    "cov.commercial": "Seguro Comercial",
+    "cov.business": "Seguro de Negocios",
   },
 };
 
@@ -233,6 +265,7 @@ const I18N = {
    Interactive coverage graphic data (bilingual)
    ============================================================ */
 const COVERAGES = {
+  /* ---------- Personal (home scene) ---------- */
   home: {
     en: {
       kicker: "Marker 1 · The House",
@@ -305,33 +338,9 @@ const COVERAGES = {
       ],
     },
   },
-  commercial: {
-    en: {
-      kicker: "Marker 4 · The Workshop",
-      title: "Commercial Insurance",
-      body: "Whether you run a shop downtown or a business from your garage, commercial insurance protects your property, your people, and your livelihood.",
-      points: [
-        "General liability protection",
-        "Commercial property and equipment",
-        "Business auto coverage",
-        "Workers' compensation options",
-      ],
-    },
-    es: {
-      kicker: "Marcador 4 · El Taller",
-      title: "Seguro Comercial",
-      body: "Ya sea que tenga una tienda en el centro o un negocio desde su garaje, el seguro comercial protege su propiedad, su gente y su sustento.",
-      points: [
-        "Protección de responsabilidad general",
-        "Propiedad comercial y equipo",
-        "Cobertura de autos comerciales",
-        "Opciones de compensación laboral",
-      ],
-    },
-  },
   watercraft: {
     en: {
-      kicker: "Marker 5 · The Boat",
+      kicker: "Marker 4 · The Boat",
       title: "Watercraft Insurance",
       body: "Weekends on the Cumberland River deserve worry-free coverage. Watercraft insurance protects your boat on the water, on the trailer, and in storage.",
       points: [
@@ -342,7 +351,7 @@ const COVERAGES = {
       ],
     },
     es: {
-      kicker: "Marcador 5 · El Bote",
+      kicker: "Marcador 4 · El Bote",
       title: "Seguro de Embarcaciones",
       body: "Los fines de semana en el río Cumberland merecen cobertura sin preocupaciones. El seguro de embarcaciones protege su bote en el agua, en el remolque y en almacenamiento.",
       points: [
@@ -355,7 +364,7 @@ const COVERAGES = {
   },
   life: {
     en: {
-      kicker: "Marker 6 · The Family",
+      kicker: "Marker 5 · The Family",
       title: "Life Insurance",
       body: "Life insurance isn't about you — it's about the people who depend on you. Term and whole life options help ensure your family's plans stay on track no matter what.",
       points: [
@@ -366,7 +375,7 @@ const COVERAGES = {
       ],
     },
     es: {
-      kicker: "Marcador 6 · La Familia",
+      kicker: "Marcador 5 · La Familia",
       title: "Seguro de Vida",
       body: "El seguro de vida no se trata de usted — se trata de las personas que dependen de usted. Las opciones de vida a término y vida entera ayudan a que los planes de su familia sigan adelante pase lo que pase.",
       points: [
@@ -379,7 +388,7 @@ const COVERAGES = {
   },
   umbrella: {
     en: {
-      kicker: "Marker 7 · Over Everything",
+      kicker: "Marker 6 · Over Everything",
       title: "Umbrella Insurance",
       body: "An umbrella policy adds an extra layer of liability protection above your home and auto limits — often a million dollars or more for less than you'd expect.",
       points: [
@@ -390,7 +399,7 @@ const COVERAGES = {
       ],
     },
     es: {
-      kicker: "Marcador 7 · Sobre Todo lo Demás",
+      kicker: "Marcador 6 · Sobre Todo lo Demás",
       title: "Seguro Sombrilla",
       body: "Una póliza sombrilla añade una capa adicional de protección de responsabilidad por encima de los límites de su hogar y auto — a menudo un millón de dólares o más por menos de lo que imagina.",
       points: [
@@ -401,48 +410,252 @@ const COVERAGES = {
       ],
     },
   },
+
+  /* ---------- Business (storefront scene) ---------- */
+  bizProperty: {
+    en: {
+      kicker: "Marker 1 · The Building",
+      title: "Commercial Property",
+      body: "Your building, equipment, and inventory are the backbone of your business. Commercial property insurance helps you repair, replace, and reopen after fire, storms, or theft.",
+      points: [
+        "Building, signage, and fixtures",
+        "Equipment and inventory",
+        "Business interruption income",
+        "Fire, storm, and theft protection",
+      ],
+    },
+    es: {
+      kicker: "Marcador 1 · El Edificio",
+      title: "Propiedad Comercial",
+      body: "Su edificio, equipo e inventario son la columna vertebral de su negocio. El seguro de propiedad comercial le ayuda a reparar, reemplazar y reabrir después de incendios, tormentas o robos.",
+      points: [
+        "Edificio, letreros e instalaciones",
+        "Equipo e inventario",
+        "Ingresos por interrupción del negocio",
+        "Protección contra incendio, tormenta y robo",
+      ],
+    },
+  },
+  bizLiability: {
+    en: {
+      kicker: "Marker 2 · The Front Door",
+      title: "General Liability",
+      body: "Every customer who walks through your door brings opportunity — and risk. General liability covers injuries on your premises and damage your operations cause to others.",
+      points: [
+        "Customer slip-and-fall injuries",
+        "Damage to others' property",
+        "Products and completed operations",
+        "Legal defense costs",
+      ],
+    },
+    es: {
+      kicker: "Marcador 2 · La Puerta Principal",
+      title: "Responsabilidad General",
+      body: "Cada cliente que cruza su puerta trae oportunidades — y riesgos. La responsabilidad general cubre lesiones en su local y daños que sus operaciones causen a terceros.",
+      points: [
+        "Lesiones de clientes por resbalones y caídas",
+        "Daños a la propiedad de terceros",
+        "Productos y operaciones completadas",
+        "Costos de defensa legal",
+      ],
+    },
+  },
+  bizAuto: {
+    en: {
+      kicker: "Marker 3 · The Van",
+      title: "Business Auto",
+      body: "Whether it's one delivery van or a whole fleet, vehicles used for work need their own coverage — personal auto policies typically exclude business use.",
+      points: [
+        "Company-owned vehicles and fleets",
+        "Liability for work-related accidents",
+        "Employees driving for the business",
+        "Tools and equipment in transit",
+      ],
+    },
+    es: {
+      kicker: "Marcador 3 · La Camioneta",
+      title: "Auto Comercial",
+      body: "Ya sea una camioneta de reparto o una flota completa, los vehículos de trabajo necesitan su propia cobertura — las pólizas de auto personales normalmente excluyen el uso comercial.",
+      points: [
+        "Vehículos y flotas de la empresa",
+        "Responsabilidad por accidentes de trabajo",
+        "Empleados que conducen para el negocio",
+        "Herramientas y equipo en tránsito",
+      ],
+    },
+  },
+  bizWorkers: {
+    en: {
+      kicker: "Marker 4 · The Crew",
+      title: "Workers' Compensation",
+      body: "Your team keeps the business running. Workers' comp covers medical care and lost wages if an employee is hurt on the job — and helps you meet Tennessee requirements.",
+      points: [
+        "Medical care for workplace injuries",
+        "Lost wage replacement",
+        "Employer liability protection",
+        "Helps meet Tennessee requirements",
+      ],
+    },
+    es: {
+      kicker: "Marcador 4 · El Equipo",
+      title: "Compensación Laboral",
+      body: "Su equipo mantiene el negocio en marcha. La compensación laboral cubre atención médica y salarios perdidos si un empleado se lesiona en el trabajo — y le ayuda a cumplir los requisitos de Tennessee.",
+      points: [
+        "Atención médica por lesiones laborales",
+        "Reemplazo de salarios perdidos",
+        "Protección de responsabilidad del empleador",
+        "Ayuda a cumplir los requisitos de Tennessee",
+      ],
+    },
+  },
+  bizCyber: {
+    en: {
+      kicker: "Marker 5 · The Office",
+      title: "Cyber Liability",
+      body: "If you store customer information or take payments online, a data breach can be devastating. Cyber liability helps cover response costs, notifications, and recovery.",
+      points: [
+        "Data breach response costs",
+        "Customer notification and credit monitoring",
+        "Ransomware and cyber extortion response",
+        "Liability from compromised data",
+      ],
+    },
+    es: {
+      kicker: "Marcador 5 · La Oficina",
+      title: "Responsabilidad Cibernética",
+      body: "Si almacena información de clientes o recibe pagos en línea, una filtración de datos puede ser devastadora. La responsabilidad cibernética ayuda a cubrir costos de respuesta, notificaciones y recuperación.",
+      points: [
+        "Costos de respuesta a filtraciones de datos",
+        "Notificación a clientes y monitoreo de crédito",
+        "Respuesta a ransomware y extorsión cibernética",
+        "Responsabilidad por datos comprometidos",
+      ],
+    },
+  },
+  bizProfessional: {
+    en: {
+      kicker: "Marker 6 · The Advisor",
+      title: "Professional Liability",
+      body: "If clients pay you for expertise, advice, or services, professional liability (E&O) protects you when a mistake — or an accusation of one — leads to a claim.",
+      points: [
+        "Errors and omissions in your work",
+        "Negligence claims from clients",
+        "Legal defense costs",
+        "Contract and service disputes",
+      ],
+    },
+    es: {
+      kicker: "Marcador 6 · El Asesor",
+      title: "Responsabilidad Profesional",
+      body: "Si los clientes le pagan por experiencia, asesoría o servicios, la responsabilidad profesional (E&O) lo protege cuando un error — o una acusación de uno — genera un reclamo.",
+      points: [
+        "Errores y omisiones en su trabajo",
+        "Reclamos de negligencia de clientes",
+        "Costos de defensa legal",
+        "Disputas de contratos y servicios",
+      ],
+    },
+  },
+  bizUmbrella: {
+    en: {
+      kicker: "Marker 7 · Over the Business",
+      title: "Commercial Umbrella",
+      body: "One large claim can exceed your policy limits. A commercial umbrella adds an extra layer of liability protection over your other business coverages.",
+      points: [
+        "Extends liability limits across policies",
+        "Protects business assets from large claims",
+        "Covers legal defense beyond base limits",
+        "Cost-effective added security",
+      ],
+    },
+    es: {
+      kicker: "Marcador 7 · Sobre el Negocio",
+      title: "Sombrilla Comercial",
+      body: "Un solo reclamo grande puede superar los límites de su póliza. Una sombrilla comercial añade una capa adicional de protección de responsabilidad sobre sus otras coberturas de negocio.",
+      points: [
+        "Extiende los límites de responsabilidad entre pólizas",
+        "Protege los activos del negocio contra reclamos grandes",
+        "Cubre defensa legal más allá de los límites base",
+        "Seguridad adicional a buen costo",
+      ],
+    },
+  },
 };
 
 /* ============================================================
-   Specialties grid data (7 coverages, bilingual)
+   Specialties grid data (bilingual)
    ============================================================ */
-const SPECIALTIES = [
-  {
-    key: "home", icon: "\u2302",
-    en: { name: "Home Insurance", desc: "Protect the place you call home, inside and out." },
-    es: { name: "Seguro de Hogar", desc: "Proteja el lugar que llama hogar, por dentro y por fuera." },
-  },
-  {
-    key: "auto", icon: "\u26FD",
-    en: { name: "Auto Insurance", desc: "Coverage for daily drivers, commuters, and everything between." },
-    es: { name: "Seguro de Auto", desc: "Cobertura para conductores diarios y todo lo demás." },
-  },
-  {
-    key: "renters", icon: "\u{1F511}",
-    en: { name: "Renters Insurance", desc: "Your landlord covers the building — this covers your life inside it." },
-    es: { name: "Seguro de Inquilinos", desc: "Su arrendador cubre el edificio — esto cubre su vida adentro." },
-  },
-  {
-    key: "umbrella", icon: "\u2602",
-    en: { name: "Umbrella Insurance", desc: "Extra liability protection above your other policies." },
-    es: { name: "Seguro Sombrilla", desc: "Protección adicional de responsabilidad sobre sus otras pólizas." },
-  },
-  {
-    key: "watercraft", icon: "\u2693",
-    en: { name: "Watercraft Insurance", desc: "Boats, jet skis, and pontoons on Tennessee waters." },
-    es: { name: "Seguro de Embarcaciones", desc: "Botes, motos acuáticas y pontones en las aguas de Tennessee." },
-  },
-  {
-    key: "life", icon: "\u2665",
-    en: { name: "Life Insurance", desc: "Security for the people who count on you most." },
-    es: { name: "Seguro de Vida", desc: "Seguridad para las personas que más dependen de usted." },
-  },
-  {
-    key: "commercial", icon: "\u2696",
-    en: { name: "Commercial Insurance", desc: "Protection for your business, your team, and everything you've built." },
-    es: { name: "Seguro Comercial", desc: "Protección para su negocio, su equipo y todo lo que ha construido." },
-  },
-];
+const SPECIALTY_SETS = {
+  personal: [
+    {
+      icon: "\u2302",
+      en: { name: "Home Insurance", desc: "Protect the place you call home, inside and out." },
+      es: { name: "Seguro de Hogar", desc: "Proteja el lugar que llama hogar, por dentro y por fuera." },
+    },
+    {
+      icon: "\u26FD",
+      en: { name: "Auto Insurance", desc: "Coverage for daily drivers, commuters, and everything between." },
+      es: { name: "Seguro de Auto", desc: "Cobertura para conductores diarios y todo lo demás." },
+    },
+    {
+      icon: "\u{1F511}",
+      en: { name: "Renters Insurance", desc: "Your landlord covers the building — this covers your life inside it." },
+      es: { name: "Seguro de Inquilinos", desc: "Su arrendador cubre el edificio — esto cubre su vida adentro." },
+    },
+    {
+      icon: "\u2602",
+      en: { name: "Umbrella Insurance", desc: "Extra liability protection above your other policies." },
+      es: { name: "Seguro Sombrilla", desc: "Protección adicional de responsabilidad sobre sus otras pólizas." },
+    },
+    {
+      icon: "\u2693",
+      en: { name: "Watercraft Insurance", desc: "Boats, jet skis, and pontoons on Tennessee waters." },
+      es: { name: "Seguro de Embarcaciones", desc: "Botes, motos acuáticas y pontones en las aguas de Tennessee." },
+    },
+    {
+      icon: "\u2665",
+      en: { name: "Life Insurance", desc: "Security for the people who count on you most." },
+      es: { name: "Seguro de Vida", desc: "Seguridad para las personas que más dependen de usted." },
+    },
+  ],
+  business: [
+    {
+      icon: "\u2616",
+      en: { name: "Commercial Property", desc: "Your building, equipment, and inventory — protected and rebuildable." },
+      es: { name: "Propiedad Comercial", desc: "Su edificio, equipo e inventario — protegidos y recuperables." },
+    },
+    {
+      icon: "\u2696",
+      en: { name: "General Liability", desc: "Covers injuries on your premises and damage your work causes to others." },
+      es: { name: "Responsabilidad General", desc: "Cubre lesiones en su local y daños que su trabajo cause a terceros." },
+    },
+    {
+      icon: "\u26FD",
+      en: { name: "Business Auto", desc: "Company vehicles and fleets, covered for work use." },
+      es: { name: "Auto Comercial", desc: "Vehículos y flotas de la empresa, cubiertos para uso laboral." },
+    },
+    {
+      icon: "\u2695",
+      en: { name: "Workers' Compensation", desc: "Care for your team when they're hurt on the job." },
+      es: { name: "Compensación Laboral", desc: "Cuidado para su equipo cuando se lesionan en el trabajo." },
+    },
+    {
+      icon: "\u26A1",
+      en: { name: "Cyber Liability", desc: "Response and recovery when data breaches strike." },
+      es: { name: "Responsabilidad Cibernética", desc: "Respuesta y recuperación ante filtraciones de datos." },
+    },
+    {
+      icon: "\u270E",
+      en: { name: "Professional Liability", desc: "E&O protection when your advice or services are challenged." },
+      es: { name: "Responsabilidad Profesional", desc: "Protección E&O cuando cuestionan su asesoría o servicios." },
+    },
+    {
+      icon: "\u2602",
+      en: { name: "Commercial Umbrella", desc: "An extra layer of liability above your business policies." },
+      es: { name: "Sombrilla Comercial", desc: "Una capa extra de responsabilidad sobre sus pólizas de negocio." },
+    },
+  ],
+};
 
 /* ============================================================
    Language state
@@ -533,16 +746,19 @@ hotspots.forEach((spot) => {
 function renderSpecialties() {
   const grid = document.getElementById("specialtyCards");
   if (!grid) return;
-  grid.innerHTML = SPECIALTIES.map((s) => {
-    const d = s[lang] || s.en;
-    return `
+  const set = SPECIALTY_SETS[grid.dataset.set] || SPECIALTY_SETS.personal;
+  grid.innerHTML = set
+    .map((s) => {
+      const d = s[lang] || s.en;
+      return `
     <a class="card" href="#quote">
       <div class="card-icon">${s.icon}</div>
       <h3>${d.name}</h3>
       <p>${d.desc}</p>
       <span class="card-link">${t("spec.link")}</span>
     </a>`;
-  }).join("");
+    })
+    .join("");
 }
 
 /* ---------- Quote form (Formspree AJAX) ---------- */
@@ -582,6 +798,27 @@ if (form) {
       status.hidden = false;
     }
   });
+}
+
+/* ---------- Scroll-triggered reveal animations ---------- */
+const revealEls = document.querySelectorAll("section > .container, .stats-band > .container");
+revealEls.forEach((el) => el.classList.add("reveal"));
+
+if ("IntersectionObserver" in window) {
+  const io = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+          io.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+  );
+  revealEls.forEach((el) => io.observe(el));
+} else {
+  revealEls.forEach((el) => el.classList.add("in-view"));
 }
 
 /* ---------- Init ---------- */

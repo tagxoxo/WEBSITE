@@ -581,6 +581,21 @@ section { padding: 4.5rem 0; }
   font-size: 0.8rem;
 }
 
+/* ---------- Scroll-triggered reveal ----------
+   Only active when JS adds the "js" class to <html>,
+   so content stays fully visible if JavaScript is off. */
+@media (prefers-reduced-motion: no-preference) {
+  html.js .reveal {
+    opacity: 0;
+    transform: translateY(22px);
+    transition: opacity 0.45s ease-out, transform 0.45s ease-out;
+  }
+  html.js .reveal.in-view {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
   .hero .container, .interactive-wrap, .quote-grid { grid-template-columns: 1fr; }

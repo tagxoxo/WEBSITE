@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Business Insurance | Millennium Insurance — Clarksville, TN</title>
+  <meta name="description" content="Business insurance from Millennium Insurance in Clarksville, TN: commercial property, general liability, business auto, workers' comp, cyber, and more. Serving businesses since 1995. También hablamos español." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container">
+      <span data-i18n="topbar.serving">Serving Clarksville, TN since 1995 &middot; Tambi&eacute;n Hablamos Espa&ntilde;ol</span>
+      <div class="topbar-contacts">
+        <a href="tel:9315550142">(931) 555-0142</a>
+        <a href="mailto:hello@millenniuminsurance.example">hello@millenniuminsurance.example</a>
+        <button class="lang-btn" type="button">Español</button>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <svg class="brand-mark" viewBox="0 0 44 44" aria-hidden="true">
+          <circle cx="22" cy="22" r="20" fill="none" stroke="#d4af37" stroke-width="2.5"/>
+          <path d="M12 30 V16 l5 8 5-10 5 10 5-8 v14" fill="none" stroke="#d4af37" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+        </svg>
+        <span>
+          <span class="brand-name">Millennium <span>Insurance</span></span><br/>
+          <span class="brand-tag">Clarksville, Tennessee &middot; Since 1995</span>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+      <nav class="main-nav">
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="personal-insurance.html" data-i18n="nav.personal">Personal Insurance</a>
+        <a href="business-insurance.html" class="active" data-i18n="nav.business">Business Insurance</a>
+        <a href="#quote" class="btn btn-gold" data-i18n="nav.quote">Get a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="crumbs"><a href="index.html" data-i18n="nav.home">Home</a> &raquo; <span data-i18n="nav.business">Business Insurance</span></p>
+      <h1 data-i18n="biz.title">Business Insurance</h1>
+      <p data-i18n="biz.lede">
+        From Main Street storefronts to growing companies, we've protected
+        Clarksville businesses since 1995. The right business insurance keeps
+        one bad day &mdash; a lawsuit, a fire, a data breach &mdash; from
+        undoing years of hard work.
+      </p>
+      <div class="hero-ctas" style="margin-top:1.5rem;">
+        <a class="btn btn-gold" href="#quote" data-i18n="hero.cta.quote">Get a Quote</a>
+        <a class="btn btn-outline" href="#interactive" data-i18n="pi.cta.try">Try the Interactive Graphic</a>
+      </div>
+      <p class="hero-espanol" data-i18n="hero.espanol">Tambi&eacute;n Hablamos Espa&ntilde;ol</p>
+    </div>
+  </section>
+
+  <section class="interactive-section on-dark" id="interactive">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker" data-i18n="int.kicker">Interactive Graphic</p>
+        <h2 data-i18n="biz.int.title">Take a coverage tour of this business</h2>
+        <p data-i18n="biz.int.sub">Click the gold markers to see how each part of a working business maps to a coverage in your policy.</p>
+      </div>
+      <div class="interactive-wrap">
+        <div class="scene-frame">
+          <svg id="bizScene" viewBox="0 0 760 520" role="group" aria-label="Interactive storefront showing business insurance coverage areas">
+            <defs>
+              <linearGradient id="bizSky" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#14573e"/>
+                <stop offset="1" stop-color="#0a3325"/>
+              </linearGradient>
+              <linearGradient id="bizWall" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#efe9d8"/>
+                <stop offset="1" stop-color="#d8cfae"/>
+              </linearGradient>
+            </defs>
+
+            <!-- backdrop -->
+            <rect x="0" y="0" width="760" height="440" fill="url(#bizSky)"/>
+            <circle cx="680" cy="70" r="30" fill="#e3c565" opacity="0.9"/>
+            <circle cx="680" cy="70" r="42" fill="#e3c565" opacity="0.18"/>
+            <!-- distant skyline -->
+            <rect x="20" y="240" width="70" height="160" fill="#0e4430"/>
+            <rect x="30" y="256" width="12" height="12" fill="#1b6b4c"/>
+            <rect x="52" y="256" width="12" height="12" fill="#1b6b4c"/>
+            <rect x="30" y="280" width="12" height="12" fill="#1b6b4c"/>
+            <rect x="52" y="280" width="12" height="12" fill="#1b6b4c"/>
+            <rect x="95" y="290" width="55" height="110" fill="#0e4430"/>
+            <rect x="104" y="304" width="10" height="10" fill="#1b6b4c"/>
+            <rect x="124" y="304" width="10" height="10" fill="#1b6b4c"/>
+            <rect x="104" y="326" width="10" height="10" fill="#1b6b4c"/>
+            <rect x="124" y="326" width="10" height="10" fill="#1b6b4c"/>
+            <!-- ground / street -->
+            <rect x="0" y="400" width="760" height="120" fill="#0e4430"/>
+            <ellipse cx="380" cy="404" rx="420" ry="26" fill="#14573e"/>
+
+            <!-- main storefront building -->
+            <rect x="180" y="180" width="260" height="224" fill="url(#bizWall)" stroke="#0a3325" stroke-width="3"/>
+            <!-- parapet -->
+            <rect x="170" y="168" width="280" height="18" fill="#0e4430" stroke="#0a3325" stroke-width="3"/>
+            <!-- sign band -->
+            <rect x="196" y="200" width="228" height="34" rx="4" fill="#0e4430" stroke="#0a3325" stroke-width="2"/>
+            <rect x="210" y="211" width="130" height="12" rx="3" fill="#e3c565"/>
+            <circle cx="404" cy="217" r="8" fill="#d4af37"/>
+            <!-- upper windows -->
+            <rect x="200" y="248" width="52" height="42" fill="#bfe0d0" stroke="#0a3325" stroke-width="3"/>
+            <line x1="226" y1="248" x2="226" y2="290" stroke="#0a3325" stroke-width="2"/>
+            <rect x="284" y="248" width="52" height="42" fill="#bfe0d0" stroke="#0a3325" stroke-width="3"/>
+            <line x1="310" y1="248" x2="310" y2="290" stroke="#0a3325" stroke-width="2"/>
+            <rect x="368" y="248" width="52" height="42" fill="#bfe0d0" stroke="#0a3325" stroke-width="3"/>
+            <line x1="394" y1="248" x2="394" y2="290" stroke="#0a3325" stroke-width="2"/>
+            <!-- monitor silhouette in middle window -->
+            <rect x="292" y="264" width="22" height="14" rx="2" fill="#0a3325"/>
+            <rect x="300" y="278" width="6" height="6" fill="#0a3325"/>
+            <!-- awning -->
+            <path d="M188 312 h244 l14 22 h-272 Z" fill="#d4af37" stroke="#0a3325" stroke-width="3"/>
+            <path d="M216 312 l7 22 M244 312 l7 22 M272 312 l7 22 M300 312 l7 22 M328 312 l7 22 M356 312 l7 22 M384 312 l7 22 M412 312 l7 22" stroke="#0a3325" stroke-width="2"/>
+            <!-- shop window -->
+            <rect x="200" y="344" width="130" height="60" fill="#bfe0d0" stroke="#0a3325" stroke-width="3"/>
+            <line x1="200" y1="374" x2="330" y2="374" stroke="#0a3325" stroke-width="2"/>
+            <!-- front door -->
+            <rect x="352" y="340" width="52" height="64" rx="4" fill="#0e4430" stroke="#0a3325" stroke-width="3"/>
+            <circle cx="392" cy="374" r="4" fill="#e3c565"/>
+
+            <!-- customer at the door -->
+            <g>
+              <circle cx="330" cy="430" r="9" fill="#efe9d8"/>
+              <path d="M330 439 v26 M330 448 l-11 12 M330 448 l11 12 M330 465 l-8 16 M330 465 l8 16" stroke="#efe9d8" stroke-width="4" stroke-linecap="round" fill="none"/>
+            </g>
+
+            <!-- crew with crates -->
+            <g>
+              <rect x="452" y="430" width="34" height="26" fill="#d4af37" stroke="#0a3325" stroke-width="2"/>
+              <rect x="458" y="406" width="26" height="24" fill="#e3c565" stroke="#0a3325" stroke-width="2"/>
+              <circle cx="512" cy="420" r="9" fill="#e3c565"/>
+              <path d="M506 414 a9 9 0 0 1 12 0 l2 -6 h-16 Z" fill="#d4af37"/>
+              <path d="M512 429 v26 M512 438 l-11 10 M512 438 l11 10 M512 455 l-8 16 M512 455 l8 16" stroke="#e3c565" stroke-width="4" stroke-linecap="round" fill="none"/>
+              <circle cx="548" cy="426" r="8" fill="#efe9d8"/>
+              <path d="M543 421 a8 8 0 0 1 10 0 l2 -5 h-14 Z" fill="#d4af37"/>
+              <path d="M548 434 v22 M548 441 l-9 9 M548 441 l9 9 M548 456 l-7 14 M548 456 l7 14" stroke="#efe9d8" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+            </g>
+
+            <!-- delivery van -->
+            <g>
+              <rect x="590" y="360" width="120" height="66" rx="8" fill="#efe9d8" stroke="#0a3325" stroke-width="3"/>
+              <rect x="700" y="382" width="34" height="44" rx="6" fill="#e3c565" stroke="#0a3325" stroke-width="3"/>
+              <rect x="706" y="388" width="22" height="16" fill="#bfe0d0" stroke="#0a3325" stroke-width="2"/>
+              <rect x="602" y="380" width="76" height="10" rx="3" fill="#d4af37"/>
+              <circle cx="622" cy="430" r="14" fill="#10201a" stroke="#e3c565" stroke-width="3"/>
+              <circle cx="706" cy="430" r="14" fill="#10201a" stroke="#e3c565" stroke-width="3"/>
+            </g>
+
+            <!-- advisor with briefcase -->
+            <g>
+              <circle cx="100" cy="428" r="9" fill="#e3c565"/>
+              <path d="M100 437 v26 M100 446 l-11 12 M100 446 l11 12 M100 463 l-8 16 M100 463 l8 16" stroke="#e3c565" stroke-width="4" stroke-linecap="round" fill="none"/>
+              <rect x="112" y="452" width="18" height="13" rx="2" fill="#d4af37" stroke="#0a3325" stroke-width="2"/>
+            </g>
+
+            <!-- hotspots -->
+            <g class="hotspot" data-key="bizProperty" tabindex="0" role="button" aria-label="Commercial property insurance details">
+              <circle class="ring" cx="310" cy="140" r="24"/>
+              <circle class="pulse" cx="310" cy="140" r="16"/>
+              <text x="310" y="145" text-anchor="middle">1</text>
+            </g>
+            <g class="hotspot" data-key="bizLiability" tabindex="0" role="button" aria-label="General liability insurance details">
+              <circle class="ring" cx="378" cy="308" r="22"/>
+              <circle class="pulse" cx="378" cy="308" r="15"/>
+              <text x="378" y="313" text-anchor="middle">2</text>
+            </g>
+            <g class="hotspot" data-key="bizAuto" tabindex="0" role="button" aria-label="Business auto insurance details">
+              <circle class="ring" cx="650" cy="330" r="22"/>
+              <circle class="pulse" cx="650" cy="330" r="15"/>
+              <text x="650" y="335" text-anchor="middle">3</text>
+            </g>
+            <g class="hotspot" data-key="bizWorkers" tabindex="0" role="button" aria-label="Workers' compensation details">
+              <circle class="ring" cx="530" cy="386" r="22"/>
+              <circle class="pulse" cx="530" cy="386" r="15"/>
+              <text x="530" y="391" text-anchor="middle">4</text>
+            </g>
+            <g class="hotspot" data-key="bizCyber" tabindex="0" role="button" aria-label="Cyber liability insurance details">
+              <circle class="ring" cx="310" cy="269" r="22"/>
+              <circle class="pulse" cx="310" cy="269" r="15"/>
+              <text x="310" y="274" text-anchor="middle">5</text>
+            </g>
+            <g class="hotspot" data-key="bizProfessional" tabindex="0" role="button" aria-label="Professional liability insurance details">
+              <circle class="ring" cx="100" cy="392" r="22"/>
+              <circle class="pulse" cx="100" cy="392" r="15"/>
+              <text x="100" y="397" text-anchor="middle">6</text>
+            </g>
+            <g class="hotspot" data-key="bizUmbrella" tabindex="0" role="button" aria-label="Commercial umbrella insurance details">
+              <circle class="ring" cx="680" cy="140" r="22"/>
+              <circle class="pulse" cx="680" cy="140" r="15"/>
+              <text x="680" y="145" text-anchor="middle">7</text>
+            </g>
+          </svg>
+        </div>
+        <aside class="coverage-panel" id="coveragePanel" aria-live="polite">
+          <p class="panel-kicker" id="panelKicker" data-i18n="panel.kicker0">Coverage Tour</p>
+          <h3 id="panelTitle" data-i18n="panel.title0">Click a marker to begin</h3>
+          <p id="panelBody" data-i18n="biz.panel.body0">
+            Each numbered gold marker highlights a part of running a business
+            that a Millennium Insurance policy can protect. Select one to learn
+            what the coverage does and why it matters for Clarksville companies.
+          </p>
+          <ul id="panelPoints" hidden></ul>
+          <a class="btn btn-gold" id="panelCta" href="#quote" hidden data-i18n="panel.cta">Get a Quote</a>
+          <p class="panel-hint" data-i18n="panel.hint">Tip: use Tab and Enter to explore with a keyboard.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="specialties">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker" data-i18n="biz.spec.kicker">Business Coverages</p>
+        <h2 data-i18n="biz.spec.title">Protection for every side of your business</h2>
+        <p data-i18n="biz.spec.sub">We build coverage packages around how your business actually operates &mdash; and adjust them as you grow.</p>
+      </div>
+      <div class="cards" id="specialtyCards" data-set="business"></div>
+    </div>
+  </section>
+
+  <section class="quote-section" id="quote">
+    <div class="container quote-grid">
+      <div>
+        <div class="section-head" style="text-align:left; margin:0 0 0.5rem;">
+          <p class="kicker" data-i18n="quote.kicker">Request a Quote</p>
+          <h2 data-i18n="quote.title">It only takes a minute to get started</h2>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div>
+              <h4 data-i18n="quote.s1t">Tell us about yourself</h4>
+              <p data-i18n="quote.s1b">Fill out the short form and a licensed Clarksville agent will reach out &mdash; usually the same business day.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div>
+              <h4 data-i18n="quote.s2t">Review your options</h4>
+              <p data-i18n="quote.s2b">We shop multiple carriers and walk you through the trade-offs in plain language.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div>
+              <h4 data-i18n="quote.s3t">Get covered</h4>
+              <p data-i18n="quote.s3b">Pick the policy that fits and enjoy the peace of mind that comes with real protection.</p>
+            </div>
+          </div>
+        </div>
+        <p style="margin-top:1.6rem; color:#5a6b62;" data-i18n="quote.visit">
+          Rather talk it through in person? Stop by our office at
+          100 Riverbend Way, Suite 210, Clarksville, TN 37040, or call
+          <a href="tel:9315550142" style="color:#b8952c; font-weight:600;">(931) 555-0142</a>.
+          Tambi&eacute;n hablamos espa&ntilde;ol.
+        </p>
+      </div>
+      <form class="quote-form" id="quoteForm" action="https://formspree.io/f/xykqaeor" method="POST">
+        <h3 data-i18n="form.title">Request an Insurance Quote</h3>
+        <div class="form-row">
+          <label><span data-i18n="form.first">First name</span> <input type="text" name="firstName" required autocomplete="given-name" /></label>
+          <label><span data-i18n="form.last">Last name</span> <input type="text" name="lastName" required autocomplete="family-name" /></label>
+        </div>
+        <div class="form-row">
+          <label><span data-i18n="form.email">Email</span> <input type="email" name="email" required autocomplete="email" /></label>
+          <label><span data-i18n="form.phone">Phone</span> <input type="tel" name="phone" autocomplete="tel" /></label>
+        </div>
+        <label><span data-i18n="form.zip">ZIP code</span> <input type="text" name="zip" inputmode="numeric" placeholder="37040" /></label>
+        <label><span data-i18n="form.coverage">What would you like a quote for?</span>
+          <select name="coverage">
+            <option data-i18n="bopt.liability">General Liability</option>
+            <option data-i18n="bopt.property">Commercial Property</option>
+            <option data-i18n="bopt.auto">Business Auto</option>
+            <option data-i18n="bopt.workers">Workers' Compensation</option>
+            <option data-i18n="bopt.cyber">Cyber Liability</option>
+            <option data-i18n="bopt.prof">Professional Liability</option>
+            <option data-i18n="bopt.other">Something else</option>
+          </select>
+        </label>
+        <label><span data-i18n="form.notes">Anything we should know?</span> <textarea name="notes" rows="3"></textarea></label>
+        <input type="hidden" name="_subject" value="New business quote request — Millennium Insurance website" />
+        <button class="btn btn-gold" type="submit" data-i18n="form.submit">Send My Request</button>
+        <p class="form-status" id="formStatus" role="status" hidden></p>
+        <p class="form-note" data-i18n="form.note">We'll only use your information to respond to your request.</p>
+      </form>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container">
+      <h2 data-i18n="cta2.title">Ready for coverage that <em>works as hard</em> as you do?</h2>
+      <a class="btn btn-gold" href="#quote" data-i18n="hero.cta.quote">Get a Quote</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Millennium Insurance</h4>
+          <p data-i18n="footer.about">An independent insurance agency proudly serving Clarksville, Tennessee since 1995. Tambi&eacute;n hablamos espa&ntilde;ol.</p>
+        </div>
+        <div>
+          <h4 data-i18n="footer.coverages">Coverages</h4>
+          <ul>
+            <li><a href="personal-insurance.html#specialties" data-i18n="cov.home">Home Insurance</a></li>
+            <li><a href="personal-insurance.html#specialties" data-i18n="cov.auto">Auto Insurance</a></li>
+            <li><a href="personal-insurance.html#specialties" data-i18n="cov.renters">Renters Insurance</a></li>
+            <li><a href="personal-insurance.html#specialties" data-i18n="cov.umbrella">Umbrella Insurance</a></li>
+            <li><a href="personal-insurance.html#specialties" data-i18n="cov.watercraft">Watercraft Insurance</a></li>
+            <li><a href="personal-insurance.html#specialties" data-i18n="cov.life">Life Insurance</a></li>
+            <li><a href="business-insurance.html" data-i18n="cov.business">Business Insurance</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer.company">Company</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="personal-insurance.html" data-i18n="nav.personal">Personal Insurance</a></li>
+            <li><a href="business-insurance.html" data-i18n="nav.business">Business Insurance</a></li>
+            <li><a href="#quote" data-i18n="nav.quote">Get a Quote</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 data-i18n="footer.visit">Visit Us</h4>
+          <ul>
+            <li>100 Riverbend Way, Suite 210</li>
+            <li>Clarksville, TN 37040</li>
+            <li><a href="tel:9315550142">(931) 555-0142</a></li>
+            <li><a href="mailto:hello@millenniuminsurance.example">hello@millenniuminsurance.example</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span data-i18n="footer.rights">&copy; 2026 Millennium Insurance. All rights reserved. Serving customers since 1995.</span>
+        <span data-i18n="footer.licensed">Licensed in the State of Tennessee</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
