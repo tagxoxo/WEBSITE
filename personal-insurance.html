@@ -40,8 +40,7 @@
         <a href="index.html" data-i18n="nav.home">Home</a>
         <a href="personal-insurance.html" class="active" data-i18n="nav.personal">Personal Insurance</a>
         <a href="#specialties" data-i18n="nav.coverages">Coverages</a>
-        <a href="#quote" data-i18n="nav.quote">Get a Quote</a>
-        <a href="#quote" class="btn btn-gold" data-i18n="nav.start">Start My Quote</a>
+        <a href="#quote" class="btn btn-gold" data-i18n="nav.quote">Get a Quote</a>
       </nav>
     </div>
   </header>
@@ -261,7 +260,7 @@
           Tambi&eacute;n hablamos espa&ntilde;ol.
         </p>
       </div>
-      <form class="quote-form" id="quoteForm" novalidate>
+      <form class="quote-form" id="quoteForm" action="https://formspree.io/f/xykqaeor" method="POST">
         <h3 data-i18n="form.title">Request an Insurance Quote</h3>
         <div class="form-row">
           <label><span data-i18n="form.first">First name</span> <input type="text" name="firstName" required autocomplete="given-name" /></label>
@@ -284,8 +283,10 @@
           </select>
         </label>
         <label><span data-i18n="form.notes">Anything we should know?</span> <textarea name="notes" rows="3"></textarea></label>
+        <input type="hidden" name="_subject" value="New quote request — Millennium Insurance website" />
         <button class="btn btn-gold" type="submit" data-i18n="form.submit">Send My Request</button>
-        <p class="form-note" data-i18n="form.note">This demo form doesn't transmit data anywhere. In production, connect it to your CRM or email service.</p>
+        <p class="form-status" id="formStatus" role="status" hidden></p>
+        <p class="form-note" data-i18n="form.note">We'll only use your information to respond to your request.</p>
       </form>
     </div>
   </section>
@@ -302,7 +303,7 @@
       <div class="footer-grid">
         <div>
           <h4>Millennium Insurance</h4>
-          <p data-i18n="footer.about">An independent insurance agency proudly serving Clarksville, Tennessee since 1995. We work for you &mdash; not the insurance companies. Tambi&eacute;n hablamos espa&ntilde;ol.</p>
+          <p data-i18n="footer.about">An independent insurance agency proudly serving Clarksville, Tennessee since 1995. Tambi&eacute;n hablamos espa&ntilde;ol.</p>
         </div>
         <div>
           <h4 data-i18n="footer.coverages">Coverages</h4>

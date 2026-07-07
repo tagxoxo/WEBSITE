@@ -489,6 +489,22 @@ section { padding: 4.5rem 0; }
   border-color: var(--gold-500);
 }
 .form-note { font-size: 0.78rem; color: #8a917f; }
+.form-status {
+  font-size: 0.92rem;
+  font-weight: 600;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+}
+.form-status.is-success {
+  color: var(--green-800);
+  background: rgba(27, 107, 76, 0.12);
+  border: 1px solid var(--green-600);
+}
+.form-status.is-error {
+  color: #7a2e2e;
+  background: rgba(190, 60, 60, 0.1);
+  border: 1px solid #c96a6a;
+}
 
 /* ---------- Stats band ---------- */
 .stats-band {

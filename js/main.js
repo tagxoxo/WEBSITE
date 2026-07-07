@@ -10,12 +10,11 @@ const I18N = {
     "nav.personal": "Personal Insurance",
     "nav.coverages": "Coverages",
     "nav.quote": "Get a Quote",
-    "nav.start": "Start My Quote",
 
     "hero.kicker": "Independent Agency &middot; Serving Customers Since 1995",
     "hero.title": "Coverage built for the way <em>your life</em> actually works.",
     "hero.lede":
-      "Millennium Insurance is a Clarksville, Tennessee agency that has served our neighbors since 1995. We shop top-rated carriers on your behalf, so you get protection that fits your needs and your budget &mdash; explained in plain English.",
+      "Millennium Insurance is a Clarksville, Tennessee agency that has served our neighbors since 1995. We shop top-rated carriers on your behalf, so you get protection that fits your needs and your budget.",
     "hero.espanol": "Tambi&eacute;n Hablamos Espa&ntilde;ol",
     "hero.cta.quote": "Get a Quote",
     "hero.cta.explore": "Explore Personal Insurance",
@@ -66,7 +65,6 @@ const I18N = {
     "spec.kicker": "Our Insurance Specialties",
     "spec.title": "Seven coverages. Every corner of your life.",
     "spec.sub": "As an independent agency serving Clarksville since 1995, we compare options from many carriers to match you with the right protection.",
-    "spec.badge": "Interactive Graphic",
     "spec.link": "Get a quote &rarr;",
 
     "quote.kicker": "Request a Quote",
@@ -96,11 +94,13 @@ const I18N = {
     "opt.commercial": "Commercial Insurance",
     "form.notes": "Anything we should know?",
     "form.submit": "Send My Request",
-    "form.note": "This demo form doesn't transmit data anywhere. In production, connect it to your CRM or email service.",
+    "form.sending": "Sending&hellip;",
+    "form.note": "We'll only use your information to respond to your request.",
     "form.success": "Request received &mdash; we'll be in touch!",
+    "form.error": "Something went wrong sending your request. Please try again, or call us at (931) 555-0142.",
 
     "footer.about":
-      "An independent insurance agency proudly serving Clarksville, Tennessee since 1995. We work for you &mdash; not the insurance companies. Tambi&eacute;n hablamos espa&ntilde;ol.",
+      "An independent insurance agency proudly serving Clarksville, Tennessee since 1995. Tambi&eacute;n hablamos espa&ntilde;ol.",
     "footer.coverages": "Coverages",
     "footer.company": "Company",
     "footer.visit": "Visit Us",
@@ -122,12 +122,11 @@ const I18N = {
     "nav.personal": "Seguros Personales",
     "nav.coverages": "Coberturas",
     "nav.quote": "Cotizar",
-    "nav.start": "Iniciar Mi Cotizaci\u00f3n",
 
     "hero.kicker": "Agencia Independiente &middot; Sirviendo Clientes Desde 1995",
     "hero.title": "Cobertura dise\u00f1ada para la forma en que <em>su vida</em> realmente funciona.",
     "hero.lede":
-      "Millennium Insurance es una agencia de Clarksville, Tennessee que ha servido a nuestra comunidad desde 1995. Comparamos aseguradoras de primer nivel por usted, para que obtenga protecci\u00f3n que se ajuste a sus necesidades y a su presupuesto \u2014 explicada con claridad.",
+      "Millennium Insurance es una agencia de Clarksville, Tennessee que ha servido a nuestra comunidad desde 1995. Comparamos aseguradoras de primer nivel por usted, para que obtenga protecci\u00f3n que se ajuste a sus necesidades y a su presupuesto.",
     "hero.espanol": "Tambi\u00e9n Hablamos Espa\u00f1ol",
     "hero.cta.quote": "Cotizar Ahora",
     "hero.cta.explore": "Explorar Seguros Personales",
@@ -178,7 +177,6 @@ const I18N = {
     "spec.kicker": "Nuestras Especialidades",
     "spec.title": "Siete coberturas. Cada rinc\u00f3n de su vida.",
     "spec.sub": "Como agencia independiente sirviendo a Clarksville desde 1995, comparamos opciones de muchas aseguradoras para encontrar la protecci\u00f3n adecuada para usted.",
-    "spec.badge": "Gr\u00e1fico Interactivo",
     "spec.link": "Cotizar &rarr;",
 
     "quote.kicker": "Solicite una Cotizaci\u00f3n",
@@ -208,11 +206,13 @@ const I18N = {
     "opt.commercial": "Seguro Comercial",
     "form.notes": "\u00bfAlgo que debamos saber?",
     "form.submit": "Enviar Mi Solicitud",
-    "form.note": "Este formulario de demostraci\u00f3n no env\u00eda datos a ning\u00fan lugar. En producci\u00f3n, con\u00e9ctelo a su CRM o servicio de correo.",
+    "form.sending": "Enviando&hellip;",
+    "form.note": "Solo usaremos su informaci\u00f3n para responder a su solicitud.",
     "form.success": "\u00a1Solicitud recibida \u2014 nos comunicaremos pronto!",
+    "form.error": "Hubo un problema al enviar su solicitud. Int\u00e9ntelo de nuevo o ll\u00e1menos al (931) 555-0142.",
 
     "footer.about":
-      "Una agencia de seguros independiente sirviendo con orgullo a Clarksville, Tennessee desde 1995. Trabajamos para usted \u2014 no para las aseguradoras. Tambi\u00e9n hablamos espa\u00f1ol.",
+      "Una agencia de seguros independiente sirviendo con orgullo a Clarksville, Tennessee desde 1995. Tambi\u00e9n hablamos espa\u00f1ol.",
     "footer.coverages": "Coberturas",
     "footer.company": "Compa\u00f1\u00eda",
     "footer.visit": "Vis\u00edtenos",
@@ -408,37 +408,37 @@ const COVERAGES = {
    ============================================================ */
 const SPECIALTIES = [
   {
-    key: "home", icon: "\u2302", interactive: true,
+    key: "home", icon: "\u2302",
     en: { name: "Home Insurance", desc: "Protect the place you call home, inside and out." },
     es: { name: "Seguro de Hogar", desc: "Proteja el lugar que llama hogar, por dentro y por fuera." },
   },
   {
-    key: "auto", icon: "\u26FD", interactive: true,
+    key: "auto", icon: "\u26FD",
     en: { name: "Auto Insurance", desc: "Coverage for daily drivers, commuters, and everything between." },
     es: { name: "Seguro de Auto", desc: "Cobertura para conductores diarios y todo lo demás." },
   },
   {
-    key: "renters", icon: "\u{1F511}", interactive: true,
+    key: "renters", icon: "\u{1F511}",
     en: { name: "Renters Insurance", desc: "Your landlord covers the building — this covers your life inside it." },
     es: { name: "Seguro de Inquilinos", desc: "Su arrendador cubre el edificio — esto cubre su vida adentro." },
   },
   {
-    key: "umbrella", icon: "\u2602", interactive: true,
+    key: "umbrella", icon: "\u2602",
     en: { name: "Umbrella Insurance", desc: "Extra liability protection above your other policies." },
     es: { name: "Seguro Sombrilla", desc: "Protección adicional de responsabilidad sobre sus otras pólizas." },
   },
   {
-    key: "watercraft", icon: "\u2693", interactive: true,
+    key: "watercraft", icon: "\u2693",
     en: { name: "Watercraft Insurance", desc: "Boats, jet skis, and pontoons on Tennessee waters." },
     es: { name: "Seguro de Embarcaciones", desc: "Botes, motos acuáticas y pontones en las aguas de Tennessee." },
   },
   {
-    key: "life", icon: "\u2665", interactive: true,
+    key: "life", icon: "\u2665",
     en: { name: "Life Insurance", desc: "Security for the people who count on you most." },
     es: { name: "Seguro de Vida", desc: "Seguridad para las personas que más dependen de usted." },
   },
   {
-    key: "commercial", icon: "\u2696", interactive: true,
+    key: "commercial", icon: "\u2696",
     en: { name: "Commercial Insurance", desc: "Protection for your business, your team, and everything you've built." },
     es: { name: "Seguro Comercial", desc: "Protección para su negocio, su equipo y todo lo que ha construido." },
   },
@@ -540,20 +540,47 @@ function renderSpecialties() {
       <div class="card-icon">${s.icon}</div>
       <h3>${d.name}</h3>
       <p>${d.desc}</p>
-      ${s.interactive ? `<span class="badge">${t("spec.badge")}</span>` : ""}
       <span class="card-link">${t("spec.link")}</span>
     </a>`;
   }).join("");
 }
 
-/* ---------- Quote form (demo) ---------- */
+/* ---------- Quote form (Formspree AJAX) ---------- */
 const form = document.getElementById("quoteForm");
 if (form) {
-  form.addEventListener("submit", (e) => {
+  const btn = form.querySelector("button[type=submit]");
+  const status = document.getElementById("formStatus");
+
+  form.addEventListener("submit", async (e) => {
     e.preventDefault();
-    const btn = form.querySelector("button[type=submit]");
-    btn.innerHTML = t("form.success");
     btn.disabled = true;
+    btn.innerHTML = t("form.sending");
+    status.hidden = true;
+    status.classList.remove("is-error", "is-success");
+
+    try {
+      const res = await fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" },
+      });
+      if (res.ok) {
+        form.reset();
+        btn.innerHTML = t("form.success");
+        status.innerHTML = t("form.success");
+        status.classList.add("is-success");
+        status.hidden = false;
+        // Button stays disabled to prevent duplicate submissions.
+      } else {
+        throw new Error("formspree-error");
+      }
+    } catch {
+      btn.disabled = false;
+      btn.innerHTML = t("form.submit");
+      status.innerHTML = t("form.error");
+      status.classList.add("is-error");
+      status.hidden = false;
+    }
   });
 }
 
