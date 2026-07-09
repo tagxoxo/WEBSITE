@@ -13,9 +13,9 @@ const I18N = {
     "nav.quote": "Get a Quote",
 
     "hero.kicker": "Independent Agency &middot; Serving Customers Since 1995",
-    "hero.title": "Coverage built for the way <em>your life</em> actually works.",
+    "hero.title": "Insurance that actually fits <em>your life</em>.",
     "hero.lede":
-      "Millennium Insurance is a Clarksville, Tennessee agency that has served our neighbors since 1995. We shop top-rated carriers on your behalf, so you get protection that fits your needs and your budget.",
+      "Independent agency since 1995. We shop the best rates and coverage from top insurance companies so you don't have to.",
     "hero.espanol": "Tambi&eacute;n Hablamos Espa&ntilde;ol",
     "hero.cta.quote": "Get a Quote",
     "hero.cta.explore": "Explore Personal Insurance",
@@ -139,9 +139,9 @@ const I18N = {
     "nav.quote": "Cotizar",
 
     "hero.kicker": "Agencia Independiente &middot; Sirviendo Clientes Desde 1995",
-    "hero.title": "Cobertura dise\u00f1ada para la forma en que <em>su vida</em> realmente funciona.",
+    "hero.title": "Seguros que realmente se ajustan a <em>su vida</em>.",
     "hero.lede":
-      "Millennium Insurance es una agencia de Clarksville, Tennessee que ha servido a nuestra comunidad desde 1995. Comparamos aseguradoras de primer nivel por usted, para que obtenga protecci\u00f3n que se ajuste a sus necesidades y a su presupuesto.",
+      "Agencia independiente desde 1995. Comparamos las mejores tarifas y coberturas de las principales aseguradoras para que usted no tenga que hacerlo.",
     "hero.espanol": "Tambi\u00e9n Hablamos Espa\u00f1ol",
     "hero.cta.quote": "Cotizar Ahora",
     "hero.cta.explore": "Explorar Seguros Personales",
