@@ -205,7 +205,17 @@ a { color: inherit; }
   max-width: 46ch;
   margin-bottom: 2rem;
 }
-.hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; }
+.hero-ctas {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 0.25rem;
+}
+.hero-ctas .btn {
+  min-width: 11.5rem;
+  text-align: center;
+  padding: 0.78rem 1.75rem;
+}
 .hero-espanol {
   margin-top: 1.4rem;
   color: var(--gold-400);

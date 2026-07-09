@@ -18,8 +18,6 @@ const I18N = {
       "Independent agency since 1995. We shop the best rates and coverage from top insurance companies so you don't have to.",
     "hero.espanol": "Tambi&eacute;n Hablamos Espa&ntilde;ol",
     "hero.cta.quote": "Get a Quote",
-    "hero.cta.explore": "Explore Personal Insurance",
-
     "home.what.kicker": "What we do",
     "home.what.title": "One agency, every angle of protection",
     "home.what.sub": "Personal and business coverage &mdash; all under one roof.",
@@ -144,8 +142,6 @@ const I18N = {
       "Agencia independiente desde 1995. Comparamos las mejores tarifas y coberturas de las principales aseguradoras para que usted no tenga que hacerlo.",
     "hero.espanol": "Tambi\u00e9n Hablamos Espa\u00f1ol",
     "hero.cta.quote": "Cotizar Ahora",
-    "hero.cta.explore": "Explorar Seguros Personales",
-
     "home.what.kicker": "Lo que hacemos",
     "home.what.title": "Una agencia, protecci\u00f3n desde todos los \u00e1ngulos",
     "home.what.sub": "Cobertura personal y de negocios \u2014 todo bajo un mismo techo.",
