@@ -7,7 +7,6 @@ document.documentElement.classList.add("js");
    ============================================================ */
 const I18N = {
   en: {
-    "topbar.serving": "Serving Clarksville, TN since 1995 &middot; Tambi&eacute;n Hablamos Espa&ntilde;ol",
     "nav.home": "Home",
     "nav.personal": "Personal Insurance",
     "nav.business": "Business Insurance",
@@ -134,7 +133,6 @@ const I18N = {
   },
 
   es: {
-    "topbar.serving": "Sirviendo a Clarksville, TN desde 1995 &middot; We Also Speak English",
     "nav.home": "Inicio",
     "nav.personal": "Seguros Personales",
     "nav.business": "Seguros de Negocios",
