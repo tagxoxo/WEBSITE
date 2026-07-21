@@ -796,7 +796,26 @@ if (form) {
 
 /* ---------- Scroll-triggered reveal animations ---------- */
 const revealEls = document.querySelectorAll("section > .container, .stats-band > .container");
-revealEls.forEach((el) => el.classList.add("reveal"));
+const STAGGER_STEP = 0.14;
+
+revealEls.forEach((el) => {
+  el.classList.add("reveal");
+
+  const staggerTargets = [
+    ...el.querySelectorAll(".section-head, .card, .step"),
+    ...(el.parentElement?.classList.contains("stats-band")
+      ? el.querySelectorAll(":scope > div")
+      : []),
+  ];
+
+  if (staggerTargets.length) {
+    el.classList.add("reveal-stagger");
+    staggerTargets.forEach((item, index) => {
+      item.classList.add("reveal-item");
+      item.style.setProperty("--reveal-delay", `${0.1 + index * STAGGER_STEP}s`);
+    });
+  }
+});
 
 if ("IntersectionObserver" in window) {
   const io = new IntersectionObserver(
@@ -808,7 +827,7 @@ if ("IntersectionObserver" in window) {
         }
       });
     },
-    { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+    { threshold: 0.08, rootMargin: "0px 0px -5% 0px" }
   );
   revealEls.forEach((el) => io.observe(el));
 } else {
