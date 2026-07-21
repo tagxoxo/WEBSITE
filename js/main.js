@@ -13,7 +13,7 @@ const I18N = {
     "nav.quote": "Get a Quote",
 
     "hero.kicker": "Independent Agency &middot; Serving Customers Since 1995",
-    "hero.title": "Insurance that actually fits <em>your life</em>.",
+    "hero.title": "Protecting Clarksville families and businesses for over 30 years.",
     "hero.lede":
       "Independent agency since 1995. We shop the best rates and coverage from top insurance companies so you don't have to.",
     "hero.espanol": "Tambi&eacute;n Hablamos Espa&ntilde;ol",
@@ -137,7 +137,7 @@ const I18N = {
     "nav.quote": "Cotizar",
 
     "hero.kicker": "Agencia Independiente &middot; Sirviendo Clientes Desde 1995",
-    "hero.title": "Seguros que realmente se ajustan a <em>su vida</em>.",
+    "hero.title": "Protegiendo a familias y negocios de Clarksville por m\u00e1s de 30 a\u00f1os.",
     "hero.lede":
       "Agencia independiente desde 1995. Comparamos las mejores tarifas y coberturas de las principales aseguradoras para que usted no tenga que hacerlo.",
     "hero.espanol": "Tambi\u00e9n Hablamos Espa\u00f1ol",
