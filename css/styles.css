@@ -593,39 +593,12 @@ section { padding: 4.5rem 0; }
   font-size: 0.8rem;
 }
 
-/* ---------- Scroll-triggered reveal ----------
-   Only active when JS adds the "js" class to <html>,
-   so content stays fully visible if JavaScript is off. */
-@media (prefers-reduced-motion: no-preference) {
-  html.js .reveal {
-    opacity: 0;
-    transform: translateY(30px);
-    transition:
-      opacity 1.15s cubic-bezier(0.19, 1, 0.22, 1),
-      transform 1.15s cubic-bezier(0.19, 1, 0.22, 1);
-  }
-  html.js .reveal.in-view {
-    opacity: 1;
-    transform: none;
-  }
-
-  /* Staggered children for premium section entrances */
-  html.js .reveal.reveal-stagger {
-    opacity: 1;
-    transform: none;
-    transition: none;
-  }
-  html.js .reveal .reveal-item {
-    opacity: 0;
-    transform: translateY(26px);
-    transition:
-      opacity 1.05s cubic-bezier(0.19, 1, 0.22, 1),
-      transform 1.05s cubic-bezier(0.19, 1, 0.22, 1);
-    transition-delay: var(--reveal-delay, 0s);
-  }
-  html.js .reveal.in-view .reveal-item {
-    opacity: 1;
-    transform: none;
+/* ---------- AOS scroll animations (Wilshire-style) ---------- */
+@media (prefers-reduced-motion: reduce) {
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
   }
 }
 

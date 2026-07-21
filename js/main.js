@@ -1,6 +1,4 @@
-/* Millennium Insurance — site interactions, EN/ES language support, scroll reveals */
-
-document.documentElement.classList.add("js");
+/* Millennium Insurance — site interactions, EN/ES language support, scroll animations */
 
 /* ============================================================
    Translations
@@ -685,6 +683,7 @@ document.querySelectorAll(".lang-btn").forEach((btn) => {
     lang = lang === "en" ? "es" : "en";
     localStorage.setItem("mi-lang", lang);
     applyLang();
+    refreshScrollAnimations();
   });
 });
 
@@ -794,45 +793,80 @@ if (form) {
   });
 }
 
-/* ---------- Scroll-triggered reveal animations ---------- */
-const revealEls = document.querySelectorAll("section > .container, .stats-band > .container");
-const STAGGER_STEP = 0.14;
+/* ---------- AOS scroll animations (Wilshire-style) ---------- */
+function setAOS(el, animation, delay = 0) {
+  if (!el) return;
+  el.setAttribute("data-aos", animation);
+  el.setAttribute("data-aos-duration", "1000");
+  if (delay) el.setAttribute("data-aos-delay", String(delay));
+}
 
-revealEls.forEach((el) => {
-  el.classList.add("reveal");
+function applyAOSAnimations() {
+  const heroCopy = document.querySelector(".hero .container > div:first-child");
+  const heroArt = document.querySelector(".hero-art");
+  setAOS(heroCopy, "fade-right", 150);
+  setAOS(heroArt, "zoom-in", 250);
 
-  const staggerTargets = [
-    ...el.querySelectorAll(".section-head, .card, .step"),
-    ...(el.parentElement?.classList.contains("stats-band")
-      ? el.querySelectorAll(":scope > div")
-      : []),
-  ];
+  document.querySelectorAll(".page-hero .container").forEach((el) => {
+    setAOS(el, "fade-right", 150);
+  });
 
-  if (staggerTargets.length) {
-    el.classList.add("reveal-stagger");
-    staggerTargets.forEach((item, index) => {
-      item.classList.add("reveal-item");
-      item.style.setProperty("--reveal-delay", `${0.1 + index * STAGGER_STEP}s`);
+  document.querySelectorAll(".section-head").forEach((el) => {
+    setAOS(el, "fade-in");
+  });
+
+  document.querySelectorAll(".card").forEach((el) => {
+    setAOS(el, "flip-up");
+  });
+
+  document.querySelectorAll(".stats-band .container > div").forEach((el) => {
+    setAOS(el, "fade-up");
+  });
+
+  document.querySelectorAll(".step").forEach((el) => {
+    setAOS(el, "fade-up");
+  });
+
+  document.querySelectorAll(".interactive-wrap > .scene-frame").forEach((el) => {
+    setAOS(el, "slide-right");
+  });
+  document.querySelectorAll(".interactive-wrap > .coverage-panel").forEach((el) => {
+    setAOS(el, "zoom-in");
+  });
+
+  document.querySelectorAll(".quote-form").forEach((el) => {
+    setAOS(el, "fade-up");
+  });
+
+  document.querySelectorAll(".cta-banner .container").forEach((el) => {
+    setAOS(el, "fade-in");
+  });
+
+  document.querySelectorAll(".site-footer .container").forEach((el) => {
+    setAOS(el, "fade-up");
+  });
+}
+
+function initScrollAnimations() {
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  applyAOSAnimations();
+
+  if (typeof AOS !== "undefined") {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 120,
+      disable: reducedMotion,
     });
   }
-});
+}
 
-if ("IntersectionObserver" in window) {
-  const io = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("in-view");
-          io.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.08, rootMargin: "0px 0px -5% 0px" }
-  );
-  revealEls.forEach((el) => io.observe(el));
-} else {
-  revealEls.forEach((el) => el.classList.add("in-view"));
+function refreshScrollAnimations() {
+  applyAOSAnimations();
+  if (typeof AOS !== "undefined") AOS.refresh();
 }
 
 /* ---------- Init ---------- */
 applyLang();
+initScrollAnimations();
