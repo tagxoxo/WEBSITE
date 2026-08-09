@@ -18,7 +18,7 @@ const I18N = {
     "landing.headline1": "Insurance for Clarksville.",
     "landing.headline2": "Coverage for real life.",
     "landing.lede":
-      "Auto, home, renters and business insurance from a local agency you can actually visit.",
+      "Auto insurance for drivers with tickets, accidents, SR-22s, and more.",
     "landing.officeLabel": "OUR CLARKSVILLE OFFICE",
     "landing.coverageLine": "Auto \u2022 Home \u2022 Renters \u2022 Business",
     "landing.b1": "Local Clarksville agency",
@@ -156,7 +156,7 @@ const I18N = {
     "landing.headline1": "Seguros para Clarksville.",
     "landing.headline2": "Cobertura para la vida real.",
     "landing.lede":
-      "Seguros de auto, hogar, inquilinos y negocios de una agencia local que puede visitar en persona.",
+      "Seguro de auto para conductores con multas, accidentes, SR-22 y m\u00e1s.",
     "landing.officeLabel": "Nuestra oficina en Clarksville",
     "landing.coverageLine": "Auto \u2022 Hogar \u2022 Inquilinos \u2022 Negocios",
     "landing.b1": "Agencia local en Clarksville",
