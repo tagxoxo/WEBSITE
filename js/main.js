@@ -15,6 +15,8 @@ const I18N = {
       "Independent agency since 1995. We shop the best rates and coverage from top insurance companies so you don't have to.",
     "hero.espanol": "Tambi&eacute;n Hablamos Espa&ntilde;ol",
     "hero.cta.quote": "Get a Quote",
+    "cta.smsConsent":
+      "By providing your phone number and clicking submit, you agree to receive non-marketing and marketing text messages from Millennium Insurance, including automated communications. Consent is not a condition of any purchase. Msg &amp; data rates may apply. Msg frequency varies. Reply STOP to opt out, HELP for help. View our <a href=\"privacy-policy.html\">Privacy Policy</a> for details.",
     "home.what.kicker": "What we do",
     "home.what.title": "One agency, every angle of protection",
     "home.what.sub": "Personal and business coverage &mdash; all under one roof.",
@@ -30,12 +32,12 @@ const I18N = {
 
     "stats.1n": "1995",
     "stats.1l": "Serving customers since",
-    "stats.2n": "30+",
-    "stats.2l": "Carriers we shop for you",
+    "stats.2n": "10+",
+    "stats.2l": "Carriers shop for you",
     "stats.3n": "4,800",
     "stats.3l": "Households protected",
-    "stats.4n": "24/7",
-    "stats.4l": "Claims support",
+    "stats.4n": "100%",
+    "stats.4l": "Local service",
 
     "cta.title": "Insurance that lets you focus on <em>living</em>, not worrying.",
     "cta2.title": "Ready for coverage that <em>works as hard</em> as you do?",
@@ -80,7 +82,7 @@ const I18N = {
     "quote.s3t": "Get covered",
     "quote.s3b": "Pick the policy that fits and enjoy the peace of mind that comes with real protection.",
     "quote.visit":
-      "Rather talk it through in person? Stop by our office at 313 Dover Rd, Clarksville, TN 37042, or call <a href=\"tel:9316472434\" style=\"color:#b8952c; font-weight:600;\">(931) 647-2434</a>. Tambi&eacute;n hablamos espa&ntilde;ol.",
+      "Rather talk it through in person? Stop by our office at 313 Dover Rd, Clarksville, TN 37042, or call <a href=\"tel:9316472434\">(931) 647-2434</a>. Tambi&eacute;n hablamos espa&ntilde;ol.",
 
     "form.title": "Request an Insurance Quote",
     "form.first": "First name",
@@ -117,6 +119,7 @@ const I18N = {
     "footer.visit": "Visit Us",
     "footer.rights": "&copy; 2026 Millennium Insurance. All rights reserved. Serving customers since 1995.",
     "footer.licensed": "Licensed in the State of Tennessee",
+    "footer.privacy": "Privacy Policy",
 
     "cov.home": "Home Insurance",
     "cov.auto": "Auto Insurance",
@@ -138,6 +141,8 @@ const I18N = {
       "Agencia independiente desde 1995. Comparamos las mejores tarifas y coberturas de las principales aseguradoras para que usted no tenga que hacerlo.",
     "hero.espanol": "Tambi\u00e9n Hablamos Espa\u00f1ol",
     "hero.cta.quote": "Cotizar Ahora",
+    "cta.smsConsent":
+      "Al proporcionar su n\u00famero de tel\u00e9fono y hacer clic en enviar, usted acepta recibir mensajes de texto promocionales y no promocionales de Millennium Insurance, incluidas comunicaciones automatizadas. El consentimiento no es una condici\u00f3n para ninguna compra. Pueden aplicarse tarifas de mensajes y datos. La frecuencia de los mensajes var\u00eda. Responda STOP para cancelar, HELP para obtener ayuda. Consulte nuestra <a href=\"privacy-policy.html\">Pol\u00edtica de Privacidad</a> para m\u00e1s detalles.",
     "home.what.kicker": "Lo que hacemos",
     "home.what.title": "Una agencia, protecci\u00f3n desde todos los \u00e1ngulos",
     "home.what.sub": "Cobertura personal y de negocios \u2014 todo bajo un mismo techo.",
@@ -153,12 +158,12 @@ const I18N = {
 
     "stats.1n": "1995",
     "stats.1l": "Sirviendo clientes desde",
-    "stats.2n": "30+",
-    "stats.2l": "Aseguradoras que comparamos",
+    "stats.2n": "10+",
+    "stats.2l": "Aseguradoras compiten por usted",
     "stats.3n": "4,800",
     "stats.3l": "Hogares protegidos",
-    "stats.4n": "24/7",
-    "stats.4l": "Apoyo con reclamos",
+    "stats.4n": "100%",
+    "stats.4l": "Servicio local",
 
     "cta.title": "Seguros que le permiten enfocarse en <em>vivir</em>, no en preocuparse.",
     "cta2.title": "\u00bfListo para una cobertura que <em>trabaje tan duro</em> como usted?",
@@ -203,7 +208,7 @@ const I18N = {
     "quote.s3t": "Obtenga su cobertura",
     "quote.s3b": "Elija la p\u00f3liza que le convenga y disfrute la tranquilidad que viene con protecci\u00f3n real.",
     "quote.visit":
-      "\u00bfPrefiere conversarlo en persona? Vis\u00edtenos en 313 Dover Rd, Clarksville, TN 37042, o llame al <a href=\"tel:9316472434\" style=\"color:#b8952c; font-weight:600;\">(931) 647-2434</a>. Nuestro equipo habla espa\u00f1ol.",
+      "\u00bfPrefiere conversarlo en persona? Vis\u00edtenos en 313 Dover Rd, Clarksville, TN 37042, o llame al <a href=\"tel:9316472434\">(931) 647-2434</a>. Nuestro equipo habla espa\u00f1ol.",
 
     "form.title": "Solicitar una Cotizaci\u00f3n de Seguro",
     "form.first": "Nombre",
@@ -240,6 +245,7 @@ const I18N = {
     "footer.visit": "Vis\u00edtenos",
     "footer.rights": "&copy; 2026 Millennium Insurance. Todos los derechos reservados. Sirviendo clientes desde 1995.",
     "footer.licensed": "Con licencia en el Estado de Tennessee",
+    "footer.privacy": "Pol\u00edtica de Privacidad",
 
     "cov.home": "Seguro de Hogar",
     "cov.auto": "Seguro de Auto",
@@ -795,30 +801,30 @@ if (form) {
 function setAOS(el, animation, delay = 0) {
   if (!el) return;
   el.setAttribute("data-aos", animation);
-  el.setAttribute("data-aos-duration", "1000");
+  el.setAttribute("data-aos-duration", "600");
   if (delay) el.setAttribute("data-aos-delay", String(delay));
 }
 
 function applyAOSAnimations() {
   const heroCopy = document.querySelector(".hero .container > div:first-child");
-  const heroArt = document.querySelector(".hero-art");
-  setAOS(heroCopy, "fade-right", 150);
-  setAOS(heroArt, "zoom-in", 250);
+  const heroArt = document.querySelector(".hero-art-wrap, .hero-art");
+  setAOS(heroCopy, "fade-up");
+  setAOS(heroArt, "fade-up", 100);
 
   document.querySelectorAll(".page-hero .container").forEach((el) => {
-    setAOS(el, "fade-right", 150);
+    setAOS(el, "fade-up");
   });
 
   document.querySelectorAll(".section-head").forEach((el) => {
-    setAOS(el, "fade-in");
+    setAOS(el, "fade");
   });
 
   document.querySelectorAll(".card").forEach((el) => {
-    setAOS(el, "flip-up");
+    setAOS(el, "fade-up");
   });
 
   document.querySelectorAll(".stats-band .container > div").forEach((el) => {
-    setAOS(el, "fade-up");
+    setAOS(el, "fade");
   });
 
   document.querySelectorAll(".step").forEach((el) => {
@@ -826,10 +832,10 @@ function applyAOSAnimations() {
   });
 
   document.querySelectorAll(".interactive-wrap > .scene-frame").forEach((el) => {
-    setAOS(el, "slide-right");
+    setAOS(el, "fade-up");
   });
   document.querySelectorAll(".interactive-wrap > .coverage-panel").forEach((el) => {
-    setAOS(el, "zoom-in");
+    setAOS(el, "fade-up", 100);
   });
 
   document.querySelectorAll(".quote-form").forEach((el) => {
@@ -837,11 +843,11 @@ function applyAOSAnimations() {
   });
 
   document.querySelectorAll(".cta-banner .container").forEach((el) => {
-    setAOS(el, "fade-in");
+    setAOS(el, "fade");
   });
 
   document.querySelectorAll(".site-footer .container").forEach((el) => {
-    setAOS(el, "fade-up");
+    setAOS(el, "fade");
   });
 }
 
@@ -852,9 +858,10 @@ function initScrollAnimations() {
 
   if (typeof AOS !== "undefined") {
     AOS.init({
-      duration: 1000,
+      duration: 600,
       once: true,
-      offset: 120,
+      offset: 80,
+      easing: "ease-out",
       disable: reducedMotion,
     });
   }
