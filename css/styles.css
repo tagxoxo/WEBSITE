@@ -192,32 +192,55 @@ a { color: inherit; }
 
 /* ---------- Hero (homepage) ---------- */
 .hero {
-  background: var(--white);
-  color: var(--ink);
-  padding: 2.5rem 0 3rem;
+  background:
+    radial-gradient(1200px 500px at 85% -10%, rgba(201, 162, 39, 0.15), transparent 60%),
+    linear-gradient(160deg, var(--green-900) 0%, var(--green-950) 70%);
+  color: var(--text-on-dark);
+  padding: 3rem 0 3.5rem;
   border-bottom: 4px solid var(--gold-500);
 }
 .hero .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-areas:
+    "title art"
+    "lede art"
+    "cta art"
+    "espanol art";
   gap: 2.5rem;
   align-items: center;
+}
+.hero h1 { grid-area: title; }
+.hero p.lede { grid-area: lede; }
+.hero-ctas { grid-area: cta; }
+.hero-art-wrap {
+  grid-area: art;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-espanol { grid-area: espanol; }
+.hero-art {
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  filter: drop-shadow(0 24px 40px rgba(0, 0, 0, 0.35));
 }
 .hero h1 {
   font-family: var(--font-head);
   font-size: clamp(1.85rem, 3.8vw, 2.65rem);
   line-height: 1.2;
-  color: var(--green-900);
+  color: var(--white);
   margin-bottom: 1rem;
   font-weight: 700;
 }
 .hero h1 em {
   font-style: normal;
-  color: var(--gold-600);
+  color: var(--gold-400);
 }
 .hero p.lede {
   font-size: 1.05rem;
-  color: var(--ink-muted);
+  color: var(--text-muted-on-dark);
   max-width: 52ch;
   margin-bottom: 1.5rem;
 }
@@ -233,24 +256,9 @@ a { color: inherit; }
 }
 .hero-espanol {
   margin-top: 1.25rem;
-  color: var(--green-800);
+  color: var(--gold-300);
   font-weight: 700;
   font-size: 0.95rem;
-}
-.hero-art-wrap {
-  border: 3px solid var(--green-800);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-md);
-  background: linear-gradient(180deg, var(--cream-dim) 0%, var(--white) 100%);
-  padding: 1.5rem 1.25rem 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.hero-art {
-  width: 100%;
-  max-width: 340px;
-  height: auto;
 }
 
 /* ---------- Page hero (interior pages) ---------- */
@@ -783,7 +791,14 @@ section {
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
   .hero .container, .interactive-wrap, .quote-grid { grid-template-columns: 1fr; }
-  .hero-art-wrap { order: -1; }
+  .hero .container {
+    grid-template-areas:
+      "title"
+      "lede"
+      "cta"
+      "art"
+      "espanol";
+  }
   .cards-featured {
     grid-template-columns: 1fr;
     max-width: 440px;

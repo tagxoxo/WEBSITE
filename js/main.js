@@ -806,10 +806,10 @@ function setAOS(el, animation, delay = 0) {
 }
 
 function applyAOSAnimations() {
-  const heroCopy = document.querySelector(".hero .container > div:first-child");
+  const heroCopy = document.querySelector(".hero h1");
   const heroArt = document.querySelector(".hero-art-wrap, .hero-art");
-  setAOS(heroCopy, "fade-up");
-  setAOS(heroArt, "fade-up", 100);
+  if (heroCopy) setAOS(heroCopy, "fade-up");
+  if (heroArt) setAOS(heroArt, "fade-up", 100);
 
   document.querySelectorAll(".page-hero .container").forEach((el) => {
     setAOS(el, "fade-up");
