@@ -19,6 +19,7 @@ const I18N = {
     "landing.headline2": "Coverage for real life.",
     "landing.lede":
       "Auto insurance for drivers with tickets, accidents, SR-22s, and more.",
+    "landing.address": "313 Dover Rd, Clarksville, TN 37042",
     "landing.officeLabel": "OUR CLARKSVILLE OFFICE",
     "landing.coverageLine": "Auto \u2022 Home \u2022 Renters \u2022 Business",
     "landing.b1": "Local Clarksville agency",
@@ -157,6 +158,7 @@ const I18N = {
     "landing.headline2": "Cobertura para la vida real.",
     "landing.lede":
       "Seguro de auto para conductores con multas, accidentes, SR-22 y m\u00e1s.",
+    "landing.address": "313 Dover Rd, Clarksville, TN 37042",
     "landing.officeLabel": "Nuestra oficina en Clarksville",
     "landing.coverageLine": "Auto \u2022 Hogar \u2022 Inquilinos \u2022 Negocios",
     "landing.b1": "Agencia local en Clarksville",
