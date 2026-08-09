@@ -80,7 +80,7 @@ const I18N = {
     "quote.s3t": "Get covered",
     "quote.s3b": "Pick the policy that fits and enjoy the peace of mind that comes with real protection.",
     "quote.visit":
-      "Rather talk it through in person? Stop by our office at 100 Riverbend Way, Suite 210, Clarksville, TN 37040, or call <a href=\"tel:9315550142\" style=\"color:#b8952c; font-weight:600;\">(931) 555-0142</a>. Tambi&eacute;n hablamos espa&ntilde;ol.",
+      "Rather talk it through in person? Stop by our office at 313 Dover Rd, Clarksville, TN 37042, or call <a href=\"tel:9316472434\" style=\"color:#b8952c; font-weight:600;\">(931) 647-2434</a>. Tambi&eacute;n hablamos espa&ntilde;ol.",
 
     "form.title": "Request an Insurance Quote",
     "form.first": "First name",
@@ -108,7 +108,7 @@ const I18N = {
     "form.sending": "Sending&hellip;",
     "form.note": "We'll only use your information to respond to your request.",
     "form.success": "Request received &mdash; we'll be in touch!",
-    "form.error": "Something went wrong sending your request. Please try again, or call us at (931) 555-0142.",
+    "form.error": "Something went wrong sending your request. Please try again, or call us at (931) 647-2434.",
 
     "footer.about":
       "An independent insurance agency proudly serving Clarksville, Tennessee since 1995. Tambi&eacute;n hablamos espa&ntilde;ol.",
@@ -203,7 +203,7 @@ const I18N = {
     "quote.s3t": "Obtenga su cobertura",
     "quote.s3b": "Elija la p\u00f3liza que le convenga y disfrute la tranquilidad que viene con protecci\u00f3n real.",
     "quote.visit":
-      "\u00bfPrefiere conversarlo en persona? Vis\u00edtenos en 100 Riverbend Way, Suite 210, Clarksville, TN 37040, o llame al <a href=\"tel:9315550142\" style=\"color:#b8952c; font-weight:600;\">(931) 555-0142</a>. Nuestro equipo habla espa\u00f1ol.",
+      "\u00bfPrefiere conversarlo en persona? Vis\u00edtenos en 313 Dover Rd, Clarksville, TN 37042, o llame al <a href=\"tel:9316472434\" style=\"color:#b8952c; font-weight:600;\">(931) 647-2434</a>. Nuestro equipo habla espa\u00f1ol.",
 
     "form.title": "Solicitar una Cotizaci\u00f3n de Seguro",
     "form.first": "Nombre",
@@ -231,7 +231,7 @@ const I18N = {
     "form.sending": "Enviando&hellip;",
     "form.note": "Solo usaremos su informaci\u00f3n para responder a su solicitud.",
     "form.success": "\u00a1Solicitud recibida \u2014 nos comunicaremos pronto!",
-    "form.error": "Hubo un problema al enviar su solicitud. Int\u00e9ntelo de nuevo o ll\u00e1menos al (931) 555-0142.",
+    "form.error": "Hubo un problema al enviar su solicitud. Int\u00e9ntelo de nuevo o ll\u00e1menos al (931) 647-2434.",
 
     "footer.about":
       "Una agencia de seguros independiente sirviendo con orgullo a Clarksville, Tennessee desde 1995. Tambi\u00e9n hablamos espa\u00f1ol.",
