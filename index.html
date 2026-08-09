@@ -13,7 +13,7 @@
 </head>
 <body>
 
-  <header class="site-header">
+  <header class="site-header site-header--landing">
     <div class="container">
       <div class="brand-group">
         <a class="brand" href="index.html">
@@ -33,44 +33,99 @@
         <a href="index.html" class="active" data-i18n="nav.home">Home</a>
         <a href="personal-insurance.html" data-i18n="nav.personal">Personal Insurance</a>
         <a href="business-insurance.html" data-i18n="nav.business">Business Insurance</a>
-        <a href="personal-insurance.html#quote" class="btn btn-gold" data-i18n="nav.quote">Get a Quote</a>
+        <a href="#quote" class="btn btn-gold" data-i18n="nav.quote">Get a Quote</a>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container">
-      <h1 data-i18n="hero.title">Protecting Clarksville families for over <em>30 years.</em></h1>
-      <p class="lede" data-i18n="hero.lede">
-        Independent agency since 1995. We shop the best rates and coverage
-        from top insurance companies so you don't have to.
-      </p>
-      <div class="hero-ctas">
-        <a class="btn btn-gold" href="personal-insurance.html#quote" data-i18n="hero.cta.quote">Get a Quote</a>
+  <section class="landing-hero" id="quote">
+    <div class="container landing-hero-grid">
+      <div class="landing-hero-copy">
+        <h1 class="landing-headline">
+          <span class="landing-headline-line" data-i18n="landing.headline1">Insurance for Clarksville.</span>
+          <span class="landing-headline-line landing-headline-gold" data-i18n="landing.headline2">Coverage for real life.</span>
+        </h1>
+        <p class="landing-lede" data-i18n="landing.lede">
+          Auto, home, renters and business insurance from a local agency you can actually visit.
+        </p>
+        <figure class="landing-photo-card">
+          <img
+            class="landing-office-photo"
+            src="images/millennium-office.jpg"
+            alt="Millennium Insurance office at 313 Dover Rd, Clarksville, Tennessee"
+            width="582"
+            height="306"
+            loading="eager"
+          />
+          <figcaption class="landing-photo-label">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z" fill="currentColor"/></svg>
+            <span data-i18n="landing.officeLabel">OUR CLARKSVILLE OFFICE</span>
+          </figcaption>
+        </figure>
+        <p class="landing-coverage-line" data-i18n="landing.coverageLine">Auto &bull; Home &bull; Renters &bull; Business</p>
+        <ul class="landing-benefits">
+          <li>
+            <span class="landing-benefit-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+            <span data-i18n="landing.b1">Local Clarksville agency</span>
+          </li>
+          <li>
+            <span class="landing-benefit-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.5"/><path d="M6 20v-1.2c0-2.8 2.7-4.8 6-4.8s6 2 6 4.8V20"/></svg>
+            </span>
+            <span data-i18n="landing.b2">Personal service from real agents</span>
+          </li>
+          <li>
+            <span class="landing-benefit-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10 12 4l8 6v10H4V10z"/><path d="M9 20v-5h6v5"/></svg>
+            </span>
+            <span data-i18n="landing.b3">Come visit us in person</span>
+          </li>
+          <li>
+            <span class="landing-benefit-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-8.4 8.4H5l-3 3V11.5A8.4 8.4 0 0 1 10.4 3h.2A8.4 8.4 0 0 1 21 11.5z"/></svg>
+            </span>
+            <span data-i18n="landing.b4">English &amp; Espa&ntilde;ol</span>
+          </li>
+        </ul>
+        <div class="landing-trust">
+          <div><strong data-i18n="stats.1n">1995</strong> <span data-i18n="stats.1l">Serving customers since</span></div>
+          <div><strong data-i18n="stats.3n">4,800</strong> <span data-i18n="stats.3l">Households protected</span></div>
+        </div>
       </div>
-      <div class="hero-art-wrap">
-        <svg class="hero-art" viewBox="0 0 420 320" aria-hidden="true">
-          <defs>
-            <linearGradient id="shieldGrad" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="#e3c565"/>
-              <stop offset="1" stop-color="#b8952c"/>
-            </linearGradient>
-          </defs>
-          <ellipse cx="210" cy="290" rx="170" ry="18" fill="rgba(0,0,0,0.25)"/>
-          <path d="M210 30 L330 70 v80 c0 70 -55 115 -120 140 C145 265 90 220 90 150 V70 Z"
-                fill="url(#shieldGrad)" opacity="0.95"/>
-          <path d="M210 52 L308 85 v66 c0 56 -44 94 -98 116 -54 -22 -98 -60 -98 -116 V85 Z"
-                fill="#0a3325"/>
-          <path d="M152 168 l20 -30 h74 l24 30" fill="#0e4430" stroke="#e3c565" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-          <rect x="130" y="168" width="160" height="40" rx="14" fill="#0e4430" stroke="#e3c565" stroke-width="4"/>
-          <rect x="180" y="148" width="26" height="16" fill="#e3c565" opacity="0.85"/>
-          <rect x="214" y="148" width="26" height="16" fill="#e3c565" opacity="0.85"/>
-          <rect x="130" y="184" width="160" height="7" fill="#e3c565" opacity="0.6"/>
-          <circle cx="165" cy="211" r="14" fill="#0a3325" stroke="#e3c565" stroke-width="5"/>
-          <circle cx="255" cy="211" r="14" fill="#0a3325" stroke="#e3c565" stroke-width="5"/>
-        </svg>
-      </div>
-      <p class="hero-espanol" data-i18n="hero.espanol">Tambi&eacute;n Hablamos Espa&ntilde;ol</p>
+      <form class="quote-form landing-quote-form" id="quoteForm" action="https://formspree.io/f/xykqaeor" method="POST">
+        <h3 data-i18n="form.title">Request an Insurance Quote</h3>
+        <div class="form-row">
+          <label><span data-i18n="form.first">First name</span> <input type="text" name="firstName" required autocomplete="given-name" /></label>
+          <label><span data-i18n="form.last">Last name</span> <input type="text" name="lastName" required autocomplete="family-name" /></label>
+        </div>
+        <div class="form-row">
+          <label><span data-i18n="form.email">Email</span> <input type="email" name="email" required autocomplete="email" /></label>
+          <label><span data-i18n="form.phone">Phone</span> <input type="tel" name="phone" autocomplete="tel" /></label>
+        </div>
+        <label><span data-i18n="form.zip">ZIP code</span> <input type="text" name="zip" inputmode="numeric" placeholder="37042" /></label>
+        <label><span data-i18n="form.coverage">What would you like a quote for?</span>
+          <select name="coverage">
+            <option data-i18n="opt.home">Home Insurance</option>
+            <option data-i18n="opt.auto">Auto Insurance</option>
+            <option data-i18n="opt.renters">Renters Insurance</option>
+            <option data-i18n="opt.umbrella">Umbrella Insurance</option>
+            <option data-i18n="opt.watercraft">Watercraft Insurance</option>
+            <option data-i18n="opt.life">Life Insurance</option>
+            <option data-i18n="opt.business">Business Insurance</option>
+          </select>
+        </label>
+        <label><span data-i18n="form.notes">Anything we should know?</span> <textarea name="notes" rows="3"></textarea></label>
+        <input type="hidden" name="_subject" value="New homepage quote request — Millennium Insurance website" />
+        <button class="btn btn-gold btn-block" type="submit" data-i18n="form.submit">Send My Request</button>
+        <p class="sms-consent" data-i18n="cta.smsConsent">By providing your phone number and clicking submit, you agree to receive non-marketing and marketing text messages from Millennium Insurance, including automated communications. Consent is not a condition of any purchase. Msg &amp; data rates may apply. Msg frequency varies. Reply STOP to opt out, HELP for help. View our <a href="privacy-policy.html">Privacy Policy</a> for details.</p>
+        <p class="form-status" id="formStatus" role="status" hidden></p>
+        <p class="form-note" data-i18n="form.note">We'll only use your information to respond to your request.</p>
+        <p class="landing-phone-cta" data-i18n="landing.phoneCta">
+          Need a quote ASAP? Call <a href="tel:9316472434">(931) 647-2434</a>
+        </p>
+      </form>
     </div>
   </section>
 
@@ -94,7 +149,7 @@
           <p data-i18n="home.c2.body">Protect your business, your team, and everything you've built with coverage designed for Tennessee companies.</p>
           <span class="card-link" data-i18n="home.c2.link">Explore &rarr;</span>
         </a>
-        <a class="card" href="personal-insurance.html#quote">
+        <a class="card" href="#quote">
           <div class="card-icon">&#9993;</div>
           <h3 data-i18n="home.c3.title">Fast, Friendly Quotes</h3>
           <p data-i18n="home.c3.body">Tell us a little about yourself and a licensed Clarksville agent will follow up with real options, not spam.</p>
@@ -112,13 +167,6 @@
       <div><div class="stat-num" data-i18n="stats.4n">100%</div><div class="stat-label" data-i18n="stats.4l">Local service</div></div>
     </div>
   </div>
-
-  <section class="cta-banner">
-    <div class="container">
-      <h2 data-i18n="cta.title">Insurance that lets you focus on <em>living</em>, not worrying.</h2>
-      <a class="btn btn-gold" href="personal-insurance.html#quote" data-i18n="hero.cta.quote">Get a Quote</a>
-    </div>
-  </section>
 
   <footer class="site-footer">
     <div class="container">
@@ -145,7 +193,7 @@
             <li><a href="index.html" data-i18n="nav.home">Home</a></li>
             <li><a href="personal-insurance.html" data-i18n="nav.personal">Personal Insurance</a></li>
             <li><a href="business-insurance.html" data-i18n="nav.business">Business Insurance</a></li>
-            <li><a href="personal-insurance.html#quote" data-i18n="nav.quote">Get a Quote</a></li>
+            <li><a href="#quote" data-i18n="nav.quote">Get a Quote</a></li>
             <li><a href="privacy-policy.html" data-i18n="footer.privacy">Privacy Policy</a></li>
           </ul>
         </div>

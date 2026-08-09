@@ -15,6 +15,18 @@ const I18N = {
       "Independent agency since 1995. We shop the best rates and coverage from top insurance companies so you don't have to.",
     "hero.espanol": "Tambi&eacute;n Hablamos Espa&ntilde;ol",
     "hero.cta.quote": "Get a Quote",
+    "landing.headline1": "Insurance for Clarksville.",
+    "landing.headline2": "Coverage for real life.",
+    "landing.lede":
+      "Auto, home, renters and business insurance from a local agency you can actually visit.",
+    "landing.officeLabel": "OUR CLARKSVILLE OFFICE",
+    "landing.coverageLine": "Auto \u2022 Home \u2022 Renters \u2022 Business",
+    "landing.b1": "Local Clarksville agency",
+    "landing.b2": "Personal service from real agents",
+    "landing.b3": "Come visit us in person",
+    "landing.b4": "English & Espa\u00f1ol",
+    "landing.phoneCta":
+      "Need a quote ASAP? Call <a href=\"tel:9316472434\">(931) 647-2434</a>",
     "cta.smsConsent":
       "By providing your phone number and clicking submit, you agree to receive non-marketing and marketing text messages from Millennium Insurance, including automated communications. Consent is not a condition of any purchase. Msg &amp; data rates may apply. Msg frequency varies. Reply STOP to opt out, HELP for help. View our <a href=\"privacy-policy.html\">Privacy Policy</a> for details.",
     "home.what.kicker": "What we do",
@@ -141,6 +153,18 @@ const I18N = {
       "Agencia independiente desde 1995. Comparamos las mejores tarifas y coberturas de las principales aseguradoras para que usted no tenga que hacerlo.",
     "hero.espanol": "Tambi\u00e9n Hablamos Espa\u00f1ol",
     "hero.cta.quote": "Cotizar Ahora",
+    "landing.headline1": "Seguros para Clarksville.",
+    "landing.headline2": "Cobertura para la vida real.",
+    "landing.lede":
+      "Seguros de auto, hogar, inquilinos y negocios de una agencia local que puede visitar en persona.",
+    "landing.officeLabel": "Nuestra oficina en Clarksville",
+    "landing.coverageLine": "Auto \u2022 Hogar \u2022 Inquilinos \u2022 Negocios",
+    "landing.b1": "Agencia local en Clarksville",
+    "landing.b2": "Atenci\u00f3n personal de agentes reales",
+    "landing.b3": "Vis\u00edtenos en persona",
+    "landing.b4": "Ingl\u00e9s y Espa\u00f1ol",
+    "landing.phoneCta":
+      "\u00bfNecesita una cotizaci\u00f3n urgentemente? Llame al <a href=\"tel:9316472434\">(931) 647-2434</a>",
     "cta.smsConsent":
       "Al proporcionar su n\u00famero de tel\u00e9fono y hacer clic en enviar, usted acepta recibir mensajes de texto promocionales y no promocionales de Millennium Insurance, incluidas comunicaciones automatizadas. El consentimiento no es una condici\u00f3n para ninguna compra. Pueden aplicarse tarifas de mensajes y datos. La frecuencia de los mensajes var\u00eda. Responda STOP para cancelar, HELP para obtener ayuda. Consulte nuestra <a href=\"privacy-policy.html\">Pol\u00edtica de Privacidad</a> para m\u00e1s detalles.",
     "home.what.kicker": "Lo que hacemos",
@@ -806,6 +830,11 @@ function setAOS(el, animation, delay = 0) {
 }
 
 function applyAOSAnimations() {
+  const landingCopy = document.querySelector(".landing-hero-copy");
+  const landingForm = document.querySelector(".landing-quote-form");
+  if (landingCopy) setAOS(landingCopy, "fade-up");
+  if (landingForm) setAOS(landingForm, "fade-up", 100);
+
   const heroCopy = document.querySelector(".hero h1");
   const heroArt = document.querySelector(".hero-art-wrap, .hero-art");
   if (heroCopy) setAOS(heroCopy, "fade-up");
