@@ -12,7 +12,7 @@ const I18N = {
 
     "hero.title": "Protecting Clarksville families for over <em>30 years.</em>",
     "hero.lede":
-      "Independent agency since 1995. We shop the best rates and coverage from top insurance companies so you don't have to.",
+      "Independent agency since 1997. We shop the best rates and coverage from top insurance companies so you don't have to.",
     "hero.espanol": "Tambi&eacute;n Hablamos Espa&ntilde;ol",
     "hero.cta.quote": "Get a Quote",
     "landing.headline1": "Insurance for Clarksville.",
@@ -43,7 +43,7 @@ const I18N = {
     "home.c3.body": "Tell us a little about yourself and a licensed Clarksville agent will follow up with real options, not spam.",
     "home.c3.link": "Start now &rarr;",
 
-    "stats.1n": "1995",
+    "stats.1n": "1997",
     "stats.1l": "Serving customers since",
     "stats.2n": "10+",
     "stats.2l": "Carriers shop for you",
@@ -57,7 +57,7 @@ const I18N = {
 
     "pi.title": "Personal Insurance",
     "pi.lede":
-      "Life moves quickly, and the right coverage should keep up. Since 1995, our Clarksville agents have built personal insurance packages around your home, your vehicles, and the people who count on you &mdash; at a price that respects your budget.",
+      "Life moves quickly, and the right coverage should keep up. Since 1997, our Clarksville agents have built personal insurance packages around your home, your vehicles, and the people who count on you &mdash; at a price that respects your budget.",
     "pi.cta.try": "Try the Interactive Graphic",
 
     "int.kicker": "Interactive Graphic",
@@ -72,12 +72,12 @@ const I18N = {
 
     "spec.kicker": "Our Insurance Specialties",
     "spec.title": "Coverage for every corner of your life",
-    "spec.sub": "As an independent agency serving Clarksville since 1995, we compare options from many carriers to match you with the right protection.",
+    "spec.sub": "As an independent agency serving Clarksville since 1997, we compare options from many carriers to match you with the right protection.",
     "spec.link": "Get a quote &rarr;",
 
     "biz.title": "Business Insurance",
     "biz.lede":
-      "From Main Street storefronts to growing companies, we've protected Clarksville businesses since 1995. The right business insurance keeps one bad day &mdash; a lawsuit, a fire, a data breach &mdash; from undoing years of hard work.",
+      "From Main Street storefronts to growing companies, we've protected Clarksville businesses since 1997. The right business insurance keeps one bad day &mdash; a lawsuit, a fire, a data breach &mdash; from undoing years of hard work.",
     "biz.int.title": "Take a coverage tour of this business",
     "biz.int.sub": "Click the gold markers to see how each part of a working business maps to a coverage in your policy.",
     "biz.panel.body0":
@@ -125,11 +125,11 @@ const I18N = {
     "form.error": "Something went wrong sending your request. Please try again, or call us at (931) 647-2434.",
 
     "footer.about":
-      "An independent insurance agency proudly serving Clarksville, Tennessee since 1995. Tambi&eacute;n hablamos espa&ntilde;ol.",
+      "An independent insurance agency proudly serving Clarksville, Tennessee since 1997. Tambi&eacute;n hablamos espa&ntilde;ol.",
     "footer.coverages": "Coverages",
     "footer.company": "Company",
     "footer.visit": "Visit Us",
-    "footer.rights": "&copy; 2026 Millennium Insurance. All rights reserved. Serving customers since 1995.",
+    "footer.rights": "&copy; 2026 Millennium Insurance. All rights reserved. Serving customers since 1997.",
     "footer.licensed": "Licensed in the State of Tennessee",
     "footer.privacy": "Privacy Policy",
 
@@ -150,7 +150,7 @@ const I18N = {
 
     "hero.title": "Protegiendo a familias de Clarksville por m\u00e1s de <em>30 a\u00f1os.</em>",
     "hero.lede":
-      "Agencia independiente desde 1995. Comparamos las mejores tarifas y coberturas de las principales aseguradoras para que usted no tenga que hacerlo.",
+      "Agencia independiente desde 1997. Comparamos las mejores tarifas y coberturas de las principales aseguradoras para que usted no tenga que hacerlo.",
     "hero.espanol": "Tambi\u00e9n Hablamos Espa\u00f1ol",
     "hero.cta.quote": "Cotizar Ahora",
     "landing.headline1": "Seguros para Clarksville.",
@@ -181,7 +181,7 @@ const I18N = {
     "home.c3.body": "Cu\u00e9ntenos un poco sobre usted y un agente licenciado de Clarksville le responder\u00e1 con opciones reales, no spam.",
     "home.c3.link": "Comenzar &rarr;",
 
-    "stats.1n": "1995",
+    "stats.1n": "1997",
     "stats.1l": "Sirviendo clientes desde",
     "stats.2n": "10+",
     "stats.2l": "Aseguradoras compiten por usted",
@@ -195,7 +195,7 @@ const I18N = {
 
     "pi.title": "Seguros Personales",
     "pi.lede":
-      "La vida avanza r\u00e1pido, y la cobertura correcta debe mantener el paso. Desde 1995, nuestros agentes de Clarksville han creado paquetes de seguros personales alrededor de su hogar, sus veh\u00edculos y las personas que dependen de usted \u2014 a un precio que respeta su presupuesto.",
+      "La vida avanza r\u00e1pido, y la cobertura correcta debe mantener el paso. Desde 1997, nuestros agentes de Clarksville han creado paquetes de seguros personales alrededor de su hogar, sus veh\u00edculos y las personas que dependen de usted \u2014 a un precio que respeta su presupuesto.",
     "pi.cta.try": "Probar el Gr\u00e1fico Interactivo",
 
     "int.kicker": "Gr\u00e1fico Interactivo",
@@ -210,12 +210,12 @@ const I18N = {
 
     "spec.kicker": "Nuestras Especialidades",
     "spec.title": "Cobertura para cada rinc\u00f3n de su vida",
-    "spec.sub": "Como agencia independiente sirviendo a Clarksville desde 1995, comparamos opciones de muchas aseguradoras para encontrar la protecci\u00f3n adecuada para usted.",
+    "spec.sub": "Como agencia independiente sirviendo a Clarksville desde 1997, comparamos opciones de muchas aseguradoras para encontrar la protecci\u00f3n adecuada para usted.",
     "spec.link": "Cotizar &rarr;",
 
     "biz.title": "Seguros de Negocios",
     "biz.lede":
-      "Desde tiendas locales hasta empresas en crecimiento, hemos protegido a los negocios de Clarksville desde 1995. El seguro de negocios correcto evita que un mal d\u00eda \u2014 una demanda, un incendio, una filtraci\u00f3n de datos \u2014 borre a\u00f1os de trabajo duro.",
+      "Desde tiendas locales hasta empresas en crecimiento, hemos protegido a los negocios de Clarksville desde 1997. El seguro de negocios correcto evita que un mal d\u00eda \u2014 una demanda, un incendio, una filtraci\u00f3n de datos \u2014 borre a\u00f1os de trabajo duro.",
     "biz.int.title": "Haga un recorrido de cobertura por este negocio",
     "biz.int.sub": "Haga clic en los marcadores dorados para ver c\u00f3mo cada parte de un negocio en marcha se conecta con una cobertura de su p\u00f3liza.",
     "biz.panel.body0":
@@ -263,11 +263,11 @@ const I18N = {
     "form.error": "Hubo un problema al enviar su solicitud. Int\u00e9ntelo de nuevo o ll\u00e1menos al (931) 647-2434.",
 
     "footer.about":
-      "Una agencia de seguros independiente sirviendo con orgullo a Clarksville, Tennessee desde 1995. Tambi\u00e9n hablamos espa\u00f1ol.",
+      "Una agencia de seguros independiente sirviendo con orgullo a Clarksville, Tennessee desde 1997. Tambi\u00e9n hablamos espa\u00f1ol.",
     "footer.coverages": "Coberturas",
     "footer.company": "Compa\u00f1\u00eda",
     "footer.visit": "Vis\u00edtenos",
-    "footer.rights": "&copy; 2026 Millennium Insurance. Todos los derechos reservados. Sirviendo clientes desde 1995.",
+    "footer.rights": "&copy; 2026 Millennium Insurance. Todos los derechos reservados. Sirviendo clientes desde 1997.",
     "footer.licensed": "Con licencia en el Estado de Tennessee",
     "footer.privacy": "Pol\u00edtica de Privacidad",
 
