@@ -7,6 +7,10 @@ const I18N = {
   en: {
     "nav.home": "Home",
     "nav.personal": "Personal Insurance",
+    "nav.highrisk": "SR-22 & High-Risk",
+    "nav.sr22": "SR-22 Insurance",
+    "nav.nonstandard": "Non-Standard Auto",
+    "nav.lowdown": "Low Down Payment Auto",
     "nav.business": "Business Insurance",
     "nav.quote": "Get a Quote",
 
@@ -145,6 +149,10 @@ const I18N = {
   es: {
     "nav.home": "Inicio",
     "nav.personal": "Seguros Personales",
+    "nav.highrisk": "SR-22 y Alto Riesgo",
+    "nav.sr22": "Seguro SR-22",
+    "nav.nonstandard": "Auto No Est\u00e1ndar",
+    "nav.lowdown": "Auto con Pago Bajo",
     "nav.business": "Seguros de Negocios",
     "nav.quote": "Cotizar",
 
@@ -724,6 +732,23 @@ if (navToggle && mainNav) {
     navToggle.setAttribute("aria-expanded", String(open));
   });
 }
+
+document.querySelectorAll(".nav-dropdown").forEach((dropdown) => {
+  const toggle = dropdown.querySelector(".nav-dropdown-toggle");
+  if (!toggle) return;
+  toggle.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const open = dropdown.classList.toggle("open");
+    toggle.setAttribute("aria-expanded", String(open));
+  });
+});
+document.addEventListener("click", () => {
+  document.querySelectorAll(".nav-dropdown.open").forEach((dropdown) => {
+    dropdown.classList.remove("open");
+    const toggle = dropdown.querySelector(".nav-dropdown-toggle");
+    if (toggle) toggle.setAttribute("aria-expanded", "false");
+  });
+});
 
 /* ---------- Interactive coverage panel ---------- */
 const panelKicker = document.getElementById("panelKicker");
