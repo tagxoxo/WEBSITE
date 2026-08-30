@@ -16,7 +16,7 @@ const I18N = {
 
     "hero.title": "Protecting Clarksville families for over <em>30 years.</em>",
     "hero.lede":
-      "Independent agency since 1997. We shop the best rates and coverage from top insurance companies so you don't have to.",
+      "Independent agency since 1995. We shop the best rates and coverage from top insurance companies so you don't have to.",
     "hero.espanol": "Tambi&eacute;n Hablamos Espa&ntilde;ol",
     "hero.cta.quote": "Get a Quote",
     "hero.cta.call": "Call (931) 647-2434",
@@ -48,7 +48,7 @@ const I18N = {
     "home.c3.body": "Tell us a little about yourself and a licensed Clarksville agent will follow up with real options, not spam.",
     "home.c3.link": "Start now &rarr;",
 
-    "stats.1n": "1997",
+    "stats.1n": "1995",
     "stats.1l": "Serving customers since",
     "stats.2n": "10+",
     "stats.2l": "Carriers shop for you",
@@ -62,7 +62,7 @@ const I18N = {
 
     "pi.title": "Personal Insurance",
     "pi.lede":
-      "Life moves quickly, and the right coverage should keep up. Since 1997, our Clarksville agents have built personal insurance packages around your home, your vehicles, and the people who count on you &mdash; at a price that respects your budget.",
+      "Life moves quickly, and the right coverage should keep up. Since 1995, our Clarksville agents have built personal insurance packages around your home, your vehicles, and the people who count on you &mdash; at a price that respects your budget.",
     "pi.cta.try": "Try the Interactive Graphic",
 
     "int.kicker": "Interactive Graphic",
@@ -77,12 +77,12 @@ const I18N = {
 
     "spec.kicker": "Our Insurance Specialties",
     "spec.title": "Coverage for every corner of your life",
-    "spec.sub": "As an independent agency serving Clarksville since 1997, we compare options from many carriers to match you with the right protection.",
+    "spec.sub": "As an independent agency serving Clarksville since 1995, we compare options from many carriers to match you with the right protection.",
     "spec.link": "Get a quote &rarr;",
 
     "biz.title": "Business Insurance",
     "biz.lede":
-      "From Main Street storefronts to growing companies, we've protected Clarksville businesses since 1997. The right business insurance keeps one bad day &mdash; a lawsuit, a fire, a data breach &mdash; from undoing years of hard work.",
+      "From Main Street storefronts to growing companies, we've protected Clarksville businesses since 1995. The right business insurance keeps one bad day &mdash; a lawsuit, a fire, a data breach &mdash; from undoing years of hard work.",
     "biz.int.title": "Take a coverage tour of this business",
     "biz.int.sub": "Click the gold markers to see how each part of a working business maps to a coverage in your policy.",
     "biz.panel.body0":
@@ -130,11 +130,11 @@ const I18N = {
     "form.error": "Something went wrong sending your request. Please try again, or call us at (931) 647-2434.",
 
     "footer.about":
-      "An independent insurance agency proudly serving Clarksville, Tennessee since 1997. Tambi&eacute;n hablamos espa&ntilde;ol.",
+      "An independent insurance agency proudly serving Clarksville, Tennessee since 1995. Tambi&eacute;n hablamos espa&ntilde;ol.",
     "footer.coverages": "Coverages",
     "footer.company": "Company",
     "footer.visit": "Visit Us",
-    "footer.rights": "&copy; 2026 Millennium Insurance. All rights reserved. Serving customers since 1997.",
+    "footer.rights": "&copy; 2026 Millennium Insurance. All rights reserved. Serving customers since 1995.",
     "footer.licensed": "Licensed in the State of Tennessee",
     "footer.privacy": "Privacy Policy",
 
@@ -148,7 +148,7 @@ const I18N = {
 
     "sr22.pageTitle": "SR-22 Insurance Clarksville, TN | Millennium Insurance",
     "sr22.meta":
-      "Need an SR-22 in Clarksville? Millennium Insurance files same-day. Serving high-risk drivers since 1997. Call (931) 647-2434. Tambi\u00e9n hablamos espa\u00f1ol.",
+      "Need an SR-22 in Clarksville? Millennium Insurance files same-day. Serving high-risk drivers since 1995. Call (931) 647-2434. Tambi\u00e9n hablamos espa\u00f1ol.",
     "sr22.title": "SR-22 Insurance in Clarksville, TN",
     "sr22.lede":
       "Need an SR-22 filing fast? Millennium Insurance helps Clarksville drivers get back on the road with same-day filing and real agents who know Tennessee requirements.",
@@ -171,7 +171,7 @@ const I18N = {
       "Most drivers are surprised: the SR-22 filing fee is usually modest, and the overall cost is often lower than people expect when they work with an agency that specializes in high-risk auto.",
     "sr22.h2.bilingual": "Local help, in English and Spanish",
     "sr22.p.bilingual":
-      "Our bilingual agents have helped Clarksville drivers with SR-22 filings since 1997. We explain the process in plain language, shop multiple carriers, and stay with you until your filing is confirmed.",
+      "Our bilingual agents have helped Clarksville drivers with SR-22 filings since 1995. We explain the process in plain language, shop multiple carriers, and stay with you until your filing is confirmed.",
     "sr22.quote.title": "Get your SR-22 quote today",
     "sr22.notes.placeholder": "SR-22 filing needed",
 
@@ -197,7 +197,7 @@ const I18N = {
     "ns.p.shop":
       "As an independent agency, we compare rates and coverage from many non-standard and standard carriers &mdash; not just one company's menu. That means better odds of finding a policy you can actually afford, with the limits Tennessee requires.",
     "ns.callout.since":
-      "Since 1997, we have helped thousands of Clarksville-area drivers get covered after a denial elsewhere. Your record is not the end of the conversation here.",
+      "Since 1995, we have helped thousands of Clarksville-area drivers get covered after a denial elsewhere. Your record is not the end of the conversation here.",
     "ns.h2.bilingual": "English and Spanish-speaking agents",
     "ns.p.bilingual":
       "Tambi\u00e9n hablamos espa\u00f1ol. Visit us at 313 Dover Rd, Clarksville, TN 37042, or call (931) 647-2434 to speak with an agent who understands high-risk auto and will treat your situation with respect.",
@@ -240,7 +240,7 @@ const I18N = {
 
     "hero.title": "Protegiendo a familias de Clarksville por m\u00e1s de <em>30 a\u00f1os.</em>",
     "hero.lede":
-      "Agencia independiente desde 1997. Comparamos las mejores tarifas y coberturas de las principales aseguradoras para que usted no tenga que hacerlo.",
+      "Agencia independiente desde 1995. Comparamos las mejores tarifas y coberturas de las principales aseguradoras para que usted no tenga que hacerlo.",
     "hero.espanol": "Tambi\u00e9n Hablamos Espa\u00f1ol",
     "hero.cta.quote": "Cotizar Ahora",
     "hero.cta.call": "Llame al (931) 647-2434",
@@ -272,7 +272,7 @@ const I18N = {
     "home.c3.body": "Cu\u00e9ntenos un poco sobre usted y un agente licenciado de Clarksville le responder\u00e1 con opciones reales, no spam.",
     "home.c3.link": "Comenzar &rarr;",
 
-    "stats.1n": "1997",
+    "stats.1n": "1995",
     "stats.1l": "Sirviendo clientes desde",
     "stats.2n": "10+",
     "stats.2l": "Aseguradoras compiten por usted",
@@ -286,7 +286,7 @@ const I18N = {
 
     "pi.title": "Seguros Personales",
     "pi.lede":
-      "La vida avanza r\u00e1pido, y la cobertura correcta debe mantener el paso. Desde 1997, nuestros agentes de Clarksville han creado paquetes de seguros personales alrededor de su hogar, sus veh\u00edculos y las personas que dependen de usted \u2014 a un precio que respeta su presupuesto.",
+      "La vida avanza r\u00e1pido, y la cobertura correcta debe mantener el paso. Desde 1995, nuestros agentes de Clarksville han creado paquetes de seguros personales alrededor de su hogar, sus veh\u00edculos y las personas que dependen de usted \u2014 a un precio que respeta su presupuesto.",
     "pi.cta.try": "Probar el Gr\u00e1fico Interactivo",
 
     "int.kicker": "Gr\u00e1fico Interactivo",
@@ -301,12 +301,12 @@ const I18N = {
 
     "spec.kicker": "Nuestras Especialidades",
     "spec.title": "Cobertura para cada rinc\u00f3n de su vida",
-    "spec.sub": "Como agencia independiente sirviendo a Clarksville desde 1997, comparamos opciones de muchas aseguradoras para encontrar la protecci\u00f3n adecuada para usted.",
+    "spec.sub": "Como agencia independiente sirviendo a Clarksville desde 1995, comparamos opciones de muchas aseguradoras para encontrar la protecci\u00f3n adecuada para usted.",
     "spec.link": "Cotizar &rarr;",
 
     "biz.title": "Seguros de Negocios",
     "biz.lede":
-      "Desde tiendas locales hasta empresas en crecimiento, hemos protegido a los negocios de Clarksville desde 1997. El seguro de negocios correcto evita que un mal d\u00eda \u2014 una demanda, un incendio, una filtraci\u00f3n de datos \u2014 borre a\u00f1os de trabajo duro.",
+      "Desde tiendas locales hasta empresas en crecimiento, hemos protegido a los negocios de Clarksville desde 1995. El seguro de negocios correcto evita que un mal d\u00eda \u2014 una demanda, un incendio, una filtraci\u00f3n de datos \u2014 borre a\u00f1os de trabajo duro.",
     "biz.int.title": "Haga un recorrido de cobertura por este negocio",
     "biz.int.sub": "Haga clic en los marcadores dorados para ver c\u00f3mo cada parte de un negocio en marcha se conecta con una cobertura de su p\u00f3liza.",
     "biz.panel.body0":
@@ -354,11 +354,11 @@ const I18N = {
     "form.error": "Hubo un problema al enviar su solicitud. Int\u00e9ntelo de nuevo o ll\u00e1menos al (931) 647-2434.",
 
     "footer.about":
-      "Una agencia de seguros independiente sirviendo con orgullo a Clarksville, Tennessee desde 1997. Tambi\u00e9n hablamos espa\u00f1ol.",
+      "Una agencia de seguros independiente sirviendo con orgullo a Clarksville, Tennessee desde 1995. Tambi\u00e9n hablamos espa\u00f1ol.",
     "footer.coverages": "Coberturas",
     "footer.company": "Compa\u00f1\u00eda",
     "footer.visit": "Vis\u00edtenos",
-    "footer.rights": "&copy; 2026 Millennium Insurance. Todos los derechos reservados. Sirviendo clientes desde 1997.",
+    "footer.rights": "&copy; 2026 Millennium Insurance. Todos los derechos reservados. Sirviendo clientes desde 1995.",
     "footer.licensed": "Con licencia en el Estado de Tennessee",
     "footer.privacy": "Pol\u00edtica de Privacidad",
 
@@ -372,7 +372,7 @@ const I18N = {
 
     "sr22.pageTitle": "Seguro SR-22 Clarksville, TN | Millennium Insurance",
     "sr22.meta":
-      "\u00bfNecesita un SR-22 en Clarksville? Millennium Insurance lo presenta el mismo d\u00eda. Sirviendo conductores de alto riesgo desde 1997. Llame al (931) 647-2434. Tambi\u00e9n hablamos espa\u00f1ol.",
+      "\u00bfNecesita un SR-22 en Clarksville? Millennium Insurance lo presenta el mismo d\u00eda. Sirviendo conductores de alto riesgo desde 1995. Llame al (931) 647-2434. Tambi\u00e9n hablamos espa\u00f1ol.",
     "sr22.title": "Seguro SR-22 en Clarksville, TN",
     "sr22.lede":
       "\u00bfNecesita presentar un SR-22 r\u00e1pido? Millennium Insurance ayuda a los conductores de Clarksville a volver a la carretera con presentaci\u00f3n el mismo d\u00eda y agentes reales que conocen los requisitos de Tennessee.",
@@ -395,7 +395,7 @@ const I18N = {
       "La mayor\u00eda de los conductores se sorprenden: la tarifa de presentaci\u00f3n del SR-22 suele ser modesta, y el costo total a menudo es menor de lo que esperan cuando trabajan con una agencia especializada en auto de alto riesgo.",
     "sr22.h2.bilingual": "Ayuda local, en ingl\u00e9s y espa\u00f1ol",
     "sr22.p.bilingual":
-      "Nuestros agentes biling\u00fces han ayudado a conductores de Clarksville con presentaciones de SR-22 desde 1997. Explicamos el proceso en un lenguaje claro, comparamos varias aseguradoras y permanecemos con usted hasta confirmar su presentaci\u00f3n.",
+      "Nuestros agentes biling\u00fces han ayudado a conductores de Clarksville con presentaciones de SR-22 desde 1995. Explicamos el proceso en un lenguaje claro, comparamos varias aseguradoras y permanecemos con usted hasta confirmar su presentaci\u00f3n.",
     "sr22.quote.title": "Obtenga su cotizaci\u00f3n de SR-22 hoy",
     "sr22.notes.placeholder": "Necesito presentaci\u00f3n de SR-22",
 
@@ -421,7 +421,7 @@ const I18N = {
     "ns.p.shop":
       "Como agencia independiente, comparamos tarifas y coberturas de muchas aseguradoras est\u00e1ndar y no est\u00e1ndar &mdash; no solo el men\u00fa de una compa\u00f1\u00eda. Eso significa mejores posibilidades de encontrar una p\u00f3liza que realmente pueda pagar, con los l\u00edmites que exige Tennessee.",
     "ns.callout.since":
-      "Desde 1997, hemos ayudado a miles de conductores del \u00e1rea de Clarksville a obtener cobertura despu\u00e9s de un rechazo en otro lugar. Su historial no es el final de la conversaci\u00f3n aqu\u00ed.",
+      "Desde 1995, hemos ayudado a miles de conductores del \u00e1rea de Clarksville a obtener cobertura despu\u00e9s de un rechazo en otro lugar. Su historial no es el final de la conversaci\u00f3n aqu\u00ed.",
     "ns.h2.bilingual": "Agentes que hablan ingl\u00e9s y espa\u00f1ol",
     "ns.p.bilingual":
       "Tambi\u00e9n hablamos espa\u00f1ol. Vis\u00edtenos en 313 Dover Rd, Clarksville, TN 37042, o llame al (931) 647-2434 para hablar con un agente que entiende el auto de alto riesgo y tratar\u00e1 su situaci\u00f3n con respeto.",
