@@ -8,8 +8,8 @@ const I18N = {
     "nav.home": "Home",
     "nav.personal": "Personal Insurance",
     "nav.highrisk": "SR-22 & High-Risk",
-    "nav.sr22": "SR-22 Insurance",
-    "nav.nonstandard": "Non-Standard Auto",
+    "nav.sr22": "SR-22 Bond",
+    "nav.coverageforall": "Coverage for All",
     "nav.lowdown": "Low Down Payment Auto",
     "nav.business": "Business Insurance",
     "nav.quote": "Get a Quote",
@@ -22,8 +22,6 @@ const I18N = {
     "hero.cta.call": "Call (931) 647-2434",
     "landing.headline1": "Insurance for Clarksville.",
     "landing.headline2": "Coverage for real life.",
-    "landing.lede":
-      "Auto insurance for drivers with tickets, accidents, SR-22s, and more.",
     "landing.address": "313 Dover Rd, Clarksville, TN 37042",
     "landing.officeLabel": "OUR CLARKSVILLE OFFICE",
     "landing.coverageLine": "Auto \u2022 Home \u2022 Renters \u2022 Business",
@@ -146,10 +144,10 @@ const I18N = {
     "cov.life": "Life Insurance",
     "cov.business": "Business Insurance",
 
-    "sr22.pageTitle": "SR-22 Insurance Clarksville, TN | Millennium Insurance",
+    "sr22.pageTitle": "SR-22 Bond Clarksville, TN | Millennium Insurance",
     "sr22.meta":
       "Need an SR-22 in Clarksville? Millennium Insurance files same-day. Serving high-risk drivers since 1995. Call (931) 647-2434. Tambi\u00e9n hablamos espa\u00f1ol.",
-    "sr22.title": "SR-22 Insurance in Clarksville, TN",
+    "sr22.title": "SR-22 Bond in Clarksville, TN",
     "sr22.lede":
       "Need an SR-22 filing fast? Millennium Insurance helps Clarksville drivers get back on the road with same-day filing and real agents who know Tennessee requirements.",
     "sr22.h2.what": "What is an SR-22?",
@@ -172,37 +170,37 @@ const I18N = {
     "sr22.h2.bilingual": "Local help, in English and Spanish",
     "sr22.p.bilingual":
       "Our bilingual agents have helped Clarksville drivers with SR-22 filings since 1995. We explain the process in plain language, shop multiple carriers, and stay with you until your filing is confirmed.",
-    "sr22.quote.title": "Get your SR-22 quote today",
+    "sr22.quote.title": "Get your SR-22 bond quote today",
     "sr22.notes.placeholder": "SR-22 filing needed",
 
-    "ns.pageTitle": "Non-Standard Auto Insurance Clarksville, TN | Millennium Insurance",
-    "ns.meta":
-      "Tickets, accidents, DUI, or a lapse in coverage? Millennium Insurance specializes in non-standard auto in Clarksville. Call (931) 647-2434.",
-    "ns.title": "Non-Standard Auto Insurance in Clarksville, TN",
-    "ns.lede":
-      "Tickets, accidents, or a gap in coverage? Most big carriers say no &mdash; we say let's find a way. Millennium Insurance specializes in non-standard auto for Clarksville drivers other agencies turn away.",
-    "ns.h2.who": "Who needs non-standard auto insurance?",
-    "ns.p.whoIntro":
-      "Non-standard auto is for drivers who do not fit the clean-record profile most national carriers prefer. You may need it if you have:",
-    "ns.li.tickets": "Multiple tickets or moving violations",
-    "ns.li.accidents": "One or more at-fault accidents",
-    "ns.li.dui": "A DUI or DWI on your record",
-    "ns.li.young": "A newly licensed or young driver in the household",
-    "ns.li.lapse": "A lapse in coverage &mdash; even a short one",
-    "ns.li.foreign": "A foreign or international driver's license",
-    "ns.h2.specialize": "We specialize in what others decline",
-    "ns.p.specialize":
-      "When you call a 1-800 insurer, a computer often makes the decision before a person ever picks up. At Millennium Insurance, a licensed Clarksville agent reviews your situation, explains your options, and works to place you with a carrier that accepts your profile.",
-    "ns.h2.shop": "We shop multiple carriers for you",
-    "ns.p.shop":
-      "As an independent agency, we compare rates and coverage from many non-standard and standard carriers &mdash; not just one company's menu. That means better odds of finding a policy you can actually afford, with the limits Tennessee requires.",
-    "ns.callout.since":
-      "Since 1995, we have helped thousands of Clarksville-area drivers get covered after a denial elsewhere. Your record is not the end of the conversation here.",
-    "ns.h2.bilingual": "English and Spanish-speaking agents",
-    "ns.p.bilingual":
-      "Tambi\u00e9n hablamos espa\u00f1ol. Visit us at 313 Dover Rd, Clarksville, TN 37042, or call (931) 647-2434 to speak with an agent who understands high-risk auto and will treat your situation with respect.",
-    "ns.quote.title": "Find non-standard auto coverage today",
-    "ns.notes.placeholder": "Tickets, accidents, or coverage lapse",
+    "cfa.pageTitle": "Coverage for All Clarksville, TN | Millennium Insurance",
+    "cfa.meta":
+      "Auto, home, renters, and business insurance for every Clarksville family. Millennium Insurance finds coverage for all situations. Call (931) 647-2434.",
+    "cfa.title": "Coverage for All in Clarksville, TN",
+    "cfa.lede":
+      "Whatever your situation, Millennium Insurance helps Clarksville families and drivers find the right protection &mdash; auto, home, renters, and business.",
+    "cfa.h2.who": "Insurance for every situation",
+    "cfa.p.whoIntro":
+      "Clean record or complicated history, first-time buyer or longtime homeowner &mdash; we work with people across Clarksville and the Fort Campbell area. Common reasons clients come to us include:",
+    "cfa.li.auto": "Auto insurance for every driver and household",
+    "cfa.li.home": "Home and renters coverage",
+    "cfa.li.business": "Business insurance for local companies",
+    "cfa.li.tickets": "Tickets, accidents, or a gap in coverage",
+    "cfa.li.budget": "Flexible payment options on a tight budget",
+    "cfa.li.new": "New drivers, military families, and first-time buyers",
+    "cfa.h2.specialize": "Real agents, not a call center",
+    "cfa.p.specialize":
+      "When you call Millennium Insurance, a licensed Clarksville agent listens to your full picture &mdash; not just a checkbox on a website. We explain your options in plain language and help you understand what you are buying.",
+    "cfa.h2.shop": "We shop multiple carriers for you",
+    "cfa.p.shop":
+      "As an independent agency, we compare rates and coverage from many carriers &mdash; not just one company's menu. That means better odds of finding a policy that fits your life and your budget.",
+    "cfa.callout.since":
+      "Since 1995, we have helped thousands of Clarksville-area households get covered. No matter where you are starting from, coverage for all starts with a conversation.",
+    "cfa.h2.bilingual": "English and Spanish-speaking agents",
+    "cfa.p.bilingual":
+      "Tambi\u00e9n hablamos espa\u00f1ol. Visit us at 313 Dover Rd, Clarksville, TN 37042, or call (931) 647-2434 to speak with an agent who will treat your situation with respect.",
+    "cfa.quote.title": "Find coverage that fits your life",
+    "cfa.notes.placeholder": "Tell us what you need covered",
 
     "ldp.pageTitle": "Low Down Payment Auto Insurance Clarksville, TN | Millennium Insurance",
     "ldp.meta":
@@ -232,8 +230,8 @@ const I18N = {
     "nav.home": "Inicio",
     "nav.personal": "Seguros Personales",
     "nav.highrisk": "SR-22 y Alto Riesgo",
-    "nav.sr22": "Seguro SR-22",
-    "nav.nonstandard": "Auto No Est\u00e1ndar",
+    "nav.sr22": "Fianza SR-22",
+    "nav.coverageforall": "Cobertura para Todos",
     "nav.lowdown": "Auto con Pago Bajo",
     "nav.business": "Seguros de Negocios",
     "nav.quote": "Cotizar",
@@ -246,8 +244,6 @@ const I18N = {
     "hero.cta.call": "Llame al (931) 647-2434",
     "landing.headline1": "Seguros para Clarksville.",
     "landing.headline2": "Cobertura para la vida real.",
-    "landing.lede":
-      "Seguro de auto para conductores con multas, accidentes, SR-22 y m\u00e1s.",
     "landing.address": "313 Dover Rd, Clarksville, TN 37042",
     "landing.officeLabel": "Nuestra oficina en Clarksville",
     "landing.coverageLine": "Auto \u2022 Hogar \u2022 Inquilinos \u2022 Negocios",
@@ -370,10 +366,10 @@ const I18N = {
     "cov.life": "Seguro de Vida",
     "cov.business": "Seguro de Negocios",
 
-    "sr22.pageTitle": "Seguro SR-22 Clarksville, TN | Millennium Insurance",
+    "sr22.pageTitle": "Fianza SR-22 Clarksville, TN | Millennium Insurance",
     "sr22.meta":
       "\u00bfNecesita un SR-22 en Clarksville? Millennium Insurance lo presenta el mismo d\u00eda. Sirviendo conductores de alto riesgo desde 1995. Llame al (931) 647-2434. Tambi\u00e9n hablamos espa\u00f1ol.",
-    "sr22.title": "Seguro SR-22 en Clarksville, TN",
+    "sr22.title": "Fianza SR-22 en Clarksville, TN",
     "sr22.lede":
       "\u00bfNecesita presentar un SR-22 r\u00e1pido? Millennium Insurance ayuda a los conductores de Clarksville a volver a la carretera con presentaci\u00f3n el mismo d\u00eda y agentes reales que conocen los requisitos de Tennessee.",
     "sr22.h2.what": "\u00bfQu\u00e9 es un SR-22?",
@@ -396,37 +392,37 @@ const I18N = {
     "sr22.h2.bilingual": "Ayuda local, en ingl\u00e9s y espa\u00f1ol",
     "sr22.p.bilingual":
       "Nuestros agentes biling\u00fces han ayudado a conductores de Clarksville con presentaciones de SR-22 desde 1995. Explicamos el proceso en un lenguaje claro, comparamos varias aseguradoras y permanecemos con usted hasta confirmar su presentaci\u00f3n.",
-    "sr22.quote.title": "Obtenga su cotizaci\u00f3n de SR-22 hoy",
+    "sr22.quote.title": "Obtenga su cotizaci\u00f3n de fianza SR-22 hoy",
     "sr22.notes.placeholder": "Necesito presentaci\u00f3n de SR-22",
 
-    "ns.pageTitle": "Seguro de Auto No Est\u00e1ndar Clarksville, TN | Millennium Insurance",
-    "ns.meta":
-      "\u00bfMultas, accidentes, DUI o una interrupci\u00f3n de cobertura? Millennium Insurance se especializa en auto no est\u00e1ndar en Clarksville. Llame al (931) 647-2434.",
-    "ns.title": "Seguro de Auto No Est\u00e1ndar en Clarksville, TN",
-    "ns.lede":
-      "\u00bfMultas, accidentes o una brecha en la cobertura? La mayor\u00eda de las grandes aseguradoras dicen que no &mdash; nosotros buscamos la manera. Millennium Insurance se especializa en auto no est\u00e1ndar para conductores de Clarksville que otras agencias rechazan.",
-    "ns.h2.who": "\u00bfQui\u00e9n necesita seguro de auto no est\u00e1ndar?",
-    "ns.p.whoIntro":
-      "El auto no est\u00e1ndar es para conductores que no encajan en el perfil de historial limpio que prefieren la mayor\u00eda de las aseguradoras nacionales. Puede necesitarlo si tiene:",
-    "ns.li.tickets": "M\u00faltiples multas o infracciones de tr\u00e1nsito",
-    "ns.li.accidents": "Uno o m\u00e1s accidentes con culpa",
-    "ns.li.dui": "Un DUI o DWI en su historial",
-    "ns.li.young": "Un conductor nuevo o joven en el hogar",
-    "ns.li.lapse": "Una interrupci\u00f3n de cobertura &mdash; aunque sea breve",
-    "ns.li.foreign": "Una licencia de conducir extranjera o internacional",
-    "ns.h2.specialize": "Nos especializamos en lo que otros rechazan",
-    "ns.p.specialize":
-      "Cuando llama a una aseguradora al 1-800, a menudo una computadora toma la decisi\u00f3n antes de que una persona atienda. En Millennium Insurance, un agente licenciado de Clarksville revisa su situaci\u00f3n, explica sus opciones y trabaja para colocarlo con una aseguradora que acepte su perfil.",
-    "ns.h2.shop": "Comparamos varias aseguradoras por usted",
-    "ns.p.shop":
-      "Como agencia independiente, comparamos tarifas y coberturas de muchas aseguradoras est\u00e1ndar y no est\u00e1ndar &mdash; no solo el men\u00fa de una compa\u00f1\u00eda. Eso significa mejores posibilidades de encontrar una p\u00f3liza que realmente pueda pagar, con los l\u00edmites que exige Tennessee.",
-    "ns.callout.since":
-      "Desde 1995, hemos ayudado a miles de conductores del \u00e1rea de Clarksville a obtener cobertura despu\u00e9s de un rechazo en otro lugar. Su historial no es el final de la conversaci\u00f3n aqu\u00ed.",
-    "ns.h2.bilingual": "Agentes que hablan ingl\u00e9s y espa\u00f1ol",
-    "ns.p.bilingual":
-      "Tambi\u00e9n hablamos espa\u00f1ol. Vis\u00edtenos en 313 Dover Rd, Clarksville, TN 37042, o llame al (931) 647-2434 para hablar con un agente que entiende el auto de alto riesgo y tratar\u00e1 su situaci\u00f3n con respeto.",
-    "ns.quote.title": "Encuentre cobertura de auto no est\u00e1ndar hoy",
-    "ns.notes.placeholder": "Multas, accidentes o interrupci\u00f3n de cobertura",
+    "cfa.pageTitle": "Cobertura para Todos Clarksville, TN | Millennium Insurance",
+    "cfa.meta":
+      "Seguro de auto, hogar, inquilinos y negocios para cada familia de Clarksville. Millennium Insurance encuentra cobertura para todas las situaciones. Llame al (931) 647-2434.",
+    "cfa.title": "Cobertura para Todos en Clarksville, TN",
+    "cfa.lede":
+      "Sea cual sea su situaci\u00f3n, Millennium Insurance ayuda a familias y conductores de Clarksville a encontrar la protecci\u00f3n adecuada &mdash; auto, hogar, inquilinos y negocios.",
+    "cfa.h2.who": "Seguros para cada situaci\u00f3n",
+    "cfa.p.whoIntro":
+      "Historial limpio o complicado, comprador por primera vez o propietario de larga data &mdash; trabajamos con personas en todo Clarksville y el \u00e1rea de Fort Campbell. Razones comunes por las que nos visitan:",
+    "cfa.li.auto": "Seguro de auto para cada conductor y hogar",
+    "cfa.li.home": "Cobertura de hogar e inquilinos",
+    "cfa.li.business": "Seguro de negocios para empresas locales",
+    "cfa.li.tickets": "Multas, accidentes o una interrupci\u00f3n de cobertura",
+    "cfa.li.budget": "Opciones de pago flexibles con presupuesto ajustado",
+    "cfa.li.new": "Conductores nuevos, familias militares y compradores por primera vez",
+    "cfa.h2.specialize": "Agentes reales, no un centro de llamadas",
+    "cfa.p.specialize":
+      "Cuando llama a Millennium Insurance, un agente licenciado de Clarksville escucha su situaci\u00f3n completa &mdash; no solo una casilla en un sitio web. Explicamos sus opciones en un lenguaje claro y le ayudamos a entender lo que est\u00e1 comprando.",
+    "cfa.h2.shop": "Comparamos varias aseguradoras por usted",
+    "cfa.p.shop":
+      "Como agencia independiente, comparamos tarifas y coberturas de muchas aseguradoras &mdash; no solo el men\u00fa de una compa\u00f1\u00eda. Eso significa mejores posibilidades de encontrar una p\u00f3liza que se ajuste a su vida y presupuesto.",
+    "cfa.callout.since":
+      "Desde 1995, hemos ayudado a miles de hogares del \u00e1rea de Clarksville a obtener cobertura. No importa desde d\u00f3nde empiece, la cobertura para todos comienza con una conversaci\u00f3n.",
+    "cfa.h2.bilingual": "Agentes que hablan ingl\u00e9s y espa\u00f1ol",
+    "cfa.p.bilingual":
+      "Tambi\u00e9n hablamos espa\u00f1ol. Vis\u00edtenos en 313 Dover Rd, Clarksville, TN 37042, o llame al (931) 647-2434 para hablar con un agente que tratar\u00e1 su situaci\u00f3n con respeto.",
+    "cfa.quote.title": "Encuentre cobertura que se ajuste a su vida",
+    "cfa.notes.placeholder": "Cu\u00e9ntenos qu\u00e9 necesita cubrir",
 
     "ldp.pageTitle": "Seguro de Auto con Pago Bajo Clarksville, TN | Millennium Insurance",
     "ldp.meta":
