@@ -994,6 +994,9 @@ if (form) {
         headers: { Accept: "application/json" },
       });
       if (res.ok) {
+        if (typeof window.oaiq === "function") {
+          window.oaiq("measure", "lead_created", { type: "customer_action" });
+        }
         form.reset();
         btn.innerHTML = t("form.success");
         status.innerHTML = t("form.success");
