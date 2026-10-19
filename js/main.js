@@ -7,7 +7,7 @@ const I18N = {
   en: {
     "nav.home": "Home",
     "nav.personal": "Personal Insurance",
-    "nav.highrisk": "SR-22 & High-Risk",
+    "nav.highrisk": "SR-22",
     "nav.sr22": "SR-22 Bond",
     "nav.coverageforall": "Coverage for All",
     "nav.lowdown": "Low Down Payment Auto",
@@ -459,7 +459,7 @@ const I18N = {
   es: {
     "nav.home": "Inicio",
     "nav.personal": "Seguros Personales",
-    "nav.highrisk": "SR-22 y Alto Riesgo",
+    "nav.highrisk": "SR-22",
     "nav.sr22": "Fianza SR-22",
     "nav.coverageforall": "Cobertura para Todos",
     "nav.lowdown": "Auto con Pago Bajo",
