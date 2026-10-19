@@ -82,69 +82,64 @@
         </a>
       </div>
       <div class="landing-hero-grid">
-      <div class="landing-hero-copy">
-        <h1 class="landing-headline">
-          <span class="landing-headline-line" data-i18n="landing.headline1">Insurance for Clarksville.</span>
-          <span class="landing-headline-line landing-headline-gold" data-i18n="landing.headline2">Coverage for real life.</span>
-        </h1>
-        <figure class="landing-photo-card">
-          <img
-            class="landing-office-photo"
-            src="images/millennium-office.jpg"
-            alt="Millennium Insurance office at 313 Dover Rd, Clarksville, Tennessee"
-            width="1300"
-            height="975"
-            loading="eager"
-          />
-          <figcaption class="landing-photo-label">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z" fill="currentColor"/></svg>
-            <span data-i18n="landing.officeLabel">OUR CLARKSVILLE OFFICE</span>
-          </figcaption>
-        </figure>
-        <p class="landing-coverage-line" data-i18n="landing.coverageLine">Auto &bull; Home &bull; Renters &bull; Business</p>
-        <ul class="landing-benefits">
-          <li>
-            <span class="landing-benefit-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-            </span>
-            <span data-i18n="landing.b1">Local Clarksville agency</span>
-          </li>
-          <li>
-            <span class="landing-benefit-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.5"/><path d="M6 20v-1.2c0-2.8 2.7-4.8 6-4.8s6 2 6 4.8V20"/></svg>
-            </span>
-            <span data-i18n="landing.b2">Personal service from real agents</span>
-          </li>
-          <li>
-            <span class="landing-benefit-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10 12 4l8 6v10H4V10z"/><path d="M9 20v-5h6v5"/></svg>
-            </span>
-            <span data-i18n="landing.b3">Come visit us in person</span>
-          </li>
-          <li>
-            <span class="landing-benefit-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-8.4 8.4H5l-3 3V11.5A8.4 8.4 0 0 1 10.4 3h.2A8.4 8.4 0 0 1 21 11.5z"/></svg>
-            </span>
-            <span data-i18n="landing.b4">English &amp; Espa&ntilde;ol</span>
-          </li>
-        </ul>
-        <div class="landing-trust">
-          <div><strong data-i18n="stats.1n">1995</strong> <span data-i18n="stats.1l">Serving customers since</span></div>
-          <div><strong data-i18n="stats.3n">4,800+</strong> <span data-i18n="stats.3l">Households protected</span></div>
+        <form class="quote-form landing-quote-form quote-start" action="quote.html" method="get" novalidate>
+          <h1 data-i18n="landing.quoteTitle">Save up to 35% on Auto insurance</h1>
+          <p class="start-sub" data-i18n="landing.quoteSub">More savings. Less hassle. Get your free auto insurance quote today.</p>
+          <label class="zip-field">
+            <span class="sr-only" data-i18n="form.zip">ZIP code</span>
+            <input type="text" name="zip" inputmode="numeric" autocomplete="postal-code" maxlength="5" placeholder="Enter ZIP" data-i18n-placeholder="landing.zipPlaceholder" aria-describedby="startError" />
+          </label>
+          <input type="hidden" name="type" value="auto" />
+          <p class="form-status is-error start-error" id="startError" role="alert" hidden></p>
+          <button class="btn btn-gold" type="submit" data-i18n="landing.quoteCta">Start Quote Now</button>
+          <p class="landing-phone-cta" data-i18n="start.talk">Prefer to talk? Call <a href="tel:9316472434">(931) 647-2434</a></p>
+        </form>
+        <div class="landing-hero-copy">
+          <figure class="landing-photo-card">
+            <img
+              class="landing-office-photo"
+              src="images/millennium-office.jpg"
+              alt="Millennium Insurance office at 313 Dover Rd, Clarksville, Tennessee"
+              width="1300"
+              height="975"
+            />
+            <figcaption class="landing-photo-label">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z" fill="currentColor"/></svg>
+              <span data-i18n="landing.officeLabel">OUR CLARKSVILLE OFFICE</span>
+            </figcaption>
+          </figure>
+          <p class="landing-coverage-line" data-i18n="landing.coverageLine">Auto &bull; Home &bull; Renters &bull; Business</p>
+          <ul class="landing-benefits">
+            <li>
+              <span class="landing-benefit-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              <span data-i18n="landing.b1">Local Clarksville agency</span>
+            </li>
+            <li>
+              <span class="landing-benefit-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.5"/><path d="M6 20v-1.2c0-2.8 2.7-4.8 6-4.8s6 2 6 4.8V20"/></svg>
+              </span>
+              <span data-i18n="landing.b2">Personal service from real agents</span>
+            </li>
+            <li>
+              <span class="landing-benefit-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10 12 4l8 6v10H4V10z"/><path d="M9 20v-5h6v5"/></svg>
+              </span>
+              <span data-i18n="landing.b3">Come visit us in person</span>
+            </li>
+            <li>
+              <span class="landing-benefit-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-8.4 8.4H5l-3 3V11.5A8.4 8.4 0 0 1 10.4 3h.2A8.4 8.4 0 0 1 21 11.5z"/></svg>
+              </span>
+              <span data-i18n="landing.b4">English &amp; Espa&ntilde;ol</span>
+            </li>
+          </ul>
+          <div class="landing-trust">
+            <div><strong data-i18n="stats.1n">1995</strong> <span data-i18n="stats.1l">Serving customers since</span></div>
+            <div><strong data-i18n="stats.3n">4,800+</strong> <span data-i18n="stats.3l">Households protected</span></div>
+          </div>
         </div>
-      </div>
-      <form class="quote-form landing-quote-form quote-start" action="quote.html" method="get" novalidate>
-        <h3 data-i18n="start.title">Get Your Free Quote</h3>
-        <p class="start-sub" data-i18n="start.sub">Takes about 2 minutes. Local agents, real answers.</p>
-        <label>
-          <span data-i18n="form.zip">ZIP code</span>
-          <input type="text" name="zip" inputmode="numeric" autocomplete="postal-code" maxlength="5" placeholder="37042" aria-describedby="startError" />
-        </label>
-        <input type="hidden" name="type" value="auto" />
-        <p class="form-status is-error start-error" id="startError" role="alert" hidden></p>
-        <button class="btn btn-gold btn-block" type="submit" data-i18n="start.cta">Start My Quote</button>
-        <p class="landing-phone-cta" data-i18n="start.talk">Prefer to talk? Call <a href="tel:9316472434">(931) 647-2434</a></p>
-      </form>
       </div>
     </div>
   </section>

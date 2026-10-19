@@ -31,6 +31,28 @@ const I18N = {
     "landing.b4": "English & Espa\u00f1ol",
     "landing.phoneCta":
       "Need a quote ASAP? Call <a href=\"tel:9316472434\">(931) 647-2434</a>",
+    "landing.quoteTitle": "Save up to 35% on Auto insurance",
+    "landing.quoteSub": "More savings. Less hassle. Get your free auto insurance quote today.",
+    "landing.quoteCta": "Start Quote Now",
+    "landing.zipPlaceholder": "Enter ZIP",
+    "landing.locEyebrow": "Insurance in Clarksville",
+    "landing.locStreet": "313 Dover Rd",
+    "landing.reviews": "Google reviews",
+    "landing.directions": "Get Directions",
+    "landing.visitNote": "Visit our Clarksville office. Tambi&eacute;n hablamos espa&ntilde;ol.",
+    "landing.phoneLabel": "Phone",
+    "landing.hoursTitle": "Hours",
+    "landing.hoursShort": "Mon–Fri · 9:00 AM – 5:00 PM",
+    "landing.closed": "Closed",
+    "landing.langLabel": "Languages",
+    "landing.langValue": "English &amp; Espa&ntilde;ol",
+    "landing.day.mon": "Monday",
+    "landing.day.tue": "Tuesday",
+    "landing.day.wed": "Wednesday",
+    "landing.day.thu": "Thursday",
+    "landing.day.fri": "Friday",
+    "landing.day.sat": "Saturday",
+    "landing.day.sun": "Sunday",
     "cta.smsConsent":
       "By providing your phone number and clicking submit, you agree to receive non-marketing and marketing text messages from Millennium Insurance, including automated communications. Consent is not a condition of any purchase. Msg &amp; data rates may apply. Msg frequency varies. Reply STOP to opt out, HELP for help. View our <a href=\"privacy-policy.html\">Privacy Policy</a> for details.",
     "home.what.kicker": "What we do",
@@ -461,6 +483,28 @@ const I18N = {
     "landing.b4": "Ingl\u00e9s y Espa\u00f1ol",
     "landing.phoneCta":
       "\u00bfNecesita una cotizaci\u00f3n urgentemente? Llame al <a href=\"tel:9316472434\">(931) 647-2434</a>",
+    "landing.quoteTitle": "Ahorre hasta un 35% en seguro de auto",
+    "landing.quoteSub": "M\u00e1s ahorros. Menos complicaciones. Obtenga hoy su cotizaci\u00f3n gratis de seguro de auto.",
+    "landing.quoteCta": "Iniciar cotizaci\u00f3n",
+    "landing.zipPlaceholder": "Ingrese ZIP",
+    "landing.locEyebrow": "Seguros en Clarksville",
+    "landing.locStreet": "313 Dover Rd",
+    "landing.reviews": "Rese\u00f1as de Google",
+    "landing.directions": "C\u00f3mo llegar",
+    "landing.visitNote": "Visite nuestra oficina en Clarksville. Tambi\u00e9n hablamos espa\u00f1ol.",
+    "landing.phoneLabel": "Tel\u00e9fono",
+    "landing.hoursTitle": "Horario",
+    "landing.hoursShort": "Lun–Vie · 9:00 AM – 5:00 PM",
+    "landing.closed": "Cerrado",
+    "landing.langLabel": "Idiomas",
+    "landing.langValue": "Ingl\u00e9s y Espa\u00f1ol",
+    "landing.day.mon": "Lunes",
+    "landing.day.tue": "Martes",
+    "landing.day.wed": "Mi\u00e9rcoles",
+    "landing.day.thu": "Jueves",
+    "landing.day.fri": "Viernes",
+    "landing.day.sat": "S\u00e1bado",
+    "landing.day.sun": "Domingo",
     "cta.smsConsent":
       "Al proporcionar su n\u00famero de tel\u00e9fono y hacer clic en enviar, usted acepta recibir mensajes de texto promocionales y no promocionales de Millennium Insurance, incluidas comunicaciones automatizadas. El consentimiento no es una condici\u00f3n para ninguna compra. Pueden aplicarse tarifas de mensajes y datos. La frecuencia de los mensajes var\u00eda. Responda STOP para cancelar, HELP para obtener ayuda. Consulte nuestra <a href=\"privacy-policy.html\">Pol\u00edtica de Privacidad</a> para m\u00e1s detalles.",
     "home.what.kicker": "Lo que hacemos",
@@ -1443,9 +1487,7 @@ function setAOS(el, animation, delay = 0) {
 
 function applyAOSAnimations() {
   const landingCopy = document.querySelector(".landing-hero-copy");
-  const landingForm = document.querySelector(".landing-quote-form");
   if (landingCopy) setAOS(landingCopy, "fade-up");
-  if (landingForm) setAOS(landingForm, "fade-up", 100);
 
   const heroCopy = document.querySelector(".hero h1");
   const heroArt = document.querySelector(".hero-art-wrap, .hero-art");
@@ -1479,7 +1521,7 @@ function applyAOSAnimations() {
     setAOS(el, "fade-up", 100);
   });
 
-  document.querySelectorAll(".quote-form").forEach((el) => {
+  document.querySelectorAll(".quote-form:not(.landing-quote-form)").forEach((el) => {
     setAOS(el, "fade-up");
   });
 

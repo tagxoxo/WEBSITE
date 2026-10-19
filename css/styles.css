@@ -249,8 +249,8 @@ a { color: inherit; }
 }
 .landing-hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
-  gap: 2.75rem 3rem;
+  grid-template-columns: minmax(300px, 0.85fr) minmax(0, 1.15fr);
+  gap: 2.5rem 3rem;
   align-items: start;
 }
 .landing-hero-copy {
@@ -258,6 +258,7 @@ a { color: inherit; }
   flex-direction: column;
   gap: 0;
   min-width: 0;
+  order: 2;
 }
 .landing-headline {
   display: grid;
@@ -285,8 +286,8 @@ a { color: inherit; }
 .landing-photo-card {
   position: relative;
   width: 100%;
-  max-width: 650px;
-  margin: 0 0 1.1rem;
+  max-width: none;
+  margin: 0 0 1.15rem;
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.14);
@@ -296,13 +297,14 @@ a { color: inherit; }
 .landing-office-photo {
   display: block;
   width: 100%;
-  height: clamp(220px, 28vw, 320px);
+  height: clamp(240px, 28vw, 340px);
   object-fit: cover;
-  object-position: center center;
+  object-position: center 42%;
 }
 .landing-photo-label {
   position: absolute;
   left: 0.85rem;
+  right: auto;
   bottom: 0.85rem;
   display: inline-flex;
   align-items: center;
@@ -401,33 +403,84 @@ a { color: inherit; }
   color: var(--white);
   font-weight: 600;
 }
-.landing-quote-form {
+.quote-form.landing-quote-form {
   margin: 0;
   align-self: start;
+  order: 1;
+  width: 100%;
+  background: var(--white);
   border: 1px solid rgba(31, 77, 56, 0.1);
   border-radius: 12px;
-  border-top: 1px solid rgba(31, 77, 56, 0.1);
+  border-top: 5px solid var(--green-800);
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.14);
-  padding: 2rem 1.85rem 1.65rem;
-  gap: 0.85rem;
+  padding: 2.15rem 1.85rem 1.65rem;
+  gap: 0;
+  justify-items: start;
 }
-.landing-quote-form h3 {
-  text-align: center;
-  font-size: 1.35rem;
-  margin-bottom: 0.15rem;
+.quote-form.landing-quote-form h1,
+.quote-form.landing-quote-form h2 {
+  text-align: left;
+  font-family: var(--font-head);
+  font-size: clamp(1.65rem, 2.4vw, 2.05rem);
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: -0.015em;
+  color: var(--green-900);
+  margin: 0 0 0.85rem;
+  max-width: 12em;
 }
-.landing-quote-form .btn-gold {
-  margin-top: 0.15rem;
-  padding: 0.9rem 1rem;
+.quote-form.landing-quote-form .start-sub {
+  display: block;
+  text-align: left;
+  color: var(--ink);
   font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.45;
+  margin: 0 0 1.25rem;
+  max-width: 32ch;
+}
+.quote-form.landing-quote-form .zip-field {
+  width: 100%;
+  max-width: 16rem;
+  margin: 0;
+}
+.quote-form.landing-quote-form .zip-field input {
+  width: 100%;
+  min-height: 48px;
+  background: var(--white);
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.75rem 0.85rem;
+  color: var(--ink);
+  font-weight: 600;
+}
+.quote-form.landing-quote-form .zip-field input::placeholder {
+  color: var(--ink-muted);
+  font-weight: 600;
+}
+.quote-form.landing-quote-form .zip-field input:focus {
+  border-color: var(--green-700);
+  box-shadow: 0 0 0 3px rgba(53, 112, 82, 0.15);
+}
+.quote-form.landing-quote-form .start-error {
+  width: 100%;
+  margin-top: 0.65rem;
+}
+.quote-form.landing-quote-form .btn-gold {
+  margin-top: 1.05rem;
+  width: auto;
+  min-height: 48px;
+  justify-self: start;
+  padding: 0.8rem 1.45rem;
+  font-size: 1rem;
+  border-radius: var(--radius);
 }
 .landing-phone-cta {
-  text-align: center;
-  font-size: 0.92rem;
+  text-align: left;
+  font-size: 0.88rem;
   font-weight: 600;
   color: var(--green-900);
-  margin-top: 0.35rem;
-  padding-top: 0.15rem;
+  margin-top: 1rem;
 }
 .landing-phone-cta a {
   color: var(--green-800);
@@ -931,11 +984,11 @@ section {
 }
 .form-note { font-size: 0.78rem; color: var(--ink-muted); }
 .landing-phone-cta {
-  font-size: 0.92rem;
+  font-size: 0.88rem;
   font-weight: 600;
   color: var(--green-900);
-  text-align: center;
-  margin-top: 0.15rem;
+  text-align: left;
+  margin-top: 1rem;
 }
 .landing-phone-cta a {
   color: var(--green-800);
@@ -1157,19 +1210,49 @@ section {
 @media (max-width: 900px) {
   .hero .container, .interactive-wrap, .quote-grid, .landing-hero-grid {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
+  }
+  .landing-hero {
+    padding: 1.35rem 0 1.75rem;
+  }
+  .landing-hero .container {
+    width: min(1180px, 92%);
+  }
+  .landing-hero-contact {
+    gap: 0.55rem 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.9rem;
+  }
+  .landing-hero-copy { order: 2; }
+  .quote-form.landing-quote-form {
+    order: 1;
+    padding: 1.35rem 1.15rem 1.15rem;
+  }
+  .quote-form.landing-quote-form .zip-field,
+  .quote-form.landing-quote-form .btn-gold {
+    max-width: none;
+    width: 100%;
+  }
+  .landing-office-photo {
+    height: 210px;
+    object-position: center 42%;
   }
   .landing-benefits {
-    grid-template-columns: 1fr 1fr;
-    column-gap: 1.25rem;
+    grid-template-columns: 1fr;
+    row-gap: 0.75rem;
     max-width: none;
   }
-  .landing-photo-card,
+  .landing-trust {
+    flex-direction: column;
+    gap: 0.85rem;
+  }
+  .landing-trust > div:first-child,
+  .landing-trust > div + div {
+    padding: 0;
+    border: 0;
+  }
   .landing-trust {
     max-width: none;
-  }
-  .landing-trust > div + div {
-    padding-left: 1.25rem;
   }
   .hero .container {
     grid-template-areas:
