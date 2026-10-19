@@ -1247,16 +1247,21 @@ section {
     max-width: none;
   }
   .landing-trust {
-    flex-direction: column;
-    gap: 0.85rem;
-  }
-  .landing-trust > div:first-child,
-  .landing-trust > div + div {
-    padding: 0;
-    border: 0;
-  }
-  .landing-trust {
+    flex-direction: row;
+    align-items: flex-start;
     max-width: none;
+    gap: 0;
+  }
+  .landing-trust > div {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+  .landing-trust > div:first-child {
+    padding-right: 1rem;
+  }
+  .landing-trust > div + div {
+    padding-left: 1rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.22);
   }
   .hero .container {
     grid-template-areas:
