@@ -99,7 +99,6 @@
   const progressLabel = document.getElementById("progressLabel");
   const progressBar = document.getElementById("progressBar");
   const progressFill = document.getElementById("progressFill");
-  const backBtn = document.getElementById("qBack");
   const nextBtn = document.getElementById("qNext");
   const submitBtn = document.getElementById("qSubmit");
   const spinner = document.getElementById("qSpinner");
@@ -288,7 +287,6 @@
     progressBar.setAttribute("aria-valuenow", String(currentNum));
     progressBar.setAttribute("aria-valuemax", String(total));
     progressFill.style.width = (currentNum / total) * 100 + "%";
-    backBtn.hidden = stepIndex === 0;
     const last = step.id === "driver";
     nextBtn.hidden = last;
     submitBtn.hidden = !last;
@@ -944,7 +942,6 @@
     submitting = true;
     form.dataset.sending = "1";
     submitBtn.disabled = true;
-    backBtn.disabled = true;
     nextBtn.disabled = true;
     spinner.hidden = false;
     submitLabel.textContent = t("flow.sending");
@@ -973,7 +970,6 @@
       submitting = false;
       form.dataset.sending = "";
       submitBtn.disabled = false;
-      backBtn.disabled = false;
       nextBtn.disabled = false;
       spinner.hidden = true;
       submitLabel.textContent = t("flow.submit");
@@ -982,15 +978,6 @@
   }
 
   nextBtn.addEventListener("click", nextStep);
-  backBtn.addEventListener("click", () => {
-    if (animating) return;
-    clearError();
-    focusOnRender = true;
-    stepDirection = -1;
-    stepIndex -= 1;
-    save();
-    renderStep();
-  });
   form.addEventListener("submit", (event) => {
     event.preventDefault();
     if (current().id === "driver") submitQuote();

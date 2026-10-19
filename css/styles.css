@@ -1392,10 +1392,22 @@ button.tap {
 .opt { font-weight: 600; color: var(--ink-muted); }
 .q-actions {
   display: flex;
-  gap: 0.75rem;
+  justify-content: flex-end;
+  margin-top: 0.35rem;
 }
-.q-actions .btn-gold { flex: 1; }
-.q-actions .btn-outline { min-width: 6.5rem; }
+.q-actions .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  min-height: 52px;
+  padding: 0.85rem 1.7rem;
+  border: 0;
+  border-radius: 999px;
+  font-size: 1.05rem;
+}
+.q-actions .btn-gold { flex: 0 0 auto; }
+.q-next-arrow { font-size: 1.15rem; line-height: 1; }
 .btn:disabled { opacity: 0.72; cursor: progress; }
 .btn:focus-visible {
   outline: 3px solid var(--green-800);
@@ -1439,8 +1451,25 @@ button.tap {
   .tap-months { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 @media (max-width: 640px) {
-  .q-actions { flex-direction: column-reverse; }
+  body:has(#quoteFlow) {
+    padding-bottom: calc(5.4rem + env(safe-area-inset-bottom));
+  }
+  .quote-flow {
+    padding-bottom: calc(1rem + env(safe-area-inset-bottom));
+  }
+  .q-actions {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 30;
+    margin: 0;
+    padding: 0.75rem 1rem calc(0.75rem + env(safe-area-inset-bottom));
+    background: var(--cream);
+    justify-content: stretch;
+  }
   .q-actions .btn { width: 100%; }
+  .q-next-arrow { display: none; }
 }
 @media (prefers-reduced-motion: reduce) {
   .btn-spinner { animation: none; }
@@ -1641,8 +1670,11 @@ button.tap {
     margin-top: 0.35rem;
     font-size: 0.95rem;
   }
-  #quote { padding: 1rem 0 1.15rem; }
-  .quote-flow { padding: 1.1rem 0.85rem 0.85rem; }
+  #quote {
+    min-height: calc(100dvh - 11rem);
+    padding: 1rem 0 calc(5.6rem + env(safe-area-inset-bottom));
+  }
+  .quote-flow { padding: 1.1rem 0.85rem calc(5.4rem + env(safe-area-inset-bottom)); }
   .q-question { font-size: 1.35rem; }
   .bubble,
   .quote-start .btn,
