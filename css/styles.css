@@ -1223,11 +1223,15 @@ section {
     margin-bottom: 1rem;
     padding-bottom: 0.9rem;
   }
-  .landing-hero-copy { order: 2; }
+  .landing-hero-copy { display: contents; }
+  .landing-photo-card { order: 1; margin-bottom: 0; }
   .quote-form.landing-quote-form {
-    order: 1;
+    order: 2;
     padding: 1.35rem 1.15rem 1.15rem;
   }
+  .landing-coverage-line,
+  .landing-benefits,
+  .landing-trust { order: 3; }
   .quote-form.landing-quote-form .zip-field,
   .quote-form.landing-quote-form .btn-gold {
     max-width: none;
