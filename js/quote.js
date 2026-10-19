@@ -164,6 +164,7 @@
   let stepDirection = 0;
   let painted = false;
   let animating = false;
+  let renderToken = 0;
 
   function steps() {
     const count = data.vehicle_count || 1;
@@ -521,6 +522,7 @@
       html += "</div></fieldset>";
     }
     const motion = stepDirection;
+    const token = ++renderToken;
     stepDirection = 0;
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -554,7 +556,7 @@
     const inX = motion > 0 ? "28px" : "-28px";
     let arrived = false;
     const arrive = () => {
-      if (arrived) return;
+      if (arrived || token !== renderToken) return;
       arrived = true;
       commit();
       stepHost.animate(
@@ -799,10 +801,31 @@
       return;
     }
 
+    advanceStep();
+  }
+
+  function quoteUrl() {
+    return location.pathname + location.search;
+  }
+
+  function installHistory() {
+    const max = steps().length - 1;
+    stepIndex = Math.max(0, Math.min(stepIndex, max));
+    if (history.state && Number.isInteger(history.state.miQuote)) {
+      stepIndex = Math.max(0, Math.min(history.state.miQuote, max));
+      return;
+    }
+    const url = quoteUrl();
+    history.replaceState({ miQuote: 0 }, "", url);
+    for (let i = 1; i <= stepIndex; i += 1) history.pushState({ miQuote: i }, "", url);
+  }
+
+  function advanceStep() {
     focusOnRender = true;
     stepDirection = 1;
     stepIndex += 1;
     save();
+    history.pushState({ miQuote: stepIndex }, "", quoteUrl());
     renderStep();
   }
 
@@ -884,11 +907,7 @@
       return;
     }
     clearError();
-    focusOnRender = true;
-    stepDirection = 1;
-    stepIndex += 1;
-    save();
-    renderStep();
+    advanceStep();
   }
 
   function buildPayload() {
@@ -986,7 +1005,19 @@
     if (errorKey) errorEl.innerHTML = t(errorKey);
     if (form.dataset.sending === "1") submitLabel.textContent = t("flow.sending");
   });
+  window.addEventListener("popstate", (event) => {
+    if (!event.state || !Number.isInteger(event.state.miQuote)) return;
+    const next = event.state.miQuote;
+    if (next === stepIndex) return;
+    clearError();
+    focusOnRender = true;
+    stepDirection = next > stepIndex ? 1 : -1;
+    stepIndex = next;
+    save();
+    renderStep();
+  });
 
+  installHistory();
   renderStep();
   save();
 })();
