@@ -1588,6 +1588,13 @@ button.tap {
   grid-template-columns: 1fr 1fr 1.4fr;
   gap: 0.6rem;
 }
+.quote-form input[type="date"] {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 52px;
+}
 .field-label {
   margin: 0;
   font-size: 0.85rem;
@@ -1642,16 +1649,6 @@ button.tap {
   .q-actions .btn {
     min-height: 52px;
     touch-action: manipulation;
-  }
-  .quote-flow .q-actions {
-    position: sticky;
-    bottom: 0;
-    z-index: 4;
-    margin: 0.2rem -0.85rem -0.35rem;
-    padding: 0.7rem 0.85rem calc(0.7rem + env(safe-area-inset-bottom));
-    background: var(--white);
-    border-top: 1px solid var(--border);
-    box-shadow: 0 -8px 18px rgba(31, 77, 56, 0.08);
   }
   .site-header { padding-top: env(safe-area-inset-top); }
   .lang-btn,

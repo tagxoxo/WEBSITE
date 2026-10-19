@@ -346,13 +346,22 @@
     return '<h2 class="q-question" id="qHeading" tabindex="-1">' + esc(text) + "</h2>";
   }
 
+  function todayISO() {
+    const now = new Date();
+    const month = String(now.getMonth() + 1).padStart(2, "0");
+    const day = String(now.getDate()).padStart(2, "0");
+    return now.getFullYear() + "-" + month + "-" + day;
+  }
+
+  function partsToISO(mm, dd, yyyy) {
+    if (!/^\d{4}$/.test(yyyy || "") || !/^\d{1,2}$/.test(mm || "") || !/^\d{1,2}$/.test(dd || "")) return "";
+    return yyyy + "-" + String(mm).padStart(2, "0") + "-" + String(dd).padStart(2, "0");
+  }
+
   function dobFields(prefix, mm, dd, yyyy) {
     return (
-      '<div class="dob-fields">' +
-      "<label><span>" + esc(t("aq.mm")) + '</span><input type="text" inputmode="numeric" maxlength="2" autocomplete="bday-month" data-dob="mm" data-prefix="' + prefix + '" value="' + esc(mm) + '" /></label>' +
-      "<label><span>" + esc(t("aq.dd")) + '</span><input type="text" inputmode="numeric" maxlength="2" autocomplete="bday-day" data-dob="dd" data-prefix="' + prefix + '" value="' + esc(dd) + '" /></label>' +
-      "<label><span>" + esc(t("aq.yyyy")) + '</span><input type="text" inputmode="numeric" maxlength="4" autocomplete="bday-year" data-dob="yyyy" data-prefix="' + prefix + '" value="' + esc(yyyy) + '" /></label>' +
-      "</div>"
+      "<label><span>" + esc(t("drv.dob")) + "</span>" +
+      '<input type="date" data-prefix="' + prefix + '" autocomplete="bday" min="1900-01-01" max="' + todayISO() + '" value="' + esc(partsToISO(mm, dd, yyyy)) + '" /></label>'
     );
   }
 
@@ -496,7 +505,6 @@
         html +=
           "<label><span>" + esc(index === 0 ? t("aq.last") : t("form.last")) + "</span>" +
           '<input type="text" data-driver="' + index + '" data-field="last" maxlength="60" autocomplete="family-name" value="' + esc(driver.last) + '" /></label>';
-        html += '<p class="field-label">' + esc(t("drv.dob")) + "</p>";
         html += dobFields("driver-" + index, driver.mm, driver.dd, driver.yyyy);
         if (index === 0) {
           html +=
@@ -626,21 +634,30 @@
       });
     }
 
-    stepHost.querySelectorAll("[data-dob]").forEach((input) => {
-      input.addEventListener("input", () => {
-        const next = digits(input.value).slice(0, input.getAttribute("maxlength"));
-        if (input.value !== next) input.value = next;
-        const part = input.dataset.dob;
-        const prefix = input.dataset.prefix;
-        if (prefix === "applicant") data["dob_" + part] = next;
-        else {
-          const index = Number(prefix.replace("driver-", ""));
-          data.drivers[index][part] = next;
+    stepHost.querySelectorAll('input[type="date"][data-prefix]').forEach((input) => {
+      const saveDate = () => {
+        const parts = (input.value || "").split("-");
+        const yyyy = parts[0] || "";
+        const mm = parts[1] || "";
+        const dd = parts[2] || "";
+        if (input.dataset.prefix === "applicant") {
+          data.dob_yyyy = yyyy;
+          data.dob_mm = mm;
+          data.dob_dd = dd;
+        } else {
+          const driver = data.drivers[Number(input.dataset.prefix.replace("driver-", ""))];
+          if (driver) {
+            driver.yyyy = yyyy;
+            driver.mm = mm;
+            driver.dd = dd;
+          }
         }
         input.removeAttribute("aria-invalid");
         clearError();
         save();
-      });
+      };
+      input.addEventListener("input", saveDate);
+      input.addEventListener("change", saveDate);
     });
 
     stepHost.querySelectorAll("[data-address]").forEach((input) => {
@@ -793,7 +810,7 @@
 
   function driverProblem(driver, index) {
     const field = (name) => stepHost.querySelector('[data-driver="' + index + '"][data-field="' + name + '"]');
-    const dobField = () => stepHost.querySelector('[data-prefix="driver-' + index + '"][data-dob="mm"]');
+    const dobField = () => stepHost.querySelector('[data-prefix="driver-' + index + '"]');
     if (!driver.first.trim()) return { key: "aq.errFirst", field: field("first") };
     if (!driver.last.trim()) return { key: "aq.errLast", field: field("last") };
     if (!validDob(driver.mm, driver.dd, driver.yyyy)) return { key: "aq.errDob", field: dobField() };
