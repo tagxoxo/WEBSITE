@@ -953,14 +953,12 @@
         body: buildPayload(),
       });
       if (!res.ok) throw new Error("formspree");
-      window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({
-        event: "quote_submitted",
-        quote_type: "auto",
-        lead_source: source || "",
-      });
       try {
         sessionStorage.setItem(NAME_KEY, data.drivers[0].first.trim());
+        sessionStorage.setItem(
+          "mi-ads-conversion",
+          JSON.stringify({ quote_type: "auto", lead_source: source || "" })
+        );
         sessionStorage.removeItem(DRAFT_KEY);
       } catch (err) {
         /* storage unavailable */
@@ -993,9 +991,37 @@
   save();
 })();
 
+function fireQuoteConversion() {
+  let raw = "";
+  try {
+    raw = sessionStorage.getItem("mi-ads-conversion") || "";
+    if (raw) sessionStorage.removeItem("mi-ads-conversion");
+  } catch (err) {
+    return;
+  }
+  if (!raw) return;
+  let info = { quote_type: "auto", lead_source: "" };
+  try {
+    info = JSON.parse(raw);
+  } catch (err) {
+    /* keep the default payload */
+  }
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    event: "quote_submitted",
+    quote_type: info.quote_type || "auto",
+    lead_source: info.lead_source || "",
+  });
+  function gtag() {
+    window.dataLayer.push(arguments);
+  }
+  gtag("event", "conversion", { send_to: "AW-18364627721/MInCCIu5-PscEIn297RE" });
+}
+
 function initThanks() {
   const heading = document.getElementById("thanksHeading");
   if (!heading) return;
+  fireQuoteConversion();
   function render() {
     let name = "";
     try {
