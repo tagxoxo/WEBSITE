@@ -149,17 +149,17 @@
           Tambi&eacute;n hablamos espa&ntilde;ol.
         </p>
       </div>
-      <form class="quote-form quote-start" action="quote.html" method="get" novalidate>
-        <h3 data-i18n="start.title">Get Your Free Quote</h3>
-        <p class="start-sub" data-i18n="start.sub">Takes about 2 minutes. Local agents, real answers.</p>
-        <label>
-          <span data-i18n="form.zip">ZIP code</span>
-          <input type="text" name="zip" inputmode="numeric" autocomplete="postal-code" maxlength="5" placeholder="37042" aria-describedby="startError" />
+      <form class="quote-form landing-quote-form quote-start" action="quote.html" method="get" novalidate>
+        <h2 data-i18n="landing.quoteTitle">Save up to 35% on Auto insurance</h2>
+        <p class="start-sub" data-i18n="landing.quoteSub">More savings. Less hassle. Get your free auto insurance quote today.</p>
+        <label class="zip-field">
+          <span class="sr-only" data-i18n="form.zip">ZIP code</span>
+          <input type="text" name="zip" inputmode="numeric" autocomplete="postal-code" maxlength="5" placeholder="Enter ZIP" data-i18n-placeholder="landing.zipPlaceholder" aria-describedby="startError" />
         </label>
         <input type="hidden" name="type" value="auto" />
         <input type="hidden" name="source" value="low-down" />
         <p class="form-status is-error start-error" id="startError" role="alert" hidden></p>
-        <button class="btn btn-gold btn-block" type="submit" data-i18n="start.cta">Start My Quote</button>
+        <button class="btn btn-gold" type="submit" data-i18n="landing.quoteCta">Start Quote Now</button>
         <p class="landing-phone-cta" data-i18n="start.talk">Prefer to talk? Call <a href="tel:9316472434">(931) 647-2434</a></p>
       </form>
     </div>
